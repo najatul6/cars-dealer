@@ -30,7 +30,7 @@ export const sliders=[
     },
     {
         id:7,
-        title:"High speed Cars",
+        title:"black friday template",
         image:`${img2}`
     },
     {
