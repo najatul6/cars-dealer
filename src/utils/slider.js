@@ -35,7 +35,7 @@ export const sliders=[
     },
     {
         id:8,
-        title:"High speed Cars",
+        title:"Motion card template",
         image:`${img3}`
     },
 ]
