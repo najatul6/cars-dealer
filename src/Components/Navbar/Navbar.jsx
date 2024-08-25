@@ -5,7 +5,7 @@ import { IoClose, IoMenu } from "react-icons/io5";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="relative w-full py-[1.3rem] px-[2%] lg:py-5 lg:px-[2%]  flex justify-between items-center z-[100] before:content-[''] before:top-0 before:left-0 before:absolute before:w-full before:h-full before:bg-gradient-back before:backdrop-blur-[50px] before:z-[-1] shadow-xl shadow-gradient-back text-white font-bold">
+    <header className="relative w-full py-[1.3rem] px-[2%] lg:py-3 lg:px-[2%]  flex justify-between items-center z-[100] before:content-[''] before:top-0 before:left-0 before:absolute before:w-full before:h-full before:bg-gradient-back before:backdrop-blur-[50px] before:z-[-1]  text-white font-bold">
 
       <label
         htmlFor=""
