@@ -26,16 +26,16 @@ export const sliders=[
     {
         id:6,
         title:"High speed Cars",
-        image:"https://static.vecteezy.com/system/resources/thumbnails/006/763/501/small_2x/high-speed-car-banner-template-with-glowing-low-poly-graphic-car-vector.jpg"
+        image:`${img1}`
     },
     {
         id:7,
         title:"High speed Cars",
-        image:"https://static.vecteezy.com/system/resources/thumbnails/006/763/501/small_2x/high-speed-car-banner-template-with-glowing-low-poly-graphic-car-vector.jpg"
+        image:`${img2}`
     },
     {
         id:8,
         title:"High speed Cars",
-        image:"https://static.vecteezy.com/system/resources/thumbnails/006/763/501/small_2x/high-speed-car-banner-template-with-glowing-low-poly-graphic-car-vector.jpg"
+        image:`${img3}`
     },
 ]
