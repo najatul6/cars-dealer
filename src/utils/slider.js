@@ -1,4 +1,6 @@
-
+import img1 from "../assets/banner/34013015_black_friday_facebook_banner_10.jpg"
+import img2 from "../assets/banner/9603766.jpg"
+import img3 from "../assets/banner/35816078_8316176.jpg"
 
 export const sliders=[
     {
