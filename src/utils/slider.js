@@ -1,3 +1,5 @@
+
+
 export const sliders=[
     {
         id:1,
@@ -15,8 +17,23 @@ export const sliders=[
         image:"https://i.pinimg.com/originals/44/fb/2d/44fb2d03ef41162f0124e9bedb18cc5e.jpg"
     },
     {
-        id:4,
+        id:5,
         title:"High speed Cars",
         image:"https://static.vecteezy.com/system/resources/thumbnails/006/763/501/small_2x/high-speed-car-banner-template-with-glowing-low-poly-graphic-car-vector.jpg"
-    }
+    },
+    {
+        id:6,
+        title:"High speed Cars",
+        image:"https://static.vecteezy.com/system/resources/thumbnails/006/763/501/small_2x/high-speed-car-banner-template-with-glowing-low-poly-graphic-car-vector.jpg"
+    },
+    {
+        id:7,
+        title:"High speed Cars",
+        image:"https://static.vecteezy.com/system/resources/thumbnails/006/763/501/small_2x/high-speed-car-banner-template-with-glowing-low-poly-graphic-car-vector.jpg"
+    },
+    {
+        id:8,
+        title:"High speed Cars",
+        image:"https://static.vecteezy.com/system/resources/thumbnails/006/763/501/small_2x/high-speed-car-banner-template-with-glowing-low-poly-graphic-car-vector.jpg"
+    },
 ]
