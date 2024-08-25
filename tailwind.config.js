@@ -5,12 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+        'Dark-blue': '#006BB3',
+        'light-blue': '#01D1FF',
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
     themes: "cupcake",
-    
   },
 }
-
