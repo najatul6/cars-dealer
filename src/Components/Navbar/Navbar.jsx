@@ -6,11 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="relative w-full py-[1.3rem] px-[2%] lg:py-5 lg:px-[2%]  flex justify-between items-center z-[100] before:content-[''] before:top-0 before:left-0 before:absolute before:w-full before:h-full before:bg-gradient-back before:backdrop-blur-[50px] before:z-[-1] shadow-xl shadow-gradient-back text-white font-bold">
-      {/* <div className="text-3xl font-bold lg:leading-[70px] capitalize cursor-pointer lg:hidden">
-          <a href="/" className="block">
-          company logo
-          </a>
-        </div> */}
+
       <label
         htmlFor=""
         className="text-4xl text-white cursor-pointer lg:hidden absolute right-[5%] inline-flex duration-300 hover:shadow-[#33ffff_0px_0px_5px] hover:text-cyan-500 rounded-md"
