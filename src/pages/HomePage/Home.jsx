@@ -1,9 +1,10 @@
+import Slider from "../../Components/Slider/Slider";
 
 
 const Home = () => {
     return (
-        <div className="text-7xl uppercase font-extrabold">
-            hello
+        <div className="">
+            <Slider/>
         </div>
     );
 };
