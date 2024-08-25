@@ -25,7 +25,7 @@ export const sliders=[
     },
     {
         id:6,
-        title:"High speed Cars",
+        title:"Popular car template",
         image:`${img1}`
     },
     {
