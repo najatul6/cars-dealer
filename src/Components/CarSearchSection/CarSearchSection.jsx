@@ -6,6 +6,7 @@ const CarSearchSection = () => {
         <div>
             <img src="../../assets/image/1.jpg" alt="" />
             <img src="../../assets/image/1.jpg" alt="" />
+            <img src="../../assets/image/1.jpg" alt="" />
         </div>
     </div>
   )
