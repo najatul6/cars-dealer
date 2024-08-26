@@ -6,9 +6,9 @@ const Home = () => {
     <div className="">
       <div>
         <Slider />
-      </div>
-      <div>
-        <CarSearchSection />
+        <div className="bg-Dark-blue w-11/12">
+          <CarSearchSection />
+        </div>
       </div>
     </div>
   );
