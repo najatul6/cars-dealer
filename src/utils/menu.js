@@ -36,31 +36,31 @@ export const navLinks = [
     {
       id:"25_0kir",
       icon: `${icons1}`,
-      alt: "car icon 1",
+      alt: "sedan",
     },
     {
       id:"35_gtr0Z",
       icon: `${icons2}`,
-      alt: "car icon 2",
+      alt: "hatchback",
     },
     {
       id:"S2fd_UV",
       icon: `${icons3}`,
-      alt: "car icon 3",
+      alt: "convertible",
     },
     {
       id:"E-t3ron",
       icon: `${icons4}`,
-      alt: "car icon 4",
+      alt: "station",
     },
     {
       id:"Model3h_S",
       icon: `${icons5}`,
-      alt: "car icon 5",
+      alt: "Van",
     },
     {
       id:"Model_sd2S",
       icon: `${icons6}`,
-      alt: "car icon 5",
+      alt: "sports",
     }
   ]
