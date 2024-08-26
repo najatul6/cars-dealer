@@ -1,13 +1,17 @@
+import { carsIcons } from "../../utils/menu"
 
 const CarSearchSection = () => {
   return (
     <div>
         <h1>Lets Find your car.</h1>
         <div>
-            <img src="../../assets/image/1.jpg" alt="" />
-            <img src="../../assets/image/1.jpg" alt="" />
-            <img src="../../assets/image/1.jpg" alt="" />
-            <h1>Lets Find your car.</h1>
+            {carsIcons?.map(item=>{
+              return(
+                <div key={item?.id}>
+                  <img src={item?.icon} alt={item?.alt} />
+                </div>
+              )
+            })}
         </div>
     </div>
   )
