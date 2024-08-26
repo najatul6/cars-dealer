@@ -4,9 +4,9 @@ import Slider from "../../Components/Slider/Slider";
 const Home = () => {
   return (
     <div className="">
-      <div>
+      <div className="relative">
         <Slider />
-        <div className="bg-Dark-blue w-11/12">
+        <div className="bg-Dark-blue mx-auto w-11/12 absolute -bottom-[35%] left-0 right-0 z-10">
           <CarSearchSection />
         </div>
       </div>
