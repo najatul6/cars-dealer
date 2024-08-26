@@ -19,16 +19,16 @@ const CarSearchSection = () => {
         type="range"
         min={0}
         max="100"
-        value="25"
-        className="range"
-        step="25"
+        className="range [--range-shdw:#243c5a]"
+        step="20"
       />
-      <div className="flex w-full justify-between px-2 text-xs">
-        <span>|</span>
-        <span>|</span>
-        <span>|</span>
-        <span>|</span>
-        <span>|</span>
+      <div className="flex w-full justify-between px-2 text-xs text-light-blue">
+        <span>$0</span>
+        <span>$100</span>
+        <span>$500</span>
+        <span>$1000</span>
+        <span>$2000</span>
+        <span>$5000</span>
       </div>
         </div>
     </div>
