@@ -12,7 +12,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <ServiceSection/>
+        <ServiceSection />
       </div>
     </div>
   );
