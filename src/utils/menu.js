@@ -1,4 +1,9 @@
-
+import icons1 from "../assets/cars/car1.png"
+import icons2 from "../assets/cars/car2.png"
+import icons3 from "../assets/cars/car3.png"
+import icons4 from "../assets/cars/car4.png"
+import icons5 from "../assets/cars/car5.png"
+import icons6 from "../assets/cars/car6.png"
 
 export const navLinks = [
     {
@@ -29,28 +34,33 @@ export const navLinks = [
 
   export const carsIcons=[
     {
-      id:"250kir",
-      icon: "car-1.svg",
+      id:"25_0kir",
+      icon: `${icons1}`,
       alt: "car icon 1",
     },
     {
-      id:"350Z",
-      icon: "car-2.svg",
+      id:"35_gtr0Z",
+      icon: `${icons2}`,
       alt: "car icon 2",
     },
     {
-      id:"SUV",
-      icon: "car-3.svg",
+      id:"S2fd_UV",
+      icon: `${icons3}`,
       alt: "car icon 3",
     },
     {
-      id:"E-tron",
-      icon: "car-4.svg",
+      id:"E-t3ron",
+      icon: `${icons4}`,
       alt: "car icon 4",
     },
     {
-      id:"Model S",
-      icon: "car-5.svg",
+      id:"Model3h_S",
+      icon: `${icons5}`,
+      alt: "car icon 5",
+    },
+    {
+      id:"Model_sd2S",
+      icon: `${icons6}`,
       alt: "car icon 5",
     }
   ]
