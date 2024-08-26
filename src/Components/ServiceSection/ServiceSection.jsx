@@ -1,7 +1,11 @@
+import { servicePlan } from "../../utils/serviceplan"
+import ServiceCard from "./ServiceCard"
 
 const ServiceSection = () => {
   return (
-    <div>ServiceSection</div>
+    <div>
+        {servicePlan?.map(item=><ServiceCard key={item?.id} item={item}/>)}
+    </div>
   )
 }
 
