@@ -3,8 +3,8 @@ import { carsIcons } from "../../utils/menu"
 const CarSearchSection = () => {
   return (
     <div className="p-5">
-        <h1 className="text-2xl  lg:text-3xl text-white font-bold text-center">Lets Find your car.</h1>
-        <div className="flex justify-center items-center gap-6">
+        <h1 className="text-2xl  lg:text-3xl text-white font-bold text-center pb-5">Lets Find your car.</h1>
+        <div className="flex justify-center items-center gap-6 py-5">
             {carsIcons?.map(item=>{
               return(
                 <div key={item?.id} className="flex flex-col justify-center items-center gap-3">
