@@ -5,9 +5,9 @@ const ServiceCard = ({ item }) => {
   return (
     <div className="border flex flex-col justify-center items-center gap-3 p-5">
       <Icon className="text-6xl lg:text-8xl text-white"/>
-      <h3 className="text-2xl uppercase font-bold">{title}</h3>
+      <h3 className="text-2xl capitalize font-bold text-white">{title}</h3>
       <p className="text-xl text-center">{description}</p>
-      <Link>{btnText}</Link>
+      <Link className="text-lg font-bold uppercase text-white">{btnText} &raquo;</Link>
     </div>
   );
 };
