@@ -8,8 +8,9 @@ const SliderContent = ({ item }) => {
         <h3>{subtitle}</h3>
         <p>{description}</p>
       </div>
-      <div>
+      <div className="w-full flex justify-center items-center">
         <img src={image} alt={title} />
+        <p>{price}</p>
       </div>
     </div>
   );
