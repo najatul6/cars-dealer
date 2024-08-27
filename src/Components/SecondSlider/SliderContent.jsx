@@ -1,7 +1,11 @@
 
-const SliderContent = () => {
+const SliderContent = ({item}) => {
   return (
-    <div>SliderContent</div>
+    <div>
+        <div>
+            <h1></h1>
+        </div>
+    </div>
   )
 }
 
