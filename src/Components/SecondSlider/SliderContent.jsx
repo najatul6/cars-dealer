@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const SliderContent = ({ item }) => {
   const { title, subtitle, description, image } = item;
   return (
@@ -13,5 +14,9 @@ const SliderContent = ({ item }) => {
     </div>
   );
 };
+
+SliderContent.propTypes={
+    image: PropTypes.string.isRequired,
+}
 
 export default SliderContent;
