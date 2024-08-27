@@ -9,7 +9,7 @@ const SliderContent = ({ item }) => {
         <p className="text-justify">{description}</p>
       </div>
       <div className="w-full flex justify-center items-center relative">
-        <img src={image} alt={title} />
+        <img src={image} alt={title} className="w-full"/>
         <p className="absolute z-10 top-0 text-xl font-bold uppercase text-white py-3 px-2 bg-Dark-blue rounded-ss-full">From {price}</p>
       </div>
     </div>
