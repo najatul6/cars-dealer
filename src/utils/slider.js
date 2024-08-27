@@ -1,6 +1,9 @@
 import img1 from "../assets/banner/34013015_black_friday_facebook_banner_10.jpg";
 import img2 from "../assets/banner/9603766.jpg";
 import img3 from "../assets/banner/35816078_8316176.jpg";
+import img4 from "../assets/banner/Ferrari.png"
+import img5 from "../assets/banner/lambar.png"
+import img6 from "../assets/banner/mercedes-benz.png"
 
 export const sliders = [
   {
@@ -51,7 +54,7 @@ export const secondSlider=[
     subtitle:"With smart connector and assistant",
     description: "The Ferrari Roma is a grand touring car by Italian manufacturer Ferrari. It has a front mid-engine, rear-wheel-drive layout with a turbocharged V8 engine and a 2+2 seating arrangement.",
     price:"$25000",
-    image: `${img1}`,
+    image: `${img4}`,
   },
   {
     id: "9876dc54_321",
@@ -59,7 +62,7 @@ export const secondSlider=[
     subtitle:"A powerful and agile sports car",
     description: "The Lamborghini Aventador is a luxury sports car by Italian manufacturer Lamborghini. It has a front-wheel-drive layout with a 1.8L V12 engine, a 2+2 seating arrangement, and a 3.6-liter engine.",
     price:"$35000",
-    image: `${img2}`,
+    image: `${img5}`,
   },
   {
     id: "123456_6543f21",
@@ -67,6 +70,6 @@ export const secondSlider=[
     subtitle:"A sports car with an impressive top speed",
     description: "The Mercedes-Benz S-Class is a luxury sports car by German manufacturer Mercedes-Benz. It has a front-wheel-drive layout with a 2.0L V12 engine, a 2+2 seating arrangement, and a 3.5-liter engine.",
     price:"$45000",
-    image: `${img3}`,
+    image: `${img6}`,
   }
 ]

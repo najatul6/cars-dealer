@@ -9,7 +9,7 @@ import { secondSlider } from "../../utils/slider";
 
 const SecondSlider = () => {
   return (
-    <div className="h-[731px]">
+    <div className="my-10">
       {" "}
       <Swiper
         spaceBetween={30}
