@@ -39,7 +39,7 @@ const CarSearchSection = () => {
       </div>
       <div className="flex justify-center items-center gap-6 mt-6">
         <select name="carName" className="text-xl py-2 w-1/2 text-center border bg-transparent focus:bg-black">
-          <option selected>Select Model</option>
+          <option  defaultValue>Select Model</option>
           <option value="Ferrari Roma">Ferrari Roma</option>
           <option value="Lamborghini Aventador">
             Lamborghini Aventador
