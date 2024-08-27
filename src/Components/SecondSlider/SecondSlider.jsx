@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import SliderContent from "./SliderContent";
 
 const SecondSlider = () => {
   return (
@@ -25,11 +26,7 @@ const SecondSlider = () => {
       >
         {sliders?.map((slider) => (
           <SwiperSlide key={slider?.id}>
-            <img
-              src={slider?.image}
-              alt={slider?.title}
-              className="w-full h-[731px] object-cover object-center"
-            />
+           <SliderContent slider={slider}/>
           </SwiperSlide>
         ))}
       </Swiper>
