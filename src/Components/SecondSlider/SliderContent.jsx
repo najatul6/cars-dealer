@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 const SliderContent = ({ item }) => {
-  const { title, subtitle, description, image } = item;
+  const { title, subtitle, description, image,price } = item;
   return (
     <div>
       <div className="bg-white shadow-2xl flex-col justify-start items-start">
@@ -17,7 +17,7 @@ const SliderContent = ({ item }) => {
 };
 
 SliderContent.propTypes={
-    image: PropTypes.string.isRequired,
+    item: PropTypes.any.isRequired,
 }
 
 export default SliderContent;

@@ -50,7 +50,7 @@ export const secondSlider=[
     title: "Introducing Ferrari series",
     subtitle:"With smart connector and assistant",
     description: "The Ferrari Roma is a grand touring car by Italian manufacturer Ferrari. It has a front mid-engine, rear-wheel-drive layout with a turbocharged V8 engine and a 2+2 seating arrangement.",
-    price:"$200000"
+    price:"$25000",
     image: `${img1}`,
   },
 ]
