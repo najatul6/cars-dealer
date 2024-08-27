@@ -1,5 +1,5 @@
 
-import { servicePlan } from "../../utils/servicePlan"
+import { servicePlan } from "../../utils/serviceplan"
 import ServiceCard from "./ServiceCard"
 
 const ServiceSection = () => {
