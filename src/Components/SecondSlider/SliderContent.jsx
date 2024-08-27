@@ -1,5 +1,6 @@
 
 const SliderContent = ({item}) => {
+    const {title,subtitle,description,image}=item
   return (
     <div>
         <div>
