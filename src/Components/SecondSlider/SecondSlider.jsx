@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import SliderContent from "./SliderContent";
+import { secondSlider } from "../../utils/slider";
 
 const SecondSlider = () => {
   return (
@@ -24,9 +25,9 @@ const SecondSlider = () => {
         modules={[Autoplay]}
         className="mySwiper"
       >
-        {sliders?.map((slider) => (
-          <SwiperSlide key={slider?.id}>
-           <SliderContent slider={slider}/>
+        {secondSlider?.map((item) => (
+          <SwiperSlide key={item?.id}>
+           <SliderContent item={item}/>
           </SwiperSlide>
         ))}
       </Swiper>
