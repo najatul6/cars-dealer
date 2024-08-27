@@ -1,4 +1,5 @@
 import CarSearchSection from "../../Components/CarSearchSection/CarSearchSection";
+import SecondSlider from "../../Components/SecondSlider/SecondSlider";
 import ServiceSection from "../../Components/ServiceSection/ServiceSection";
 import Slider from "../../Components/Slider/Slider";
 
@@ -13,6 +14,9 @@ const Home = () => {
       </div>
       <div className="">
         <ServiceSection />
+      </div>
+      <div>
+        <SecondSlider/>
       </div>
     </div>
   );
