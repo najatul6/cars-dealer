@@ -1,7 +1,10 @@
+import Header from "../shared/Header/Header"
 
 const ServiceSection = () => {
   return (
-    <div>ServiceSection</div>
+    <div>
+        <Header text={"service"}/>
+    </div>
   )
 }
 
