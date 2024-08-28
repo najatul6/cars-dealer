@@ -33,7 +33,14 @@ export const productData = [
       image:"https://m.media-amazon.com/images/I/71Lzg0+D0TL._AC_UF1000,1000_QL80_.jpg",
       price: "$49.99",
       rating: 4.8
-    }
+    },
+    {
+        id: "a1b_y42c3d4",
+        name: "Paint Refinishing",
+        image:"https://www.prestaproducts.com/XMLAutoPlayJQ/Presta-Web-Banner-495x280_APEX_2.jpg",
+        price: "$50.50",
+        rating: 3.9
+      },
   ];
   
   
