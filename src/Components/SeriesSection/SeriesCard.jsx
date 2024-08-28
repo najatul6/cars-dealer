@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const ServiceCard = ({ item }) => {
+const SeriesCard = ({ item }) => {
   const { icon: Icon, title, description, btnText } = item;
   return (
     <div className="border flex flex-col justify-center items-center gap-3 p-5">
@@ -13,8 +13,8 @@ const ServiceCard = ({ item }) => {
   );
 };
 
-ServiceCard.propTypes={
+SeriesCard.propTypes={
   item: PropTypes.any,
 }
 
-export default ServiceCard;
+export default SeriesCard;

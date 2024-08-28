@@ -1,6 +1,6 @@
 import CarSearchSection from "../../Components/CarSearchSection/CarSearchSection";
 import SecondSlider from "../../Components/SecondSlider/SecondSlider";
-import ServiceSection from "../../Components/ServiceSection/ServiceSection";
+import SeriesSection from "../../Components/SeriesSection/SeriesSection";
 import Slider from "../../Components/Slider/Slider";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
         </div>
       </div>
       <div className="">
-        <ServiceSection />
+        <SeriesSection />
       </div>
       <div>
         <SecondSlider/>
