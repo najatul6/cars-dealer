@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import SliderContent from "./SliderContent";
 import { secondSlider } from "../../utils/slider";
+import 'swiper/css/pagination';
 
 const SecondSlider = () => {
   return (
@@ -22,7 +23,7 @@ const SecondSlider = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay]}
+        modules={[Autoplay,Pagination]}
         className="mySwiper"
       >
         {secondSlider?.map((item) => (
