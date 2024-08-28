@@ -20,7 +20,7 @@ const Home = () => {
       <div>
         <SecondSlider/>
       </div>
-      <div>
+      <div className="px-5">
         <Header text={"services"}/>
         <ServiceSection/>
       </div>

@@ -1,18 +1,21 @@
+import { Link } from "react-router-dom";
+
 const ServiceCard = ({ service }) => {
   const { title, description, image } = service;
   return (
-    <div className="card shadow-xl">
+    <div className="card shadow-2xl rounded-none">
       <figure>
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
+          src={image}
+          alt={title}
+          className="h-[317px]"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{titel}</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <h2 className="card-title text-white">{title}</h2>
+        <p>{description}</p>
+        <div className="card-actions">
+          <Link className="text-Dark-blue hover:text-light-blue font-bold">Learn More &rarr;</Link>
         </div>
       </div>
     </div>
