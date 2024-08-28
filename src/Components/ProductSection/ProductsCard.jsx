@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
 
 const ProductsCard = ({item}) => {
+    const {name,price,rating,image}=item;
   return (
     <div className="card shadow-2xl rounded-none">
     <figure>
-      <img src={image} alt={title} className="h-[317px]" />
+      <img src={image} alt={name} className="h-[317px]" />
     </figure>
     <div className="card-body">
-      <h2 className="card-title text-white">{title}</h2>
-      <p>{description}</p>
+      <h2 className="card-title text-white">{name}</h2>
+      <p>{price}</p>
+      <p>{rating}</p>
       <div className="card-actions">
         <Link className="text-Dark-blue hover:text-light-blue font-bold">
           Learn More &rarr;
