@@ -25,7 +25,7 @@ const Home = () => {
         <Header text={"services"}/>
         <ServiceSection/>
       </div>
-      <div className="py-5 bg-Dark-blue">
+      <div className="py-5 bg-Dark-blue px-5">
         <Header text={"products"}/>
         <ProductSection/>
       </div>
