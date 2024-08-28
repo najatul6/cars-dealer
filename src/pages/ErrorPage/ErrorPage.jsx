@@ -17,13 +17,11 @@ const ErrorPage = () => {
           />
           <div className="absolute bottom-20 z-1 left-[45%] text-center">
             <div className="flex flex-col items-center justify-center  space-y-2 text-white">
-              <h2 className="capitalize text-xl font-bold">Try it later</h2>
-              <h4 className="text-xl font-bold">OR</h4>
               <Link
                 to="/"
                 className="capitalize btn text-xl font-bold btn-success text-white"
               >
-                Back to home &raquo;
+               &laquo; Back to home 
               </Link>
             </div>
           </div>
