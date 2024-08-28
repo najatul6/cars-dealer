@@ -15,7 +15,7 @@ const SliderContent = ({ item }) => {
       <div className="w-full flex justify-center items-center relative">
         <img src={image} alt={title} className="w-full h-[600px]" />
         <div className="absolute z-10 right-8 top-[25%] felx justify-center items-center">
-        <p className="text-xl -skew-x-[25deg] font-bold uppercase text-white py-3 px-2 bg-regal-blue ">
+        <p className="text-xl -skew-x-[25deg] font-bold uppercase text-white py-3 px-2 bg-Dark-blue ">
           From {price}
         </p>
         </div>
