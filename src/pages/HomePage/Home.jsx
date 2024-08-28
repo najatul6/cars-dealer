@@ -1,6 +1,7 @@
 import CarSearchSection from "../../Components/CarSearchSection/CarSearchSection";
 import SecondSlider from "../../Components/SecondSlider/SecondSlider";
 import SeriesSection from "../../Components/SeriesSection/SeriesSection";
+import ServiceSection from "../../Components/ServiceSeciton/ServiceSection";
 import Slider from "../../Components/Slider/Slider";
 
 const Home = () => {
@@ -17,6 +18,9 @@ const Home = () => {
       </div>
       <div>
         <SecondSlider/>
+      </div>
+      <div>
+        <ServiceSection/>
       </div>
     </div>
   );
