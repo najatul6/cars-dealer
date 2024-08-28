@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 const ProductsCard = ({item}) => {
     const {name,price,rating,image}=item;
   return (
-    <div className="card shadow-2xl rounded-none">
+    <div className="card shadow-2xl rounded-none w-full">
     <figure>
-      <img src={image} alt={name} className="h-[317px]" />
+      <img src={image} alt={name} className="h-[317px] w-full" />
     </figure>
-    <div className="card-body">
+    <div className="card-body items-center text-center">
+      <p>{rating}</p>
       <h2 className="card-title text-white">{name}</h2>
       <p>{price}</p>
-      <p>{rating}</p>
       <div className="card-actions">
       <button className="btn bg-regal-blue hover:bg-light-blue text-white outline-none border-none rounded-none font-bold">Buy Now</button>
       </div>
