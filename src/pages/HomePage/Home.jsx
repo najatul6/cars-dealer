@@ -21,7 +21,7 @@ const Home = () => {
       <div>
         <SecondSlider/>
       </div>
-      <div className="px-5">
+      <div className="px-5 py-5">
         <Header text={"services"}/>
         <ServiceSection/>
       </div>
