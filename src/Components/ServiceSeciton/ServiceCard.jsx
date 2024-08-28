@@ -1,7 +1,10 @@
 
-const ServiceCard = () => {
+const ServiceCard = ({service}) => {
+    const {title,description,image}=service
   return (
-    <div>ServiceCard</div>
+    <div>
+        
+    </div>
   )
 }
 
