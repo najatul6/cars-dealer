@@ -13,9 +13,7 @@ const ProductsCard = ({item}) => {
       <p>{price}</p>
       <p>{rating}</p>
       <div className="card-actions">
-        <Link className="text-Dark-blue hover:text-light-blue font-bold">
-          Learn More &rarr;
-        </Link>
+      <button className="btn bg-regal-blue hover:bg-light-blue text-white outline-none border-none rounded-none font-bold">Buy Now</button>
       </div>
     </div>
   </div>
