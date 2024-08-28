@@ -1,7 +1,7 @@
 import { CiBadgeDollar } from "react-icons/ci";
 import { MdSupportAgent } from "react-icons/md";
 import { FiSettings } from "react-icons/fi";
-export const servicePlan = [
+export const seriesPlan = [
   {
     id: "458j76_4r5",
     icon: CiBadgeDollar ,
