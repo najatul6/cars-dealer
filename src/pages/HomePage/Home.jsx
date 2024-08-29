@@ -29,6 +29,10 @@ const Home = () => {
         <Header text={"products"}/>
         <ProductSection/>
       </div>
+      <div className="py-5 px-5">
+        <Header text={"our team"}/>
+        <ProductSection/>
+      </div>
     </div>
   );
 };
