@@ -1,3 +1,4 @@
+import { FaPhone } from "react-icons/fa";
 import CarSearchSection from "../../Components/CarSearchSection/CarSearchSection";
 import OurTeam from "../../Components/OurTeam/OurTeam";
 import ProductSection from "../../Components/ProductSection/ProductSection";
@@ -6,6 +7,7 @@ import SeriesSection from "../../Components/SeriesSection/SeriesSection";
 import ServiceSection from "../../Components/ServiceSeciton/ServiceSection";
 import Title from "../../Components/shared/Title/Title";
 import Slider from "../../Components/Slider/Slider";
+import banner from "../../assets/image/sell-buy-car.jpg"
 
 const Home = () => {
   return (
@@ -33,6 +35,14 @@ const Home = () => {
       <div className="py-5 px-5">
         <Title text={"our team"}/>
         <OurTeam/>
+      </div>
+      <div className="py-5">
+       <div className="py-20 bg-regal-blue bg-opacity-95 flex flex-col gap-6 justify-center items-center w-full bg-blend-multiply " style={{backgroundImage: `url(${banner})`,backgroundPosition:"center",backgroundSize:"cover",backgroundRepeat:"no-repeat"}}>
+        <h2 className="text-6xl text-light-blue font-bold">Lets find your dream car.</h2>
+        <button className="flex justify-center items-center gap-5 bg-Dark-blue px-6 py-5 text-white -skew-x-[25deg]">
+          <FaPhone/> +8801773827414
+        </button>
+       </div>
       </div>
     </div>
   );
