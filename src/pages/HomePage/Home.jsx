@@ -1,4 +1,5 @@
 import CarSearchSection from "../../Components/CarSearchSection/CarSearchSection";
+import OurTeam from "../../Components/OurTeam/OurTeam";
 import ProductSection from "../../Components/ProductSection/ProductSection";
 import SecondSlider from "../../Components/SecondSlider/SecondSlider";
 import SeriesSection from "../../Components/SeriesSection/SeriesSection";
@@ -31,7 +32,7 @@ const Home = () => {
       </div>
       <div className="py-5 px-5">
         <Header text={"our team"}/>
-        <ProductSection/>
+        <OurTeam/>
       </div>
     </div>
   );

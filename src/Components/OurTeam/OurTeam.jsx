@@ -1,7 +1,13 @@
+import { ourTeam } from "../../utils/ourTeam"
+import TeamCard from "./TeamCard"
 
 const OurTeam = () => {
   return (
-    <div>OurTeam</div>
+    <div>
+        {
+            ourTeam?.map(team=><TeamCard key={team?.id} team={team}/>)
+        }
+    </div>
   )
 }
 
