@@ -43,12 +43,12 @@ export const ourTeam = [
                 link:"http://facebook.com/johndoe6/",
             },
             {
-                Icon:SiFacebook,
+                Icon:BiLogoInstagramAlt,
                 link:"http://instagram.com/johndoe6/",
             },
             
             {
-                Icon:SiFacebook,
+                Icon:TfiTwitterAlt,
                 link:"http://twitter.com/johndoe6/",
             },
             
@@ -66,12 +66,12 @@ export const ourTeam = [
                 link:"http://facebook.com/janesmith6/",
             },
             {
-                Icon:SiFacebook,
+                Icon:BiLogoInstagramAlt,
                 link:"http://instagram.com/janesmith6/",
             },
             
             {
-                Icon:SiFacebook,
+                Icon:TfiTwitterAlt,
                 link:"http://twitter.com/janesmith6/",
             },
             
