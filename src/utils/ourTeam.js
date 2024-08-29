@@ -1,7 +1,7 @@
 import team1 from "../assets/team/1.jpg"
 import team2 from "../assets/team/2.jpg"
 import team3 from "../assets/team/3.jpg"
-import { SiFacebook } from "react-icons/si";
+import { FaFacebookF } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { TfiTwitterAlt } from "react-icons/tfi";
 
@@ -15,7 +15,7 @@ export const ourTeam = [
         description:"The co-founder of the organization that owns the organization that owns the organization that owns the organization.",
         socialMedia:[
             {
-                Icon:SiFacebook,
+                Icon:FaFacebookF,
                 link:"http://facebook.com/najatul6/",
             },
             {
@@ -39,7 +39,7 @@ export const ourTeam = [
         description:"The Chief Financial Officer of the organization that owns the organization that owns the organization.",
         socialMedia:[
             {
-                Icon:SiFacebook,
+                Icon:FaFacebookF,
                 link:"http://facebook.com/johndoe6/",
             },
             {
@@ -62,7 +62,7 @@ export const ourTeam = [
         description:"The Chief Technology Officer of the organization that owns the organization that owns the organization.",
         socialMedia:[
             {
-                Icon:SiFacebook,
+                Icon:FaFacebookF,
                 link:"http://facebook.com/janesmith6/",
             },
             {

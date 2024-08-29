@@ -4,7 +4,7 @@ import ProductSection from "../../Components/ProductSection/ProductSection";
 import SecondSlider from "../../Components/SecondSlider/SecondSlider";
 import SeriesSection from "../../Components/SeriesSection/SeriesSection";
 import ServiceSection from "../../Components/ServiceSeciton/ServiceSection";
-import Header from "../../Components/shared/Header/Header";
+import Title from "../../Components/shared/Title/Title";
 import Slider from "../../Components/Slider/Slider";
 
 const Home = () => {
@@ -23,15 +23,15 @@ const Home = () => {
         <SecondSlider/>
       </div>
       <div className="px-5 py-5">
-        <Header text={"services"}/>
+        <Title text={"services"}/>
         <ServiceSection/>
       </div>
       <div className="py-5 bg-Dark-blue px-5">
-        <Header text={"products"}/>
+        <Title text={"products"}/>
         <ProductSection/>
       </div>
       <div className="py-5 px-5">
-        <Header text={"our team"}/>
+        <Title text={"our team"}/>
         <OurTeam/>
       </div>
     </div>
