@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const TeamCard = ({ team }) => {
   const { name, image, description, position, socialMedia } = team;
   return (
@@ -29,6 +31,21 @@ const TeamCard = ({ team }) => {
       </div>
     </div>
   );
+};
+
+TeamCard.propTypes = {
+    team: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      position: PropTypes.string.isRequired,
+      socialMedia: PropTypes.arrayOf(
+        PropTypes.shape({
+          url: PropTypes.string.isRequired,
+          Icon: PropTypes.func.isRequired,
+        })
+      ),
+    }).isRequired,
 };
 
 export default TeamCard;
