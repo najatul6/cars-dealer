@@ -1,17 +1,17 @@
 const TeamCard = ({ team }) => {
   const { name, image, description, position, socialMedia } = team;
   return (
-    <div className="card shadow-xl shadow-regal-blue rounded-none w-full">
+    <div className="card shadow-2xl rounded-none w-full">
       <figure>
         <img src={image} alt={name} className="h-[317px] w-full" />
       </figure>
-      <div className="card-body  text-white">
-        <div>
+      <div className="card-body text-white">
+        <div className=" border-l-4 rounded border-light-blue px-2">
           <h2 className="card-title ">{name}</h2>
-          <p>{position}</p>
+          <p className="text-base">{position}</p>
         </div>
-        <p>{description}</p>
-        <div className="card-actions justify-end">
+        <p className="my-5">{description}</p>
+        <div className="card-actions">
           {socialMedia?.map((socialLink, index) => {
             return (
               <a
@@ -21,7 +21,7 @@ const TeamCard = ({ team }) => {
                 rel="noopener noreferrer"
                 className="text-dark-blue hover:text-light-blue font-bold"
               >
-                <socialLink.Icon size={28} />
+                <socialLink.Icon size={20} />
               </a>
             );
           })}
