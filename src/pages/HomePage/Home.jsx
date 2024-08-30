@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       </div>
       <div className="py-5 px-5">
-        
+        <ProductSection/>
       </div>
     </div>
   );
