@@ -1,4 +1,4 @@
-export const products = [
+export const shopProducts = [
   {
     id: "prod_001",
     name: "Toyota Camry",

@@ -1,7 +1,9 @@
 
-const ItemCard = () => {
+const ItemCard = ({item}) => {
   return (
-    <div>ItemCard</div>
+    <div>
+
+    </div>
   )
 }
 
