@@ -11,9 +11,9 @@ const ProductsCard = ({ item }) => {
         <img src={image} alt={name} className="h-[317px] w-full" />
       </figure>
       <div className="card-body items-center text-center text-white">
-        <p>
+
           <Rating style={{ maxWidth: 120 }} value={rating} readOnly />
-        </p>
+
         <h2 className="card-title ">{name}</h2>
         <p>{price}</p>
         <div className="card-actions">

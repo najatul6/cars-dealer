@@ -10,7 +10,7 @@ const TeamCard = ({ team }) => {
       <div className="card-body text-white">
         <div className=" border-l-4 rounded border-light-blue px-2">
           <h2 className="card-title ">{name}</h2>
-          <p className="text-base">{position}</p>
+          <h4 className="text-base">{position}</h4>
         </div>
         <p className="my-5">{description}</p>
         <div className="card-actions">
