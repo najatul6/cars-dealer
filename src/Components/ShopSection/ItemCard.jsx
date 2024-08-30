@@ -14,9 +14,9 @@ const ItemCard = ({item}) => {
         <h2 className="card-title ">{name}</h2>
         <p>{price}</p>
         <div>
-          <p className="w-2 h-2">{colorOptions[0]}</p>
-          <p className="w-2 h-2">{colorOptions[1]}</p>
-          <p className="w-2 h-2">{colorOptions[2]}</p>
+          <p className="w-2 h-2 rounded rounded-full">{colorOptions[0]}</p>
+          <p className="w-2 h-2 rounded rounded-full">{colorOptions[1]}</p>
+          <p className="w-2 h-2 rounded rounded-full">{colorOptions[2]}</p>
         </div>
         <div className="card-actions">
           <button className="btn bg-regal-blue hover:bg-light-blue text-white outline-none border-none rounded-none font-bold">
