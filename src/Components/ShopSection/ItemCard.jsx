@@ -13,7 +13,7 @@ const ItemCard = ({item}) => {
 
         <h2 className="card-title ">{name}</h2>
         <p>{price}</p>
-        <div>
+        <div className="flex justify-center items-center gap-6">
           <p className="w-2 h-2 rounded-full">{colorOptions[0]}</p>
           <p className="w-2 h-2 rounded-full">{colorOptions[1]}</p>
           <p className="w-2 h-2 rounded-full">{colorOptions[2]}</p>
