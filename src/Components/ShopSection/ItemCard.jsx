@@ -1,4 +1,5 @@
 import { Rating } from "@smastrom/react-rating"
+import PropTypes from "prop-types";
 
 const ItemCard = ({item}) => {
   const {image,name,price, rating,stoke,weight,colorOptions} = item
@@ -26,6 +27,10 @@ const ItemCard = ({item}) => {
       </div>
     </div>
   )
+}
+
+ItemCard.propTypes={
+  item:PropTypes.any.isRequired,
 }
 
 export default ItemCard
