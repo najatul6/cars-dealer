@@ -1,1 +1,3 @@
-const 
+export const products =[
+
+]
