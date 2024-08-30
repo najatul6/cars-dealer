@@ -20,7 +20,7 @@ const ItemCard = ({item}) => {
           <p className="w-2 h-2 rounded-full">{colorOptions[2]}</p>
         </div>
         <div className="card-actions">
-          <button className=``>
+          <button className={`${!isOnSale && "disabled"} btn bg-regal-blue hover:bg-light-blue text-white outline-none border-none rounded-none font-bold`}>
             {isOnSale?"Add to Cart":"Out of stock"}
           </button>
         </div>
