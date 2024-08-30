@@ -14,17 +14,19 @@ const TeamCard = ({ team }) => {
         </div>
         <p className="my-5">{description}</p>
         <div className="card-actions">
-          {socialMedia?.map((socialLink, index) => {
+          {socialMedia?.map((socialLink) => {
             return (
+              
               <a
-                key={index}
-                href={socialLink?.url}
+                key={socialLink?.id}
+                href={socialLink?.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-dark-blue hover:text-light-blue font-bold"
+                className="text-dark-blue hover:text-light-blue font-bold cursor-pointer"
               >
                 <socialLink.Icon size={20} />
               </a>
+              
             );
           })}
         </div>
@@ -34,18 +36,8 @@ const TeamCard = ({ team }) => {
 };
 
 TeamCard.propTypes = {
-    team: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      position: PropTypes.string.isRequired,
-      socialMedia: PropTypes.arrayOf(
-        PropTypes.shape({
-          url: PropTypes.string.isRequired,
-          Icon: PropTypes.func.isRequired,
-        })
-      ),
-    }).isRequired,
+  team:PropTypes.any
+
 };
 
 export default TeamCard;
