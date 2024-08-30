@@ -238,7 +238,7 @@ export const products = [
     name: "Kia Seltos",
     price: 23000,
     rating: 4.4,
-    category: "SUV",
+    category: "Station wagon",
     description:
       "The Kia Seltos is a compact SUV that offers a perfect balance of style, versatility, and advanced features.",
     images: [
@@ -264,6 +264,171 @@ export const products = [
     weight: "3,185 lbs",
     colorOptions: ["Blue", "White", "Gray"],
     warranty: "5 years / 60,000 miles",
+    safetyRating: "5-Star Overall",
+  },
+  {
+    id: "prod_018",
+    name: "Kia Seltos",
+    price: 23000,
+    rating: 4.4,
+    category: "Station wagon",
+    description:
+      "The Kia Seltos is a compact SUV that offers a perfect balance of style, versatility, and advanced features.",
+    images: [
+      "https://example.com/images/kia_seltos_1.jpg",
+      "https://example.com/images/kia_seltos_2.jpg",
+    ],
+    stock: 18,
+    isOnSale: true,
+    engine: "2.0L 4-Cylinder",
+    fuelType: "Gasoline",
+    transmission: "Automatic",
+    features: [
+      "All-Wheel Drive",
+      "10.25-inch Touchscreen",
+      "Wireless Phone Charger",
+      "Rear Cross-Traffic Alert",
+    ],
+    dimensions: {
+      length: "172.0 inches",
+      width: "70.9 inches",
+      height: "64.4 inches",
+    },
+    weight: "3,185 lbs",
+    colorOptions: ["Blue", "White", "Gray"],
+    warranty: "5 years / 60,000 miles",
+    safetyRating: "5-Star Overall",
+  },
+  {
+    id: "prod_019",
+    name: "Volkswagen Golf Alltrack",
+    price: 29000,
+    rating: 4.5,
+    category: "Station wagon",
+    description:
+      "The Volkswagen Golf Alltrack is a versatile station wagon with all-wheel drive, combining practicality with a sporty design.",
+    images: [
+      "https://example.com/images/vw_golf_alltrack_1.jpg",
+      "https://example.com/images/vw_golf_alltrack_2.jpg",
+    ],
+    stock: 15,
+    isOnSale: true,
+    engine: "1.8L Turbocharged 4-Cylinder",
+    fuelType: "Gasoline",
+    transmission: "Automatic",
+    features: [
+      "4MOTION All-Wheel Drive",
+      "Panoramic Sunroof",
+      "Keyless Access with Push-Button Start",
+      "Fender Premium Audio",
+    ],
+    dimensions: {
+      length: "180.6 inches",
+      width: "70.8 inches",
+      height: "59.7 inches",
+    },
+    weight: "3,450 lbs",
+    colorOptions: ["Red", "White", "Gray"],
+    warranty: "4 years / 50,000 miles",
+    safetyRating: "5-Star Overall",
+  },
+  {
+    id: "prod_020",
+    name: "Subaru Levorg",
+    price: 31000,
+    rating: 4.7,
+    category: "Station wagon",
+    description:
+      "The Subaru Levorg is a sporty station wagon with standard all-wheel drive, offering a blend of performance and practicality.",
+    images: [
+      "https://example.com/images/subaru_levorg_1.jpg",
+      "https://example.com/images/subaru_levorg_2.jpg",
+    ],
+    stock: 12,
+    isOnSale: false,
+    engine: "2.0L Turbocharged 4-Cylinder",
+    fuelType: "Gasoline",
+    transmission: "Automatic",
+    features: [
+      "Symmetrical All-Wheel Drive",
+      "EyeSight Driver Assist Technology",
+      "Heated Front Seats",
+      "8-Inch Multimedia System",
+    ],
+    dimensions: {
+      length: "183.0 inches",
+      width: "70.7 inches",
+      height: "58.3 inches",
+    },
+    weight: "3,500 lbs",
+    colorOptions: ["Blue", "Silver", "Black"],
+    warranty: "5 years / 60,000 miles",
+    safetyRating: "5-Star Overall",
+  },
+  {
+    id: "prod_021",
+    name: "Volvo V90 Cross Country",
+    price: 55000,
+    rating: 4.8,
+    category: "Station wagon",
+    description:
+      "The Volvo V90 Cross Country is a luxurious station wagon with a rugged design, offering comfort and advanced safety features.",
+    images: [
+      "https://example.com/images/volvo_v90_1.jpg",
+      "https://example.com/images/volvo_v90_2.jpg",
+    ],
+    stock: 8,
+    isOnSale: false,
+    engine: "2.0L Turbocharged and Supercharged 4-Cylinder",
+    fuelType: "Gasoline",
+    transmission: "Automatic",
+    features: [
+      "All-Wheel Drive",
+      "Pilot Assist",
+      "Bowers & Wilkins Sound System",
+      "Air Suspension",
+    ],
+    dimensions: {
+      length: "194.4 inches",
+      width: "75.9 inches",
+      height: "60.7 inches",
+    },
+    weight: "4,200 lbs",
+    colorOptions: ["Gray", "White", "Black"],
+    warranty: "4 years / 50,000 miles",
+    safetyRating: "5-Star Overall",
+  },
+  {
+    id: "prod_022",
+    name: "Audi A6 Allroad",
+    price: 65000,
+    rating: 4.9,
+    category: "Station wagon",
+    description:
+      "The Audi A6 Allroad is a premium station wagon with off-road capabilities, featuring a refined interior and advanced technology.",
+    images: [
+      "https://example.com/images/audi_a6_allroad_1.jpg",
+      "https://example.com/images/audi_a6_allroad_2.jpg",
+    ],
+    stock: 10,
+    isOnSale: false,
+    engine: "3.0L V6 Turbocharged",
+    fuelType: "Gasoline",
+    transmission: "Automatic",
+    features: [
+      "Quattro All-Wheel Drive",
+      "Adaptive Air Suspension",
+      "Bang & Olufsen 3D Sound System",
+      "Matrix LED Headlights",
+    ],
+    dimensions: {
+      length: "194.9 inches",
+      width: "74.9 inches",
+      height: "58.9 inches",
+    },
+    weight: "4,486 lbs",
+    colorOptions: ["Green", "Gray", "Black"],
+    warranty: "4 years / 50,000 miles",
     safetyRating: "5-Star Overall",
   },
   {
@@ -337,7 +502,7 @@ export const products = [
     name: "Jaguar F-Pace",
     price: 62000,
     rating: 4.6,
-    category: "SUV",
+    category: "sedan",
     description:
       "The Jaguar F-Pace is a luxury SUV with a dynamic drive, sophisticated design, and advanced technology features.",
     images: [
@@ -370,7 +535,7 @@ export const products = [
     name: "Lexus RX 350",
     price: 47000,
     rating: 4.7,
-    category: "SUV",
+    category: "sedan",
     description:
       "The Lexus RX 350 is a luxury crossover SUV, offering a comfortable ride, premium materials, and advanced safety features.",
     images: [
@@ -403,7 +568,7 @@ export const products = [
     name: "Hyundai Tucson",
     price: 29000,
     rating: 4.5,
-    category: "SUV",
+    category: "sedan",
     description:
       "The Hyundai Tucson is a compact SUV with a modern design, efficient engine, and a suite of advanced safety features.",
     images: [
@@ -436,7 +601,7 @@ export const products = [
     name: "Chevrolet Tahoe",
     price: 65000,
     rating: 4.7,
-    category: "SUV",
+    category: "sedan",
     description:
       "The Chevrolet Tahoe is a full-size SUV that offers a spacious interior, powerful engine options, and advanced towing capabilities.",
     images: [
@@ -469,7 +634,7 @@ export const products = [
     name: "Acura MDX",
     price: 52000,
     rating: 4.6,
-    category: "SUV",
+    category: "sedan",
     description:
       "The Acura MDX is a premium 3-row SUV, offering a powerful V6 engine, advanced safety features, and a luxurious cabin.",
     images: [
@@ -502,7 +667,7 @@ export const products = [
     name: "Mazda CX-5",
     price: 31000,
     rating: 4.6,
-    category: "SUV",
+    category: "hatchback",
     description:
       "The Mazda CX-5 is a stylish compact SUV, known for its sharp handling, premium interior, and advanced safety features.",
     images: [
@@ -568,7 +733,7 @@ export const products = [
     name: "Subaru Outback",
     price: 34000,
     rating: 4.7,
-    category: "SUV",
+    category: "hatchback",
     description:
       "The Subaru Outback is a rugged crossover SUV with standard all-wheel drive, advanced safety features, and a spacious interior.",
     images: [
@@ -634,7 +799,7 @@ export const products = [
     name: "Toyota RAV4",
     price: 32000,
     rating: 4.5,
-    category: "SUV",
+    category: "coupe",
     description:
       "The Toyota RAV4 is a versatile compact SUV with a spacious interior, advanced safety features, and excellent fuel economy.",
     images: [
@@ -733,7 +898,7 @@ export const products = [
     name: "BMW X5",
     price: 61000,
     rating: 4.8,
-    category: "SUV",
+    category: "coupe",
     description:
       "The BMW X5 is a luxury midsize SUV that combines powerful engine options, advanced technology, and a premium interior.",
     images: [
