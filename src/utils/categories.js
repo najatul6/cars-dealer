@@ -1,18 +1,18 @@
-export const category=[
+export const categories=[
     {
         id:"87j8743_mur",
-        label:"sedan",
+        category:"sedan",
     },
     {
         id:"87j8743_8j",
-        label:"hatchback"
+        category:"hatchback"
     },
     {
         id:"j8ne8_f8r5",
-        label:"coupe"
+        category:"coupe"
     },
     {
         id:"cdjjro_r85n9",
-        label:"Station wagon"
+        category:"Station wagon"
     }
 ]
