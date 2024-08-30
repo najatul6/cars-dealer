@@ -1,3 +1,4 @@
+import { Rating } from "@smastrom/react-rating"
 
 const ItemCard = ({item}) => {
   const {image,name,price, rating,stoke,weight,colorOptions} = item
