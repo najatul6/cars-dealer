@@ -2,7 +2,7 @@ import { Rating } from "@smastrom/react-rating"
 import PropTypes from "prop-types";
 
 const ItemCard = ({item}) => {
-  const {image,name,price, rating,stoke,weight,colorOptions} = item
+  const {image,name,price, rating,stoke,weight,colorOptions,isOnSale} = item
   return (
     <div className="card shadow-2xl rounded-none w-full">
       <figure>
@@ -20,8 +20,8 @@ const ItemCard = ({item}) => {
           <p className="w-2 h-2 rounded-full">{colorOptions[2]}</p>
         </div>
         <div className="card-actions">
-          <button className="btn bg-regal-blue hover:bg-light-blue text-white outline-none border-none rounded-none font-bold">
-            Buy Now
+          <button className=``>
+            {isOnSale?"Add to Cart":"Out of stock"}
           </button>
         </div>
       </div>
