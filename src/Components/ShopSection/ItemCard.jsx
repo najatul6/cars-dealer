@@ -2,7 +2,6 @@ import { Rating } from "@smastrom/react-rating"
 import PropTypes from "prop-types";
 
 const ItemCard = ({item}) => {
-  const {image,name,price, rating,stoke,weight,colorOptions,isOnSale} = item
   return (
     <div className="card shadow-2xl rounded-none w-full">
       <figure>

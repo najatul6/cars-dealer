@@ -1,38 +1,25 @@
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, Tabs, TabList, TabPanel,  } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { categories } from "../../utils/categories";
+import { shopProducts } from "../../utils/shopProducts";
+import ItemCard from "./ItemCard";
 
 const ShopSection = () => {
+  const sedansProducts= shopProducts.filter(product=>product?.category === "sedan")
+  console.log(sedansProducts);
   return (
     <div>
-      <Tabs defaultIndex={item?.id} onSelect={item.id}>
+      <Tabs >
         <TabList>
           {
             categories?.map(item=><Tab key={item?.id}>{item?.category}</Tab>)
           }
           
         </TabList>
-        {/* <TabPanel>
-          <OrderTab items={popularItem} />
-        </TabPanel>
         <TabPanel>
-          <OrderTab items={offeredItem} />
+          <ItemCard items={sedansProducts} />
         </TabPanel>
-        <TabPanel>
-          <OrderTab items={saladItem} />
-        </TabPanel>
-        <TabPanel>
-          <OrderTab items={pizzaItem} />
-        </TabPanel>
-        <TabPanel>
-          <OrderTab items={dessertItem} />
-        </TabPanel>
-        <TabPanel>
-          <OrderTab items={soupItem} />
-        </TabPanel>
-        <TabPanel>
-          <OrderTab items={drinksItem} />
-        </TabPanel> */}
+        
       </Tabs>
     </div>
   );
