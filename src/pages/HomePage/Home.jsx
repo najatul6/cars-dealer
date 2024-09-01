@@ -8,6 +8,7 @@ import ServiceSection from "../../Components/ServiceSeciton/ServiceSection";
 import Title from "../../Components/shared/Title/Title";
 import Slider from "../../Components/Slider/Slider";
 import banner from "../../assets/image/sell-buy-car.jpg";
+import ShopSection from "../../Components/ShopSection/ShopSection";
 
 const Home = () => {
   return (
@@ -55,8 +56,8 @@ const Home = () => {
         </div>
       </div>
       <div className="py-5 px-5">
-        <Title/>
-        <ProductSection/>
+        
+        <ShopSection/>
       </div>
     </div>
   );
