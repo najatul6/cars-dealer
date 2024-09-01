@@ -11,7 +11,7 @@ const ShopSection = () => {
   const stationWagonProducts=shopProducts.filter(product=>product?.category === "stationwagon")
   const hotDealProducts=shopProducts.filter(product=>product?.isHotDeal === true)
   return (
-    <div>
+    <div className="text-center">
       <Tabs >
         <TabList>
           {
