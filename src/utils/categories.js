@@ -1,5 +1,9 @@
 export const categories=[
     {
+        id:"cdj_jro_r85n9",
+        category: "Hot Deal"
+    },
+    {
         id:"87j8743_mur",
         category: "sedan",
     },
@@ -14,9 +18,6 @@ export const categories=[
     {
         id:"cdjjro_r85n9",
         category: "Station wagon"
-    },
-    {
-        id:"cdj_jro_r85n9",
-        category: "Hot Deal"
     }
+    
 ]
