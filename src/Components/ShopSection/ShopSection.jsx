@@ -2,7 +2,7 @@ import { Tab, Tabs, TabList, TabPanel,  } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { categories } from "../../utils/categories";
 import { shopProducts } from "../../utils/shopProducts";
-import ItemCard from "./ItemCard";
+import ShopTab from "./ShopTab";
 
 const ShopSection = () => {
   const sedansProducts= shopProducts.filter(product=>product?.category === "sedan")
@@ -17,7 +17,7 @@ const ShopSection = () => {
           
         </TabList>
         <TabPanel>
-          <ItemCard items={sedansProducts} />
+          <ShopTab items={sedansProducts} />
         </TabPanel>
         
       </Tabs>
