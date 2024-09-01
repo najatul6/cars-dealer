@@ -8,7 +8,8 @@ const ShopSection = () => {
   const sedansProducts= shopProducts.filter(product=>product?.category === "sedan")
   const hatchbackProducts=shopProducts.filter(product=>product?.category === "hatchback")
   const coupeProducts=shopProducts.filter(product=>product?.category === "coupe")
-  console.log(coupeProducts);
+  const stationwagonProducts=shopProducts.filter(product=>product?.category === "stationwagon")
+  console.log(stationwagonProducts);
   return (
     <div>
       <Tabs >
@@ -20,6 +21,12 @@ const ShopSection = () => {
         </TabList>
         <TabPanel>
           <ShopTab items={sedansProducts} />
+        </TabPanel>
+        <TabPanel>
+          <ShopTab items={hatchbackProducts} />
+        </TabPanel>
+        <TabPanel>
+          <ShopTab items={coupeProducts} />
         </TabPanel>
         
       </Tabs>
