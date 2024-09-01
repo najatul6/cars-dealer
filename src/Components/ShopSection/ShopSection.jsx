@@ -1,7 +1,13 @@
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 const ShopSection = () => {
   return (
-    <div>ShopSection</div>
+    <div>
+    #Todo: import react tabs
+
+
+    </div>
   )
 }
 
