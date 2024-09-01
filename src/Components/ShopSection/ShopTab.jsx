@@ -1,8 +1,13 @@
+import ItemCard from "./ItemCard"
 
 
-const ShopTab = () => {
+const ShopTab = ({items}) => {
   return (
-    <div>ShopTab</div>
+    <div>
+        {
+            items?.map((item,idx)=><ItemCard key={idx} item={item}/>)
+        }
+    </div>
   )
 }
 
