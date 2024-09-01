@@ -8,8 +8,8 @@ export const shopProducts = [
     description:
       "The Toyota Camry is a comfortable, fuel-efficient sedan perfect for family use, equipped with modern tech and safety features.",
     images: [
-      "https://example.com/images/toyota_camry_1.jpg",
-      "https://example.com/images/toyota_camry_2.jpg",
+      "https://www.cars.com/i/large/in/v2/stock_photos/8ceebd76-8d07-41e4-99f9-37e7ed367847/a7f50d60-bc9d-4264-96d3-b8f60f71f259.png",
+      "https://cdn.jdpower.com/Models/640x480/2019-Toyota-Camry-L.jpg",
     ],
     stock: 15,
     isOnSale: false,
@@ -41,8 +41,8 @@ export const shopProducts = [
     description:
       "The Honda Civic is a compact car with a sporty design, known for its reliability and fuel efficiency.",
     images: [
-      "https://example.com/images/honda_civic_1.jpg",
-      "https://example.com/images/honda_civic_2.jpg",
+      "https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2025/civic-sedan/non-VLP/10-Family/MY25_Civic_Family_Card_Jelly_Hybrid_2x.jpg?sc_lang=en",
+      "https://cdn.motor1.com/images/mgl/mMEQ8j/114:0:1820:1366/2024-honda-civic-rs-jdm.webp",
     ],
     stock: 25,
     isOnSale: true,
@@ -74,8 +74,8 @@ export const shopProducts = [
     description:
       "The BMW M4 is a high-performance sports coupe, offering exhilarating driving dynamics and luxurious comfort.",
     images: [
-      "https://example.com/images/bmw_m4_1.jpg",
-      "https://example.com/images/bmw_m4_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4XHzeX8EGbL7qB-EPlIN3raTif8Ewq1rlnL6gc9QFnuNDakiDtkblaoNckLIUdPOUwRw&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDv8wivQsSJTBMxT3hn-oDv956EGeyW3BSr8JpRYauXsRE3Mk8-TWLmmRlXAD0OBw1GLM&usqp=CAU",
     ],
     stock: 8,
     isOnSale: false,
@@ -107,8 +107,8 @@ export const shopProducts = [
     description:
       "The Volvo V60 is a versatile station wagon, combining Scandinavian design with advanced safety features and a spacious interior.",
     images: [
-      "https://example.com/images/volvo_v60_1.jpg",
-      "https://example.com/images/volvo_v60_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVPw7wPFfOT_TbvefbTohX4cAyuOcWnpylrqCwJsU0IhAOZKxchOcUBHPpT-nz0tk0pI&usqp=CAU",
+      "https://cas.volvocars.com/image/dynamic/MY24_2317/227/exterior-v2/83/71700/RA0000/R13B/TC06/_/2G03/TP02/_/_/JT02/GR05/T102/TJ03/NP02/TM04/_/_/EV02/JB0C/T21B/LF01/VP07/FH02/_/_/_/_/_/default.jpg?market=au&client=gox-graph%7Cpdps&angle=4&w=1920&bg=descriptive-studio",
     ],
     stock: 10,
     isOnSale: true,
@@ -140,8 +140,8 @@ export const shopProducts = [
     description:
       "The Ford Focus is a practical hatchback with responsive handling and a comfortable ride, ideal for city driving.",
     images: [
-      "https://example.com/images/ford_focus_1.jpg",
-      "https://example.com/images/ford_focus_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGT74xAwu4uy2djja7Uc8Nu66urijJByBkOw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQefh6JUdu4c7DN6AtV43CpLch4I9WKGNv4ZC-CtxEiN5iU6hHMuPS0e_WZdAeftJDlpzs&usqp=CAU",
     ],
     stock: 20,
     isOnSale: false,
@@ -174,8 +174,8 @@ export const shopProducts = [
     description:
       "The Mercedes-Benz E-Class is a luxurious sedan, offering a refined ride, cutting-edge technology, and elegant design.",
     images: [
-      "https://example.com/images/mercedes_e_class_1.jpg",
-      "https://example.com/images/mercedes_e_class_2.jpg",
+      "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/E-Class/10855/1690452177573/front-left-side-47.jpg",
+      "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/E-Class/10855/1690452177573/front-left-side-47.jpg",
     ],
     stock: 12,
     isOnSale: true,
@@ -208,8 +208,8 @@ export const shopProducts = [
     description:
       "The Chevrolet Camaro is a powerful sports car with aggressive styling, offering a thrilling driving experience.",
     images: [
-      "https://example.com/images/chevrolet_camaro_1.jpg",
-      "https://example.com/images/chevrolet_camaro_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 5,
     isOnSale: false,
@@ -242,8 +242,8 @@ export const shopProducts = [
     description:
       "The Kia Seltos is a compact SUV that offers a perfect balance of style, versatility, and advanced features.",
     images: [
-      "https://example.com/images/kia_seltos_1.jpg",
-      "https://example.com/images/kia_seltos_2.jpg",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
     ],
     stock: 18,
     isOnSale: true,
@@ -275,8 +275,8 @@ export const shopProducts = [
     description:
       "The Kia Seltos is a compact SUV that offers a perfect balance of style, versatility, and advanced features.",
     images: [
-      "https://example.com/images/kia_seltos_1.jpg",
-      "https://example.com/images/kia_seltos_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 18,
     isOnSale: true,
@@ -308,8 +308,8 @@ export const shopProducts = [
     description:
       "The Volkswagen Golf Alltrack is a versatile station wagon with all-wheel drive, combining practicality with a sporty design.",
     images: [
-      "https://example.com/images/vw_golf_alltrack_1.jpg",
-      "https://example.com/images/vw_golf_alltrack_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 15,
     isOnSale: true,
@@ -341,8 +341,8 @@ export const shopProducts = [
     description:
       "The Subaru Levorg is a sporty station wagon with standard all-wheel drive, offering a blend of performance and practicality.",
     images: [
-      "https://example.com/images/subaru_levorg_1.jpg",
-      "https://example.com/images/subaru_levorg_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 12,
     isOnSale: false,
@@ -374,8 +374,8 @@ export const shopProducts = [
     description:
       "The Volvo V90 Cross Country is a luxurious station wagon with a rugged design, offering comfort and advanced safety features.",
     images: [
-      "https://example.com/images/volvo_v90_1.jpg",
-      "https://example.com/images/volvo_v90_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 8,
     isOnSale: false,
@@ -407,8 +407,8 @@ export const shopProducts = [
     description:
       "The Audi A6 Allroad is a premium station wagon with off-road capabilities, featuring a refined interior and advanced technology.",
     images: [
-      "https://example.com/images/audi_a6_allroad_1.jpg",
-      "https://example.com/images/audi_a6_allroad_2.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 10,
     isOnSale: false,
@@ -440,8 +440,8 @@ export const shopProducts = [
     description:
       "The Volkswagen Passat is a spacious midsize sedan with a smooth ride, ample legroom, and advanced safety features.",
     images: [
-      "https://example.com/images/vw_passat_1.jpg",
-      "https://example.com/images/vw_passat_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 20,
     isOnSale: false,
@@ -473,8 +473,8 @@ export const shopProducts = [
     description:
       "The Tesla Model S is a luxury electric sedan, known for its incredible performance, long range, and cutting-edge technology.",
     images: [
-      "https://example.com/images/tesla_model_s_1.jpg",
-      "https://example.com/images/tesla_model_s_2.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 7,
     isOnSale: true,
@@ -506,8 +506,8 @@ export const shopProducts = [
     description:
       "The Jaguar F-Pace is a luxury SUV with a dynamic drive, sophisticated design, and advanced technology features.",
     images: [
-      "https://example.com/images/jaguar_f_pace_1.jpg",
-      "https://example.com/images/jaguar_f_pace_2.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 10,
     isOnSale: false,
@@ -539,8 +539,8 @@ export const shopProducts = [
     description:
       "The Lexus RX 350 is a luxury crossover SUV, offering a comfortable ride, premium materials, and advanced safety features.",
     images: [
-      "https://example.com/images/lexus_rx350_1.jpg",
-      "https://example.com/images/lexus_rx350_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 14,
     isOnSale: false,
@@ -572,8 +572,8 @@ export const shopProducts = [
     description:
       "The Hyundai Tucson is a compact SUV with a modern design, efficient engine, and a suite of advanced safety features.",
     images: [
-      "https://example.com/images/hyundai_tucson_1.jpg",
-      "https://example.com/images/hyundai_tucson_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 25,
     isOnSale: true,
@@ -605,8 +605,8 @@ export const shopProducts = [
     description:
       "The Chevrolet Tahoe is a full-size SUV that offers a spacious interior, powerful engine options, and advanced towing capabilities.",
     images: [
-      "https://example.com/images/chevrolet_tahoe_1.jpg",
-      "https://example.com/images/chevrolet_tahoe_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 8,
     isOnSale: false,
@@ -638,8 +638,8 @@ export const shopProducts = [
     description:
       "The Acura MDX is a premium 3-row SUV, offering a powerful V6 engine, advanced safety features, and a luxurious cabin.",
     images: [
-      "https://example.com/images/acura_mdx_1.jpg",
-      "https://example.com/images/acura_mdx_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 12,
     isOnSale: true,
@@ -671,8 +671,8 @@ export const shopProducts = [
     description:
       "The Mazda CX-5 is a stylish compact SUV, known for its sharp handling, premium interior, and advanced safety features.",
     images: [
-      "https://example.com/images/mazda_cx5_1.jpg",
-      "https://example.com/images/mazda_cx5_2.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 20,
     isOnSale: false,
@@ -704,8 +704,8 @@ export const shopProducts = [
     description:
       "The Audi A4 is a luxury sedan that combines sporty performance with a premium interior and advanced technology.",
     images: [
-      "https://example.com/images/audi_a4_1.jpg",
-      "https://example.com/images/audi_a4_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 14,
     isOnSale: true,
@@ -737,8 +737,8 @@ export const shopProducts = [
     description:
       "The Subaru Outback is a rugged crossover SUV with standard all-wheel drive, advanced safety features, and a spacious interior.",
     images: [
-      "https://example.com/images/subaru_outback_1.jpg",
-      "https://example.com/images/subaru_outback_2.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 18,
     isOnSale: true,
@@ -770,8 +770,8 @@ export const shopProducts = [
     description:
       "The Ford Mustang is an iconic American muscle car with aggressive styling, powerful engine options, and thrilling performance.",
     images: [
-      "https://example.com/images/ford_mustang_1.jpg",
-      "https://example.com/images/ford_mustang_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 8,
     isOnSale: false,
@@ -803,8 +803,8 @@ export const shopProducts = [
     description:
       "The Toyota RAV4 is a versatile compact SUV with a spacious interior, advanced safety features, and excellent fuel economy.",
     images: [
-      "https://example.com/images/toyota_rav4_1.jpg",
-      "https://example.com/images/toyota_rav4_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 22,
     isOnSale: true,
@@ -836,8 +836,8 @@ export const shopProducts = [
     description:
       "The Nissan Altima is a midsize sedan with a comfortable interior, smooth ride, and advanced safety features.",
     images: [
-      "https://example.com/images/nissan_altima_1.jpg",
-      "https://example.com/images/nissan_altima_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 18,
     isOnSale: false,
@@ -869,8 +869,8 @@ export const shopProducts = [
     description:
       "The Honda Accord is a midsize sedan that offers a comfortable ride, spacious interior, and a host of advanced safety features.",
     images: [
-      "https://example.com/images/honda_accord_1.jpg",
-      "https://example.com/images/honda_accord_2.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 20,
     isOnSale: true,
@@ -902,8 +902,8 @@ export const shopProducts = [
     description:
       "The BMW X5 is a luxury midsize SUV that combines powerful engine options, advanced technology, and a premium interior.",
     images: [
-      "https://example.com/images/bmw_x5_1.jpg",
-      "https://example.com/images/bmw_x5_2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmlRgym2o7duLqS-VblM_LY80wjEQQfYQUA&s",
+      "https://imagecdnsa.zigwheels.ae/large/gallery/exterior/19/1988/kia-seltos-front-medium-view-472346.jpg",
     ],
     stock: 12,
     isOnSale: false,
