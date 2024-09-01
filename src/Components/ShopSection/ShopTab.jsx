@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import ItemCard from "./ItemCard"
 
 
@@ -10,5 +11,9 @@ const ShopTab = ({items}) => {
     </div>
   )
 }
+
+ShopTab.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default ShopTab
