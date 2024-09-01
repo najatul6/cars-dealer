@@ -2,12 +2,12 @@ import { Rating } from "@smastrom/react-rating"
 import PropTypes from "prop-types";
 
 const ItemCard = ({item}) => {
-  const {image,name,price, rating,stoke,weight,colorOptions,isOnSale} = item
-  console.log(item.image);
+  const {images,name,price, rating,stoke,weight,colorOptions,isOnSale} = item
+  // console.log(item.image);
   return (
     <div className="card shadow-2xl rounded-none w-full">
       <figure>
-        {/* <img src={image[0]} alt={name} className="h-[317px] w-full" /> */}
+        <img src={images[0]} alt={name} className="h-[317px] w-full" />
       </figure>
       <div className="card-body items-center text-center text-white">
 
