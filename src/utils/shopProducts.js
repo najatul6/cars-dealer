@@ -147,7 +147,7 @@ export const shopProducts = [
     isOnSale: false,
     isHotDeal: true,
     engine: "2.0L 4-Cylinder",
-    // fuelType: "Gasoline",
+    fuelType: "Gasoline",
     transmission: "Automatic",
     features: [
       "Sync 3 Infotainment System",
