@@ -6,7 +6,8 @@ import ShopTab from "./ShopTab";
 
 const ShopSection = () => {
   const sedansProducts= shopProducts.filter(product=>product?.category === "sedan")
-  console.log(sedansProducts);
+  const hatchbackProducts=shopProducts.filter(product=>product?.category === "hatchback")
+  console.log(hatchbackProducts);
   return (
     <div>
       <Tabs >
