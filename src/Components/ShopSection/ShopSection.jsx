@@ -8,8 +8,9 @@ const ShopSection = () => {
   const sedansProducts= shopProducts.filter(product=>product?.category === "sedan")
   const hatchbackProducts=shopProducts.filter(product=>product?.category === "hatchback")
   const coupeProducts=shopProducts.filter(product=>product?.category === "coupe")
-  const stationwagonProducts=shopProducts.filter(product=>product?.category === "stationwagon")
-  console.log(stationwagonProducts);
+  const stationWagonProducts=shopProducts.filter(product=>product?.category === "stationwagon")
+  const hotDealProducts=shopProducts.filter(product=>product?.isHotDeal === true)
+  console.log(hotDealProducts);
   return (
     <div>
       <Tabs >
@@ -27,6 +28,9 @@ const ShopSection = () => {
         </TabPanel>
         <TabPanel>
           <ShopTab items={coupeProducts} />
+        </TabPanel>
+        <TabPanel>
+          <ShopTab items={stationWagonProducts} />
         </TabPanel>
         
       </Tabs>

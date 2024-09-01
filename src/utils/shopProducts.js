@@ -103,7 +103,7 @@ export const shopProducts = [
     name: "Volvo V60",
     price: 48000,
     rating: 4.7,
-    category: "Station wagon",
+    category: "stationwagon",
     description:
       "The Volvo V60 is a versatile station wagon, combining Scandinavian design with advanced safety features and a spacious interior.",
     images: [
@@ -238,7 +238,7 @@ export const shopProducts = [
     name: "Kia Seltos",
     price: 23000,
     rating: 4.4,
-    category: "Station wagon",
+    category: "stationwagon",
     description:
       "The Kia Seltos is a compact SUV that offers a perfect balance of style, versatility, and advanced features.",
     images: [
@@ -271,7 +271,7 @@ export const shopProducts = [
     name: "Kia Seltos",
     price: 23000,
     rating: 4.4,
-    category: "Station wagon",
+    category: "stationwagon",
     description:
       "The Kia Seltos is a compact SUV that offers a perfect balance of style, versatility, and advanced features.",
     images: [
@@ -304,7 +304,7 @@ export const shopProducts = [
     name: "Volkswagen Golf Alltrack",
     price: 29000,
     rating: 4.5,
-    category: "Station wagon",
+    category: "stationwagon",
     description:
       "The Volkswagen Golf Alltrack is a versatile station wagon with all-wheel drive, combining practicality with a sporty design.",
     images: [
@@ -337,7 +337,7 @@ export const shopProducts = [
     name: "Subaru Levorg",
     price: 31000,
     rating: 4.7,
-    category: "Station wagon",
+    category: "stationwagon",
     description:
       "The Subaru Levorg is a sporty station wagon with standard all-wheel drive, offering a blend of performance and practicality.",
     images: [
@@ -370,7 +370,7 @@ export const shopProducts = [
     name: "Volvo V90 Cross Country",
     price: 55000,
     rating: 4.8,
-    category: "Station wagon",
+    category: "stationwagon",
     description:
       "The Volvo V90 Cross Country is a luxurious station wagon with a rugged design, offering comfort and advanced safety features.",
     images: [
@@ -403,7 +403,7 @@ export const shopProducts = [
     name: "Audi A6 Allroad",
     price: 65000,
     rating: 4.9,
-    category: "Station wagon",
+    category: "stationwagon",
     description:
       "The Audi A6 Allroad is a premium station wagon with off-road capabilities, featuring a refined interior and advanced technology.",
     images: [
