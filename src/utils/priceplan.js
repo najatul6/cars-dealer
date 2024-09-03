@@ -2,7 +2,7 @@ export const priceplan=[
     {
         id: 1,
         name: "Basic",
-        price: 19.99,
+        price: 500,
         currency: "USD",
         billingCycle: "monthly",
         features: [
@@ -23,7 +23,7 @@ export const priceplan=[
     {
         id: 2,
         name: "Small",
-        price: 49.99,
+        price: 700,
         currency: "USD",
         billingCycle: "monthly",
         features: [
@@ -44,7 +44,7 @@ export const priceplan=[
     {
         id: 3,
         name: "Medium",
-        price: 99.99,
+        price: 1500,
         currency: "USD",
         billingCycle: "monthly",
         features: [
@@ -66,7 +66,7 @@ export const priceplan=[
     {
         id: 4,
         name: "Premium",
-        price: 199.99,
+        price: 2500,
         currency: "USD",
         billingCycle: "monthly",
         features: [
