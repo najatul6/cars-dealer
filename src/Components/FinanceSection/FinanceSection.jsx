@@ -1,7 +1,9 @@
 
 const FinanceSection = () => {
   return (
-    <div>FinanceSection</div>
+    <div>
+        
+    </div>
   )
 }
 
