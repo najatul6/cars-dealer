@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const FinanceCard = ({ item }) => {
   return (
     <div className="border py-5 text-white flex flex-col flex-shrink-0 ">
@@ -23,6 +25,10 @@ const FinanceCard = ({ item }) => {
       </div>
     </div>
   );
+};
+
+FinanceCard.propTypes = {
+    item: PropTypes.object.isRequired,
 };
 
 export default FinanceCard;
