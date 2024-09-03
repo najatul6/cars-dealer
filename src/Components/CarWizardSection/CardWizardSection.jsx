@@ -13,7 +13,7 @@ const CardWizardSection = () => {
         <h1></h1>
         <p></p>
         <p></p>
-        <button></button>
+        <button>sell you car</button>
       </section>
     </div>
   );
