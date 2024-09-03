@@ -2,7 +2,7 @@ import img from "../../assets/image/3.jpg";
 import img2 from "../../assets/cars/car1.png";
 const CardWizardSection = () => {
   return (
-    <div className="flex">
+    <div className="grid grid-cols-1 lg:grid-cols-2">
       <section
       className="flex justify-center items-center bg-regal-blue bg-blend-multiply"
        style={{
