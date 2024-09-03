@@ -19,7 +19,7 @@ const FinanceCard = ({ item }) => {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <button className="py-3 btn">Apply Now &#10149;</button>
+        <button className="py-3 btn bg-transparent border-light-blue text-white hover:bg-light-blue transition-colors duration-300">Apply Now &#10149;</button>
       </div>
     </div>
   );
