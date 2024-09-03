@@ -9,7 +9,7 @@ const CardWizardSection = () => {
           backgroundImage: `url(${img})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          // backgroundRepeat: "no-repeat",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <h1 className="text-3xl font-bold">Are you looking for a Car?</h1>
