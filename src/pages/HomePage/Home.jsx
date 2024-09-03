@@ -64,6 +64,7 @@ const Home = () => {
         <CardWizardSection/>
       </div>
       <div className="py-5 px-5">
+      <Title text={"Finance"} />
         <FinanceSection/>
       </div>
     </div>
