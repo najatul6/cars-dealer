@@ -9,6 +9,7 @@ import Title from "../../Components/shared/Title/Title";
 import Slider from "../../Components/Slider/Slider";
 import banner from "../../assets/image/sell-buy-car.jpg";
 import ShopSection from "../../Components/ShopSection/ShopSection";
+import CardWizardSection from "../../Components/CarWizardSection/CardWizardSection";
 
 const Home = () => {
   return (
@@ -57,6 +58,9 @@ const Home = () => {
       </div>
       <div className="py-5 px-5">
         <ShopSection/>
+      </div>
+      <div className="py-5 px-5">
+        <CardWizardSection/>
       </div>
     </div>
   );

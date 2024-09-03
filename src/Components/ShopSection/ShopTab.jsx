@@ -6,7 +6,7 @@ const ShopTab = ({items}) => {
   return (
     <div className="grid grid-cols-3 gap-6">
         {
-            items?.map((item,idx)=><ItemCard key={idx} item={item}/>)
+            items?.slice(0,3).map((item,idx)=><ItemCard key={idx} item={item}/>)
         }
     </div>
   )
