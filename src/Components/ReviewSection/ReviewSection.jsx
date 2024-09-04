@@ -1,9 +1,10 @@
 import { reviews } from "../../utils/Reviews"
+import ReviewCard from "./ReviewCard"
 
 const ReviewSection = () => {
   return (
     <div>
-        {reviews?.map(review=>)}
+        {reviews?.map((review,index)=><ReviewCard review={review} key={index}/>)}
     </div>
   )
 }

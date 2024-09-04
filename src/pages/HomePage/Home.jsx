@@ -12,6 +12,7 @@ import ShopSection from "../../Components/ShopSection/ShopSection";
 import CardWizardSection from "../../Components/CarWizardSection/CardWizardSection";
 import FinanceSection from "../../Components/FinanceSection/FinanceSection";
 import TrustedSection from "../../Components/TrustedSection/TrustedSection";
+import ReviewSection from "../../Components/ReviewSection/ReviewSection";
 
 const Home = () => {
   return (
@@ -70,6 +71,10 @@ const Home = () => {
       </div>
       <div className="py-5 px-5">
         <TrustedSection/>
+      </div>
+      <div className="py-5 px-5">
+        <Title text={"Reviews"}/>
+        <ReviewSection/>
       </div>
     </div>
   );
