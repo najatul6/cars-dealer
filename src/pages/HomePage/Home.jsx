@@ -11,6 +11,7 @@ import banner from "../../assets/image/sell-buy-car.jpg";
 import ShopSection from "../../Components/ShopSection/ShopSection";
 import CardWizardSection from "../../Components/CarWizardSection/CardWizardSection";
 import FinanceSection from "../../Components/FinanceSection/FinanceSection";
+import TrustedSection from "../../Components/TrustedSection/TrustedSection";
 
 const Home = () => {
   return (
@@ -68,7 +69,7 @@ const Home = () => {
         <FinanceSection/>
       </div>
       <div className="py-5 px-5">
-        <FinanceSection/>
+        <TrustedSection/>
       </div>
     </div>
   );
