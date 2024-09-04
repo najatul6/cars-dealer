@@ -11,6 +11,11 @@ const ReviewCard = ({review}) => {
             <p>{review?.description}</p>
             <p>Reviews : {review?.rating}</p>
         </div>
+        <div>
+            <h2>{review?.label} : {review?.style}</h2>
+            <p>{review?.description}</p>
+            <p>Reviews : {review?.rating}</p>
+        </div>
 
     </div>
   )
