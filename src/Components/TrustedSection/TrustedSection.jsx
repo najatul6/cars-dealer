@@ -1,4 +1,5 @@
 import carImage from "../../assets/image/1.jpg";
+
 const TrustedSection = () => {
   return (
     <div className="flex items-center justify-center ">
