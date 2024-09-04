@@ -4,7 +4,7 @@ const ReviewCard = ({review}) => {
   return (
     <div>
         <div>
-            <img src={review?.} alt="" />
+            <img src={review?.img} alt={review} />
         </div>
 
     </div>
