@@ -15,5 +15,8 @@ const ReviewCard = ({review}) => {
     </div>
   )
 }
+ReviewCard.propTypes={
+    review: PropTypes.any,
+}
 
 export default ReviewCard
