@@ -1,4 +1,4 @@
-
+import carImage from "../../assets/image/1.jpg"
 const TrustedSection = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
@@ -47,7 +47,7 @@ const TrustedSection = () => {
         </div>
         {/* <!-- Right Side --> */}
         <div className="w-1/3 relative">
-            <img className="h-full w-full object-cover" src="your-image-url-here.jpg" alt="Car image"/>
+            <img className="h-full w-full object-cover" src={carImage} alt="Car image"/>
         </div>
     </div>
 </div>
