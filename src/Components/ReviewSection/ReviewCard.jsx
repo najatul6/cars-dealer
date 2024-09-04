@@ -1,7 +1,9 @@
 
-const ReviewCard = () => {
+const ReviewCard = ({review}) => {
   return (
-    <div>ReviewCard</div>
+    <div>
+        
+    </div>
   )
 }
 
