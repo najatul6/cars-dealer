@@ -1,8 +1,8 @@
 import carImage from "../../assets/image/1.jpg"
 const TrustedSection = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-    <div className="bg-white shadow-md flex rounded-lg overflow-hidden">
+    <div className="flex items-center justify-center h-screen ">
+    <div className="shadow-md flex rounded-lg overflow-hidden">
         {/* <!-- Left Side --> */}
         <div className="bg-red-600 text-white p-8 w-2/3">
             <h2 className="text-4xl font-bold mb-6">Trusted Experience</h2>
