@@ -8,6 +8,7 @@ const ReviewCard = ({review}) => {
         </div>
         <div>
             <h2>{review?.label} : {review?.style}</h2>
+            <p>{}</p>
         </div>
 
     </div>
