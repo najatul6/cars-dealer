@@ -9,6 +9,7 @@ const ReviewCard = ({review}) => {
         <div>
             <h2>{review?.label} : {review?.style}</h2>
             <p>{review?.description}</p>
+            <p>{review?.rating}</p>
         </div>
 
     </div>
