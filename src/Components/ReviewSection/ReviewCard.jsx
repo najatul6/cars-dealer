@@ -6,6 +6,9 @@ const ReviewCard = ({review}) => {
         <div>
             <img src={review?.img} alt={review?.style} />
         </div>
+        <div>
+            <h2>{review?.label} : {review?.style}</h2>
+        </div>
 
     </div>
   )
