@@ -10,7 +10,7 @@ const TrustedSection = () => {
                 <li className="flex items-center">
                     <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                             d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span>Premium cars, simple pricing.</span>
@@ -26,7 +26,7 @@ const TrustedSection = () => {
                 <li className="flex items-center">
                     <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" stroke-linejoin="round" stroke-width="2"
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                             d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span>Easy financing options.</span>
@@ -34,7 +34,7 @@ const TrustedSection = () => {
                 <li className="flex items-center">
                     <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                             d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span>Trusted experience since 2007.</span>
