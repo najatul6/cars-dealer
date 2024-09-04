@@ -1,6 +1,7 @@
 export const reviews = [
   {
     id: "790_uii",
+    img:"http://google.com/images/icons",
     label: "style",
     style: "Cover - Format: Standard",
     description:
@@ -9,6 +10,7 @@ export const reviews = [
   },
   {
     id: "79y0_u2ii",
+    img:"http://google.com/images/icons",
     label: "style",
     style: "Cover - Format: Standard",
     description:
@@ -17,6 +19,7 @@ export const reviews = [
   },
   {
     id: "79y0_u2ii",
+    img:"http://google.com/images/icons",
     label: "style",
     style: "Cover - Format: Standard",
     description:
