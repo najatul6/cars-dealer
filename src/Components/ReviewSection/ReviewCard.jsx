@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 const ReviewCard = ({review}) => {
     
   return (
