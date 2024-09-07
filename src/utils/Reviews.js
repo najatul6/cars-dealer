@@ -1,7 +1,11 @@
+import image1 from "../assets/image/2.jpg"
+import image2 from "../assets/image/1.jpg"
+import image3 from "../assets/image/3.jpg"
+
 export const reviews = [
   {
     id: "790_uii",
-    img:"http://google.com/images/icons",
+    img:`${image1}`,
     label: "style",
     style: "Cover - Format: Standard",
     description:
@@ -10,7 +14,7 @@ export const reviews = [
   },
   {
     id: "79y0_u2ii",
-    img:"http://google.com/images/icons",
+    img:`${image2}`,
     label: "style",
     style: "Cover - Format: Standard",
     description:
@@ -19,7 +23,7 @@ export const reviews = [
   },
   {
     id: "79y0_u2ii",
-    img:"http://google.com/images/icons",
+    img:`${image3}`,
     label: "style",
     style: "Cover - Format: Standard",
     description:
