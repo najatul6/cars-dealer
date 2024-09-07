@@ -3,7 +3,7 @@ import ReviewCard from "./ReviewCard"
 
 const ReviewSection = () => {
   return (
-    <div>
+    <div className="grid grid-cols-3">
         {reviews?.map((review,index)=><ReviewCard review={review} key={index}/>)}
     </div>
   )
