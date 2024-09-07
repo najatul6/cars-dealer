@@ -73,7 +73,7 @@ const Home = () => {
         <TrustedSection/>
       </div>
       <div className="py-5 px-5">
-        <Title text={"Reviews"}/>
+        <Title text={"Latest Reviews"}/>
         <ReviewSection/>
       </div>
     </div>
