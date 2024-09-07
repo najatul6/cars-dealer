@@ -9,7 +9,7 @@ export const reviews = [
     label: "style",
     style: "Cover - Format: Standard",
     description:
-      "lot the stories unfold and unkash yourself. Much mantul ouch much one grizly a much and boomed well.",
+      "Much mantul ouch much one grizly a much and boomed well.lot the stories unfold and unkash yourself. Much mantul ouch much one grizly a much and boomed well.",
     rating: 9.5,
   },
   {
@@ -18,7 +18,7 @@ export const reviews = [
     label: "style",
     style: "Cover - Format: Standard",
     description:
-      "lot the stories unfold and unkash yourself. Much mantul ouch much one grizly a much and boomed well.",
+      "lot the stories unfold and unkash yourself. Much mantul ouch much one grizly a much and boomed well.lot the stories unfold and unkash yourself.",
     rating: 9.5,
   },
   {
@@ -27,7 +27,7 @@ export const reviews = [
     label: "style",
     style: "Cover - Format: Standard",
     description:
-      "lot the stories unfold and unkash yourself. Much mantul ouch much one grizly a much and boomed well.",
+      "lot the stories unfold and unkash yourself. Much mantul ouch much one grizly a much and boomed well.lot the stories unfold and unkash yourself. Much mantul ouch much one grizly a much and boomed well.",
     rating: 9.5,
   },
 ];
