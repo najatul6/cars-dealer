@@ -5,7 +5,7 @@ const FinanceCard = ({ item }) => {
     <div className="border py-5 text-white flex flex-col flex-shrink-0 ">
       <p className="text-3xl text-center font-bold pb-5">{item?.name}</p>
       <hr className="w-full" />
-      <div className="text-center py-5 px-4 flex flex-col justify-center items-center gap-6">
+      <div className="text-center py-5 px-4 flex flex-col justify-center items-center gap-6 flex-grow">
         <div>
           <h1 className="text-5xl">${item?.price}</h1>
           <p>/{item?.billingCycle}</p>
