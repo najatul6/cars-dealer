@@ -56,6 +56,9 @@ const Registration = () => {
   };
 
   return (
+    <div  className="flex  justify-center items-center min-h-screen py-5">
+
+    
     <div className="border border-gray-500 rounded-xl sm:px-6 px-4 py-8 max-w-md w-full h-max shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-lg:mx-auto">
       <Helmet>
         <title>Register | StoreN</title>
@@ -194,6 +197,7 @@ const Registration = () => {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };
