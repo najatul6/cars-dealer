@@ -99,7 +99,7 @@ const Registration = () => {
             </h3>
           </div>
 
-        <div>
+        <div className="space-y-4">
             {/* Name Field */}
             <div>
             <label className="text-white text-sm mb-2 block">Full Name</label>
