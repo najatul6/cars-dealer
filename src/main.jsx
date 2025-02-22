@@ -1,12 +1,32 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { RouterProvider } from 'react-router-dom'
-import router from './Routes/router.jsx'
-import './index.css'
-import 'animate.css';
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import "animate.css";
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import Router from "./Router/Router";
+import { HelmetProvider } from "react-helmet-async";
+import { Bounce, ToastContainer } from "react-toastify";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { CartProvider } from "./providers/CartProvider";
+import AuthProvider from "./Providers/AuthProvider";
+const queryClient = new QueryClient();
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-   <RouterProvider router={router}/>
-  </React.StrictMode>,
-)
+    <AuthProvider>
+      <QueryClientProvider client={queryClient}>
+        <CartProvider>
+          <HelmetProvider>
+            <RouterProvider router={Router} />
+            <ToastContainer
+              position="top-center"
+              autoClose={2000}
+              theme="colored"
+              transition={Bounce}
+            />
+          </HelmetProvider>
+        </CartProvider>
+      </QueryClientProvider>
+    </AuthProvider>
+  </React.StrictMode>
+);
