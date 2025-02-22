@@ -72,7 +72,7 @@ const LogIn = () => {
     );
   };
   return (
-    <div className="flex  justify-center items-center py-5">
+    <div className="flex  justify-center items-center min-h-screen py-5">
       {/* Helmet for title and meta tags Start here */}
       <Helmet>
         <title>NiNCars | Log in</title>
@@ -275,6 +275,17 @@ const LogIn = () => {
             </button>
           </div>
         </form>
+        <div className="mt-8 text-center">
+          <p className="text-white text-sm">
+            Don&apos;t have an account?{" "}
+            <Link
+              to="/signup"
+              className="text-blue-600 font-semibold hover:underline"
+            >
+              Sign up
+            </Link>
+          </p>
+          </div>
       </div>
     </div>
   );
