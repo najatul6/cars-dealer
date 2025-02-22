@@ -1,10 +1,10 @@
-import useAuth from "@/hooks/useAuth";
-import useAxiosPublic from "@/hooks/useAxiosPublic";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import useAuth from "../../Hooks/useAuth";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
 
 const Registration = () => {
   const [passShow, setPassShow] = useState(false);
