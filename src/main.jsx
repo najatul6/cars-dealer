@@ -3,12 +3,12 @@ import "./index.css";
 import "animate.css";
 import React from "react";
 import { RouterProvider } from "react-router-dom";
-import Router from "./Router/Router";
 import { HelmetProvider } from "react-helmet-async";
 import { Bounce, ToastContainer } from "react-toastify";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { CartProvider } from "./providers/CartProvider";
 import AuthProvider from "./Providers/AuthProvider";
+import router from "./Routes/router";
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")).render(
@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")).render(
       <QueryClientProvider client={queryClient}>
         <CartProvider>
           <HelmetProvider>
-            <RouterProvider router={Router} />
+            <RouterProvider router={router} />
             <ToastContainer
               position="top-center"
               autoClose={2000}
