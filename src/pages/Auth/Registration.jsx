@@ -58,12 +58,43 @@ const Registration = () => {
   return (
     <div  className="flex  justify-center items-center min-h-screen py-5">
 
-    
-    <div className="border border-gray-500 rounded-xl sm:px-6 px-4 py-8 max-w-md w-full h-max shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-lg:mx-auto">
-      <Helmet>
-        <title>Register | StoreN</title>
-        <link rel="najatul islam" href="https://www.najatulislam.me/" />
+<Helmet>
+        <title>NiNCars | Sign Up</title>
+        <meta
+          name="description"
+          content="Sign Up to NiNCars to access exclusive deals and manage your account securely."
+        />
+        <meta
+          name="keywords"
+          content="NiNCars, login, ecommerce, secure access, online store"
+        />
+        <meta name="author" content="NiNCars" />
+
+        {/* Open Graph for social media */}
+        <meta property="og:title" content="NiNCars | Sign Up" />
+        <meta
+          property="og:description"
+          content="Sign Up to NiNCars to access exclusive deals and manage your account securely."
+        />
+        <meta
+          property="og:image"
+          content="https://www.najatulislam.me/og-image.jpg"
+        />
+        <meta property="og:url" content="https://www.najatulislam.me/" />
+        <meta property="og:type" content="website" />
+
+        {/* Favicon (if available) */}
+        <link
+          rel="icon"
+          href="https://www.najatulislam.me/favicon.ico"
+          type="image/x-icon"
+        />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.najatulislam.me/login" />
       </Helmet>
+    <div className="border border-gray-500 rounded-xl sm:px-6 px-4 py-8 max-w-md w-full h-max shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-lg:mx-auto">
+     
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-8">
           <h3 className="text-3xl font-extrabold text-white text-center">
