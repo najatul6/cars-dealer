@@ -72,7 +72,7 @@ const LogIn = () => {
     );
   };
   return (
-    <div>
+    <div className="flex  justify-center items-center py-5">
       {/* Helmet for title and meta tags Start here */}
       <Helmet>
         <title>NiNCars | Log in</title>
@@ -113,7 +113,7 @@ const LogIn = () => {
       <div className="border border-gray-500 rounded-xl sm:px-6 px-4 py-8 max-w-md w-full h-max shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-lg:mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-8">
-            <h3 className="text-3xl font-extrabold text-gray-800 text-center">
+            <h3 className="text-3xl font-extrabold text-white text-center">
               Sign in
             </h3>
           </div>
@@ -197,7 +197,7 @@ const LogIn = () => {
           </div>
           {/* Email Field */}
           <div>
-            <label className="text-gray-800 text-sm mb-2 block">Email</label>
+            <label className="text-white text-sm mb-2 block">Email</label>
             <div className="relative flex items-center">
               <input
                 {...register("email", {
@@ -208,9 +208,9 @@ const LogIn = () => {
                   },
                 })}
                 type="email"
-                className={`w-full text-sm text-gray-800 border ${
+                className={`w-full text-sm text-white border ${
                   errors.email ? "border-red-500" : "border-gray-300"
-                } px-4 py-3 rounded-md outline-blue-600`}
+                } px-4 py-3 rounded-md outline-blue-600 bg-transparent`}
                 placeholder="Enter email address"
               />
               <Mail className="w-[18px] h-[18px] absolute right-4" />
@@ -224,7 +224,7 @@ const LogIn = () => {
 
           {/* Password Field */}
           <div className="mt-4">
-            <label className="text-gray-800 text-sm mb-2 block">Password</label>
+            <label className="text-white text-sm mb-2 block">Password</label>
             <div className="relative flex items-center">
               <input
                 {...register("password", {
@@ -235,9 +235,9 @@ const LogIn = () => {
                   },
                 })}
                 type={passShow ? "text" : "password"}
-                className={`w-full text-sm text-gray-800 border ${
+                className={`w-full text-sm text-white border ${
                   errors.password ? "border-red-500" : "border-gray-300"
-                } px-4 py-3 rounded-md outline-blue-600`}
+                } px-4 py-3 rounded-md outline-blue-600 bg-transparent`}
                 placeholder="Enter password"
               />
               <svg
