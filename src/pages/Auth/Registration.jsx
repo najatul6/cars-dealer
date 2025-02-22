@@ -99,8 +99,9 @@ const Registration = () => {
             </h3>
           </div>
 
-          {/* Name Field */}
-          <div>
+        <div>
+            {/* Name Field */}
+            <div>
             <label className="text-white text-sm mb-2 block">Full Name</label>
             <div className="relative flex items-center">
               <input
@@ -146,7 +147,7 @@ const Registration = () => {
           </div>
 
           {/* Password Field */}
-          <div className="mt-4">
+          <div className="">
             <label className="text-white text-sm mb-2 block">Password</label>
             <div className="relative flex items-center">
               <input
@@ -182,7 +183,7 @@ const Registration = () => {
           </div>
 
           {/* Confirm Password Field */}
-          <div className="mt-4">
+          <div className="">
             <label className="text-white text-sm mb-2 block">
               Confirm Password
             </label>
@@ -217,6 +218,7 @@ const Registration = () => {
             )}
           </div>
 
+        </div>
           {/* Submit Button */}
           <div className="mt-8">
             <button
@@ -227,7 +229,6 @@ const Registration = () => {
             </button>
           </div>
         </form>
-      </div>
       <div>
         <p className="text-white mt-4 text-center">
           Already have an account?{" "}
@@ -238,6 +239,7 @@ const Registration = () => {
             Sign In
           </span>
         </p>
+      </div>
       </div>
     </div>
   );
