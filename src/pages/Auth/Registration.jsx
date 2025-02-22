@@ -228,6 +228,17 @@ const Registration = () => {
           </div>
         </form>
       </div>
+      <div>
+        <p className="text-white mt-4 text-center">
+          Already have an account?{" "}
+          <span
+            onClick={() => navigate("/signin")}
+            className="text-blue-500 cursor-pointer"
+          >
+            Sign In
+          </span>
+        </p>
+      </div>
     </div>
   );
 };
