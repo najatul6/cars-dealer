@@ -6,7 +6,7 @@ const TrustedSection = () => {
       <div className="shadow-md  flex w-full max-w-7xl relative">
         {/* Left Section with Diagonal Cut */}
         <div
-          className="bg-regal-blue text-white p-8 w-2/3 relative z-10 flex flex-col justify-center animate__animated animate__fadeInLeft"
+          className="bg-regal-blue text-white p-8 w-2/3 relative z-10 flex flex-col justify-center"
           style={{ clipPath: "polygon(0 0, 100% 0%, 80% 100%, 0% 100%)" }}
         >
           <h2 className="text-4xl font-bold mb-6">Trusted Experience</h2>
