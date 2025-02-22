@@ -56,28 +56,28 @@ const Registration = () => {
   };
 
   return (
-    <div className="bg-white rounded-xl sm:px-6 px-4 py-8 max-w-md w-full h-max shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-lg:mx-auto">
+    <div className="border border-gray-500 rounded-xl sm:px-6 px-4 py-8 max-w-md w-full h-max shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-lg:mx-auto">
       <Helmet>
         <title>Register | StoreN</title>
         <link rel="najatul islam" href="https://www.najatulislam.me/" />
       </Helmet>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-8">
-          <h3 className="text-3xl font-extrabold text-gray-800 text-center">
+          <h3 className="text-3xl font-extrabold text-white text-center">
             Sign Up
           </h3>
         </div>
 
         {/* Name Field */}
         <div>
-          <label className="text-gray-800 text-sm mb-2 block">Full Name</label>
+          <label className="text-white text-sm mb-2 block">Full Name</label>
           <div className="relative flex items-center">
             <input
               {...register("name", {
                 required: "Name is required",
               })}
               type="text"
-              className={`w-full text-sm text-gray-800 border ${
+              className={`w-full text-sm text-white border ${
                 errors.name ? "border-red-500" : "border-gray-300"
               } px-4 py-3 rounded-md outline-blue-600`}
               placeholder="Enter full name"
@@ -90,7 +90,7 @@ const Registration = () => {
 
         {/* Email Field */}
         <div>
-          <label className="text-gray-800 text-sm mb-2 block">Email</label>
+          <label className="text-white text-sm mb-2 block">Email</label>
           <div className="relative flex items-center">
             <input
               {...register("email", {
@@ -101,7 +101,7 @@ const Registration = () => {
                 },
               })}
               type="email"
-              className={`w-full text-sm text-gray-800 border ${
+              className={`w-full text-sm text-white border ${
                 errors.email ? "border-red-500" : "border-gray-300"
               } px-4 py-3 rounded-md outline-blue-600`}
               placeholder="Enter email address"
@@ -114,7 +114,7 @@ const Registration = () => {
 
         {/* Password Field */}
         <div className="mt-4">
-          <label className="text-gray-800 text-sm mb-2 block">Password</label>
+          <label className="text-white text-sm mb-2 block">Password</label>
           <div className="relative flex items-center">
             <input
               {...register("password", {
@@ -125,7 +125,7 @@ const Registration = () => {
                 },
               })}
               type={passShow ? "text" : "password"}
-              className={`w-full text-sm text-gray-800 border ${
+              className={`w-full text-sm text-white border ${
                 errors.password ? "border-red-500" : "border-gray-300"
               } px-4 py-3 rounded-md outline-blue-600`}
               placeholder="Enter password"
@@ -150,7 +150,7 @@ const Registration = () => {
 
         {/* Confirm Password Field */}
         <div className="mt-4">
-          <label className="text-gray-800 text-sm mb-2 block">
+          <label className="text-white text-sm mb-2 block">
             Confirm Password
           </label>
           <div className="relative flex items-center">
@@ -161,7 +161,7 @@ const Registration = () => {
                   value === password || "Passwords do not match",
               })}
               type={passShow ? "text" : "password"}
-              className={`w-full text-sm text-gray-800 border ${
+              className={`w-full text-sm text-white border ${
                 errors.confirmPassword ? "border-red-500" : "border-gray-300"
               } px-4 py-3 rounded-md outline-blue-600`}
               placeholder="Re-enter password"
