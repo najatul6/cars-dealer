@@ -23,6 +23,10 @@ const router = createBrowserRouter([
       {
         path:"/term-condition",
         element:<div>TERM & CONDITION</div>
+      },
+      {
+        path:"/contactUs",
+        element:<div>Contact Us</div>
       }
      
     ],
