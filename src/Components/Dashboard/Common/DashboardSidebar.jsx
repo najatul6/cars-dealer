@@ -1,5 +1,8 @@
-
+import useAuth from "../../../Hooks/useAuth";
+import { motion } from "framer-motion";
 const DashboardSidebar = ({setSidebarOpen,sidebarOpen}) => {
+    const { logOut } = useAuth();
+  const [userRole] = useRole();
   return (
     <>
     <nav id="sidebar" className={`lg:min-w-[250px] w-max max-lg:min-w-8`}>
