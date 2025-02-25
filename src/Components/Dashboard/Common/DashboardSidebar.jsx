@@ -1,7 +1,7 @@
 import useAuth from "../../../Hooks/useAuth";
 import { motion } from "framer-motion";
 import useRole from "../../../Hooks/useRole";
-import { userNav } from "../../../utils/DashboardMenu";
+import { adminNav, userNav } from "../../../utils/DashboardMenu";
 import { NavLink } from "react-router-dom";
 const DashboardSidebar = ({setSidebarOpen,sidebarOpen}) => {
     const { logOut } = useAuth();
@@ -20,7 +20,7 @@ const DashboardSidebar = ({setSidebarOpen,sidebarOpen}) => {
       >
         <ul className="space-y-2">
           {userRole === "user"
-            ? userNav.map((item, index) => (
+            ? userNav?.map((item, index) => (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -48,7 +48,7 @@ const DashboardSidebar = ({setSidebarOpen,sidebarOpen}) => {
                   </NavLink>
                 </motion.div>
               ))
-            : adminNav.map((item, index) => (
+            : adminNav?.map((item, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.9 }}
