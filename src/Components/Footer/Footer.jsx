@@ -23,6 +23,8 @@ const Footer = () => {
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
+          <Link className="link link-hover" to="/signup">Sign Up</Link>
+          <Link className="link link-hover" to="/signin">Sign in</Link>
         </nav>
       </footer>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
