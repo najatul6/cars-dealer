@@ -10,7 +10,7 @@ const Dashboard = () => {
         <div className="flex items-start">
           <DashboardSidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
 
-          <section className="main-content w-full overflow-auto p-6 ">
+          <section className="main-content w-full overflow-auto p-6">
               <Outlet/>
             {/* <div className="overflow-x-auto no-scrollbar">
             </div> */}

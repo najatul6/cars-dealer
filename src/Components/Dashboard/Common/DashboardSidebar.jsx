@@ -1,10 +1,19 @@
 import useAuth from "../../../Hooks/useAuth";
 import { motion } from "framer-motion";
 import useRole from "../../../Hooks/useRole";
-import { adminNav, userNav } from "../../../utils/DashboardMenu";
 import { Link, NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 import PropTypes from "prop-types";
+import {
+    SquareChartGantt,
+    BookA,
+    UserCog,
+    Truck,
+    PackageOpen,
+    PackageCheck,
+    Newspaper,
+    PackageSearch,
+  } from "lucide-react";
 const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
   const { logOut } = useAuth();
   const [userRole] = useRole();
@@ -15,6 +24,57 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
         error: "Error logging out",
       });
   }
+
+  const userNav = [
+    {
+      label: "Overview",
+      path: "/dashboard/overview",
+      icon: <SquareChartGantt />,
+    },
+    {
+      label: "My Orders",
+      path: "/dashboard/my-orders",
+      icon: <BookA />,
+    },
+  ];
+
+  const adminNav = [
+    {
+      label: "Overview",
+      path: "/dashboard/overview",
+      icon: <SquareChartGantt />,
+    },
+    {
+      label: "Pending Orders",
+      path: "/dashboard/new-orders",
+      icon: <PackageOpen />,
+    },
+    {
+      label: "Processing Orders",
+      path: "/dashboard/process-orders",
+      icon: <Truck />,
+    },
+    {
+      label: "Completed Orders",
+      path: "/dashboard/complete-orders",
+      icon: <PackageCheck />,
+    },
+    {
+      label: "Categories Management",
+      path: "/dashboard/categories-control",
+      icon: <Newspaper />,
+    },
+    {
+      label: "Products Management",
+      path: "/dashboard/products-control",
+      icon: <PackageSearch />,
+    },
+    {
+      label: "Users Management",
+      path: "/dashboard/users-control",
+      icon: <UserCog />,
+    },
+  ];
   return (
     <>
       <nav id="sidebar" className={`lg:min-w-[250px] w-max max-lg:min-w-8`}>
