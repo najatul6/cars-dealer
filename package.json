@@ -15,6 +15,7 @@
     "animate.css": "^4.1.1",
     "axios": "^1.7.9",
     "firebase": "^11.3.1",
+    "framer-motion": "^12.4.7",
     "localforage": "^1.10.0",
     "lucide-react": "^0.475.0",
     "match-sorter": "^6.3.4",
