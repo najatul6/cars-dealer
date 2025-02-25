@@ -1,5 +1,7 @@
 import useAuth from "../../../Hooks/useAuth";
 import { motion } from "framer-motion";
+import useRole from "../../../Hooks/useRole";
+import { userNav } from "../../../utils/DashboardMenu";
 const DashboardSidebar = ({setSidebarOpen,sidebarOpen}) => {
     const { logOut } = useAuth();
   const [userRole] = useRole();
