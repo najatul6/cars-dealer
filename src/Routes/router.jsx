@@ -75,7 +75,12 @@ const router = createBrowserRouter([
       {
         path:"agent-complete-orders",
         element:<div>Completed Orders</div>
-      }
+      },
+      {
+        path:"customer-inquiries",
+        element:<div>Customer Inquiries</div>
+      },
+      
 
     ]
   },
