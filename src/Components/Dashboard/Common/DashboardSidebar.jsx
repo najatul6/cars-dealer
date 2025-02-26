@@ -143,8 +143,8 @@ const adminNav = [
                       className={({ isActive }) =>
                         `text-white text-sm flex gap-2 items-center rounded-md px-4 py-2 transition-all ${
                           isActive
-                            ? "text-baseColor bg-background"
-                            : "hover:bg-background"
+                            ? "text-red-600 bg-background"
+                            : "hover:bg-background text-baseColor"
                         }`
                       }
                     >
