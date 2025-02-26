@@ -40,11 +40,11 @@ const router = createBrowserRouter([
     </PrivateRoute>
   },
   {
-    path:"signin",
+    path:"/signin",
     element:<LogIn/>
   },
   {
-    path:"signup",
+    path:"/signup",
     element:<Registration/>
   }
 ]);

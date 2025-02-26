@@ -16,7 +16,7 @@ const AgentRoute = ({ children }) => {
   if (user && userRole === "agent") {
     return children;
   } else {
-    return <Navigate to="/auth/login" state={{ from: location }} replace />;
+    return <Navigate to="/signin" state={{ from: location }} replace />;
   }
 };
 AgentRoute.propTypes = {
