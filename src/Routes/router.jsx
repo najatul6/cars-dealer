@@ -44,6 +44,10 @@ const router = createBrowserRouter([
 
         path:"overview",
         element:<MainOverview/>
+      },
+      {
+        path:"my-orders",
+        element:<div>My Orders</div>
       }
     ]
   },
