@@ -111,10 +111,24 @@ const router = createBrowserRouter([
         element:<div>Products Control</div>
       },
       {
-        path:"categories-control",
+        path:"users-control",
+        element:<div>Users Control</div>
       },
       {
-        path:"categories-control",
+        path:"agents-control",
+        
+      },
+      {
+        path:"categories",
+      },
+      {
+        path:"categories",
+      },
+      {
+        path:"categories",
+      },
+      {
+        path:"categories",
       },
     
 
