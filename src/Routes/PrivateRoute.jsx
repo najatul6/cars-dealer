@@ -9,8 +9,7 @@ const PrivateRoute = ({ children }) => {
     if (loading) return <Loader />;
   
     if (user) {
-        return <Loader />;
-    //   return children;
+      return children;
     } else {
       return <Navigate to="/auth/login" state={{ from: location }} replace />;
     }
