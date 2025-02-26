@@ -29,11 +29,11 @@ const Overview = () => {
 
   return (
     <div className=" py-4">
-      <div className="overview-header flex justify-between items-center py-4 px-6">
+      <div className="overview-header flex justify-between items-center py-4 ">
         <h2 className="text-2xl font-bold text-white">Dashboard Overview</h2>
       </div>
 
-      <div className="overview-stats grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-6 py-4">
+      <div className="overview-stats grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  py-4">
         <motion.div
           className="stat-card bg-background2 rounded-lg shadow-lg p-4"
           initial={{ opacity: 0, scale: 0.9 }}
