@@ -83,7 +83,14 @@ const router = createBrowserRouter([
       {
         path:"earnings",
         element:<div>Earnings & Payouts</div>
+      },
+
+      // Admin Pages
+      {
+        path:"settings",
+        element:<div>Settings</div>
       }
+
 
     ]
   },
