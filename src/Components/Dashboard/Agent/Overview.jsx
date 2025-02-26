@@ -62,7 +62,7 @@ const Overview = () => {
       return (
         <div className="dashboard-overview-container">
           <div className="overview-header flex justify-between items-center py-4 px-6">
-            <h2 className="text-2xl font-bold text-white">Agent Dashboard Overview</h2>
+            <h2 className="text-2xl font-bold text-white py-4">Agent Dashboard Overview</h2>
           </div>
     
           {/* Overview Stats */}

@@ -4,12 +4,7 @@ import useRole from "../../../Hooks/useRole";
 import {  NavLink } from "react-router-dom";
 // import { toast } from "react-toastify";
 import PropTypes from "prop-types";
-import {
-  SquareChartGantt, BookA, LifeBuoy, Heart, User,
-  ClipboardList, Truck, PackageCheck, MessagesSquare, Wallet,
-  PackageOpen, RotateCcw, Newspaper, PackageSearch, UserCog,
-   Headset, BarChart, CreditCard, Settings
-} from "lucide-react";
+import { SquareChartGantt, BookA, LifeBuoy, Car, Star, Truck, DollarSign, Users, Package } from "lucide-react";
 
 const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
   // const { logOut } = useAuth();
@@ -40,125 +35,80 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
         icon: <LifeBuoy />,
     },
     {
-        label: "Wishlist",
-        path: "/dashboard/wishlist",
-        icon: <Heart />,
+        label: "Services",
+        path: "/dashboard/services",
+        icon: <Car />,
     },
     {
-        label: "Profile Settings",
-        path: "/dashboard/profile-settings",
-        icon: <User />,
+        label: "Latest Reviews",
+        path: "/dashboard/reviews",
+        icon: <Star />,
     },
-  ];
+];
+
   
-   const agentNav = [
-    {
-        label: "Overview",
-        path: "/dashboard/overview",
-        icon: <SquareChartGantt />,
-    },
-    {
-        label: "Assigned Orders",
-        path: "/dashboard/assigned-orders",
-        icon: <ClipboardList />,
-    },
-    {
-        label: "Processing Orders",
-        path: "/dashboard/agent-process-orders",
-        icon: <Truck />,
-    },
-    {
-        label: "Completed Orders",
-        path: "/dashboard/agent-complete-orders",
-        icon: <PackageCheck />,
-    },
-    {
-        label: "Customer Inquiries",
-        path: "/dashboard/customer-inquiries",
-        icon: <MessagesSquare />,
-    },
-    {
-        label: "Earnings & Payouts",
-        path: "/dashboard/earnings",
-        icon: <Wallet />,
-    },
-  ];
+const agentNav = [
+  {
+      label: "Overview",
+      path: "/dashboard/overview",
+      icon: <SquareChartGantt />,
+  },
+  {
+      label: "Orders to Process",
+      path: "/dashboard/orders-to-process",
+      icon: <Truck />,
+  },
+  {
+      label: "Customer Support",
+      path: "/dashboard/customer-support",
+      icon: <LifeBuoy />,
+  },
+  {
+      label: "Services Management",
+      path: "/dashboard/services-management",
+      icon: <Car />,
+  },
+  {
+      label: "Finance Reports",
+      path: "/dashboard/finance-reports",
+      icon: <DollarSign />,
+  },
+];
+
   
-   const adminNav = [
-    {
-        label: "Overview",
-        path: "/dashboard/overview",
-        icon: <SquareChartGantt />,
-    },
-  
-    {
-        label: "Pending Orders",
-        path: "/dashboard/new-orders",
-        icon: <PackageOpen />,
-    },
-    {
-        label: "Processing Orders",
-        path: "/dashboard/process-orders",
-        icon: <Truck />,
-    },
-    {
-        label: "Completed Orders",
-        path: "/dashboard/complete-orders",
-        icon: <PackageCheck />,
-    },
-    {
-        label: "Refund Requests",
-        path: "/dashboard/refund-requests",
-        icon: <RotateCcw />,
-    },
-    {
-        label: "Categories",
-        path: "/dashboard/categories-control",
-        icon: <Newspaper />,
-    },
-    {
-        label: "Products",
-        path: "/dashboard/products-control",
-        icon: <PackageSearch />,
-    },
-  
-    {
-        label: "All Users",
-        path: "/dashboard/users-control",
-        icon: <UserCog />,
-    },
-    {
-        label: "Agents",
-        path: "/dashboard/agents-control",
-        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shield-user"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M6.376 18.91a6 6 0 0 1 11.249.003"/><circle cx="12" cy="11" r="4"/></svg>,
-    },
-    {
-        label: "Customer Support",
-        path: "/dashboard/customer-support",
-        icon: <Headset />,
-    },
-    {
-        label: "Sales Reports",
-        path: "/dashboard/reports",
-        icon: <BarChart />,
-    },
-    {
-        label: "Transactions",
-        path: "/dashboard/transactions",
-        icon: <CreditCard />,
-    },
-    {
-        label: "Payouts",
-        path: "/dashboard/payouts",
-        icon: <Wallet />,
-    },
-  
-    {
-        label: "Settings",
-        path: "/dashboard/settings",
-        icon: <Settings />,
-    },
-  ];
+const adminNav = [
+  {
+      label: "Dashboard Overview",
+      path: "/dashboard/overview",
+      icon: <SquareChartGantt />,
+  },
+  {
+      label: "Manage Users",
+      path: "/dashboard/manage-users",
+      icon: <Users />,
+  },
+  {
+      label: "Manage Products",
+      path: "/dashboard/manage-products",
+      icon: <Package />,
+  },
+  {
+      label: "Manage Services",
+      path: "/dashboard/manage-services",
+      icon: <Car />,
+  },
+  {
+      label: "Finance Overview",
+      path: "/dashboard/finance-overview",
+      icon: <DollarSign />,
+  },
+  {
+      label: "Latest Reviews",
+      path: "/dashboard/latest-reviews",
+      icon: <Star />,
+  },
+];
+
 
   const navItems = userRole === "admin" ? adminNav : userRole === "agent" ? agentNav : userNav;
   return (
