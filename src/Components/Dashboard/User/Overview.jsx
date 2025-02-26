@@ -28,14 +28,14 @@ const Overview = () => {
   }, [axiosSecure]); // The dependency array ensures this runs once when the component mounts
 
   return (
-    <div className="dashboard-overview-container">
+    <div className=" ">
       <div className="overview-header flex justify-between items-center py-4 px-6">
         <h2 className="text-2xl font-bold text-white">Dashboard Overview</h2>
       </div>
 
       <div className="overview-stats grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-6 py-4">
         <motion.div
-          className="stat-card bg-background rounded-lg shadow-lg p-4"
+          className="stat-card bg-background2 rounded-lg shadow-lg p-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -48,7 +48,7 @@ const Overview = () => {
         </motion.div>
 
         <motion.div
-          className="stat-card bg-background rounded-lg shadow-lg p-4"
+          className="stat-card bg-background2 rounded-lg shadow-lg p-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
@@ -61,7 +61,7 @@ const Overview = () => {
         </motion.div>
 
         <motion.div
-          className="stat-card bg-background rounded-lg shadow-lg p-4"
+          className="stat-card bg-background2 rounded-lg shadow-lg p-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
@@ -105,7 +105,7 @@ const Overview = () => {
         </ul>
       </div>
 
-      <div className="profile-completion mt-6 p-4 bg-background rounded-lg shadow-lg">
+      <div className="profile-completion mt-6 p-4 bg-background2 rounded-lg shadow-lg">
         <h3 className="text-sm text-gray-400">Profile Completion</h3>
         <div className="progress-bar mt-2 bg-gray-200 rounded-lg h-2.5 w-full">
           <div
