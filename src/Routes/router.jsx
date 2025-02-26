@@ -123,7 +123,8 @@ const router = createBrowserRouter([
         element:<div>Customer Support</div>
       },
       {
-        path:"categories",
+        path:"reports",
+        element:<div>Reports</div>
       },
       {
         path:"categories",
