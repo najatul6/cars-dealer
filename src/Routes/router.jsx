@@ -80,7 +80,10 @@ const router = createBrowserRouter([
         path:"customer-inquiries",
         element:<div>Customer Inquiries</div>
       },
-      
+      {
+        path:"earnings",
+        element:<div>Earnings & Payouts</div>
+      }
 
     ]
   },
