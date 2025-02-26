@@ -57,6 +57,10 @@ const router = createBrowserRouter([
       {
         path:"wishlist",
         element:<div>Wishlist</div>
+      },
+      {
+        path:"profile-settings",
+        element:<div>Profile Settings</div>
       }
     ]
   },
