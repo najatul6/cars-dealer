@@ -116,10 +116,11 @@ const router = createBrowserRouter([
       },
       {
         path:"agents-control",
-        
+        element:<div>Agents Control</div>
       },
       {
-        path:"categories",
+        path:"customer-support",
+        element:<div>Customer Support</div>
       },
       {
         path:"categories",
