@@ -101,6 +101,10 @@ const router = createBrowserRouter([
       {
         path:"refund-requests",
         element:<div>Refund Requests</div>
+      },
+      {
+        path:"refund-requests",
+        element:<div>Refund Requests</div>
       }
     
 
