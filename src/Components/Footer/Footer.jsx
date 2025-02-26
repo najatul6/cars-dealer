@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import useRole from "../../Hooks/useRole";
+import useAuth from "../../Hooks/useAuth";
 
 const Footer = () => {
-  const [userRole]=useRole();
-  console.log(userRole);
+  const { user } = useAuth();
   return (
     <div>
       <footer className="footer bg-neutral text-neutral-content p-10">
@@ -26,13 +25,34 @@ const Footer = () => {
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
-          <Link className="link link-hover" to="/signup">Sign Up</Link>
-          <Link className="link link-hover" to="/signin">Sign in</Link>
+          {user ? (
+            <Link className="link link-hover" to="/dashboard">
+              Dashboard
+            </Link>
+          ) : (
+            <>
+              <Link className="link link-hover" to="/signup">
+                Sign Up
+              </Link>
+              <Link className="link link-hover" to="/signin">
+                Sign in
+              </Link>
+            </>
+          )}
         </nav>
       </footer>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <aside>
-          <p>Copyright © 2024 - All right reserved by <Link target="_blank" className="font-bold hover:underline" to="https://najatul-islam.vercel.app/">NiN Industries Ltd</Link></p>
+          <p>
+            Copyright © 2024 - All right reserved by{" "}
+            <Link
+              target="_blank"
+              className="font-bold hover:underline"
+              to="https://najatul-islam.vercel.app/"
+            >
+              NiN Industries Ltd
+            </Link>
+          </p>
         </aside>
       </footer>
     </div>
