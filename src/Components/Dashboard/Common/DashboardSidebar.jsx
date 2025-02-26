@@ -1,10 +1,20 @@
 // import useAuth from "../../../Hooks/useAuth";
 import { motion } from "framer-motion";
 import useRole from "../../../Hooks/useRole";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import { toast } from "react-toastify";
 import PropTypes from "prop-types";
-import { SquareChartGantt, BookA, LifeBuoy, Car, Star, Truck, DollarSign, Users, Package } from "lucide-react";
+import {
+  SquareChartGantt,
+  BookA,
+  LifeBuoy,
+  Car,
+  Star,
+  Truck,
+  DollarSign,
+  Users,
+  Package,
+} from "lucide-react";
 
 const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
   // const { logOut } = useAuth();
@@ -20,101 +30,98 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
 
   const userNav = [
     {
-        label: "Overview",
-        path: "/dashboard/overview",
-        icon: <SquareChartGantt />,
-    },
-    {
-        label: "My Orders",
-        path: "/dashboard/my-orders",
-        icon: <BookA />,
-    },
-    {
-        label: "Support Tickets",
-        path: "/dashboard/support-tickets",
-        icon: <LifeBuoy />,
-    },
-    {
-        label: "Services",
-        path: "/dashboard/services",
-        icon: <Car />,
-    },
-    {
-        label: "Latest Reviews",
-        path: "/dashboard/reviews",
-        icon: <Star />,
-    },
-];
-
-  
-const agentNav = [
-  {
       label: "Overview",
       path: "/dashboard/overview",
       icon: <SquareChartGantt />,
-  },
-  {
+    },
+    {
+      label: "My Orders",
+      path: "/dashboard/my-orders",
+      icon: <BookA />,
+    },
+    {
+      label: "Support Tickets",
+      path: "/dashboard/support-tickets",
+      icon: <LifeBuoy />,
+    },
+    {
+      label: "Services",
+      path: "/dashboard/services",
+      icon: <Car />,
+    },
+    {
+      label: "Latest Reviews",
+      path: "/dashboard/reviews",
+      icon: <Star />,
+    },
+  ];
+
+  const agentNav = [
+    {
+      label: "Overview",
+      path: "/dashboard/overview",
+      icon: <SquareChartGantt />,
+    },
+    {
       label: "Orders to Process",
       path: "/dashboard/orders-to-process",
       icon: <Truck />,
-  },
-  {
+    },
+    {
       label: "Customer Support",
       path: "/dashboard/customer-support",
       icon: <LifeBuoy />,
-  },
-  {
+    },
+    {
       label: "Services Management",
       path: "/dashboard/services-management",
       icon: <Car />,
-  },
-  {
+    },
+    {
       label: "Finance Reports",
       path: "/dashboard/finance-reports",
       icon: <DollarSign />,
-  },
-];
+    },
+  ];
 
-  
-const adminNav = [
-  {
+  const adminNav = [
+    {
       label: "Dashboard Overview",
       path: "/dashboard/overview",
       icon: <SquareChartGantt />,
-  },
-  {
+    },
+    {
       label: "Manage Users",
       path: "/dashboard/manage-users",
       icon: <Users />,
-  },
-  {
+    },
+    {
       label: "Manage Products",
       path: "/dashboard/manage-products",
       icon: <Package />,
-  },
-  {
+    },
+    {
       label: "Manage Services",
       path: "/dashboard/manage-services",
       icon: <Car />,
-  },
-  {
+    },
+    {
       label: "Finance Overview",
       path: "/dashboard/finance-overview",
       icon: <DollarSign />,
-  },
-  {
+    },
+    {
       label: "Latest Reviews",
       path: "/dashboard/latest-reviews",
       icon: <Star />,
-  },
-];
+    },
+  ];
 
-
-  const navItems = userRole === "admin" ? adminNav : userRole === "agent" ? agentNav : userNav;
+  const navItems =
+    userRole === "admin" ? adminNav : userRole === "agent" ? agentNav : userNav;
   return (
     <>
       <nav id="sidebar" className={`lg:min-w-[250px] w-max max-lg:min-w-8`}>
-        
         <div
           id="sidebar-collapse-menu"
           style={{ height: "calc(100vh - 72px)" }}
@@ -126,37 +133,34 @@ const adminNav = [
         >
           <ul className="space-y-2">
             {navItems?.map((item, index) => (
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                      ease: "easeOut",
-                      duration: 0.6,
-                      delay: index * 0.2,
-                    }}
-                    viewport={{ once: true, amount: 0.2 }}
-                    key={index}
-                  >
-                    <NavLink
-                      onClick={() => setSidebarOpen(!sidebarOpen)}
-                      to={item.path}
-                      className={({ isActive }) =>
-                        `text-white text-sm flex gap-2 items-center rounded-md px-4 py-2 transition-all ${
-                          isActive
-                            ? "text-red-600 bg-background"
-                            : "hover:bg-background text-baseColor"
-                        }`
-                      }
-                    >
-                      {item.icon}
-                      <span>{item.label}</span>
-                    </NavLink>
-                  </motion.div>
-                ))
-              }
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  ease: "easeOut",
+                  duration: 0.6,
+                  delay: index * 0.2,
+                }}
+                viewport={{ once: true, amount: 0.2 }}
+                key={index}
+              >
+                <NavLink
+                  onClick={() => setSidebarOpen(!sidebarOpen)}
+                  to={item.path}
+                  className={({ isActive }) =>
+                    `text-sm flex gap-2 items-center rounded-md px-4 py-2 transition-all ${
+                      isActive
+                        ? "text-baseColor bg-background" // Active state styling
+                        : "hover:bg-background  text-white " // Hover state styling
+                    }`
+                  }
+                >
+                  {item.icon}
+                  <span>{item.label}</span>
+                </NavLink>
+              </motion.div>
+            ))}
           </ul>
-
-          
         </div>
       </nav>
 

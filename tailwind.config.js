@@ -11,7 +11,7 @@ export default {
         'Dark-blue': '#006BB3',
         'light-blue': '#01D1FF',
         background: '#000000',
-        baseColor: '#d7572b',
+        baseColor: '#006BB3',
       },
     },
   },
