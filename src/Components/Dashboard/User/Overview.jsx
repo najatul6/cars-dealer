@@ -28,7 +28,7 @@ const Overview = () => {
   }, [axiosSecure]); // The dependency array ensures this runs once when the component mounts
 
   return (
-    <div className=" ">
+    <div className=" py-4">
       <div className="overview-header flex justify-between items-center py-4 px-6">
         <h2 className="text-2xl font-bold text-white">Dashboard Overview</h2>
       </div>

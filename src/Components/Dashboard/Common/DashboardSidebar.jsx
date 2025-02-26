@@ -191,10 +191,10 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
                       onClick={() => setSidebarOpen(!sidebarOpen)}
                       to={item.path}
                       className={({ isActive }) =>
-                        `text-white text-sm flex gap-2 items-center rounded-md px-4 py-2 transition-all ${
+                        `text-sm flex gap-2 items-center rounded-md px-4 py-2 transition-all ${
                           isActive
                             ? "text-baseColor bg-background"
-                            : "hover:bg-background"
+                            : "hover:bg-background text-white"
                         }`
                       }
                     >
