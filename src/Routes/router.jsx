@@ -53,6 +53,10 @@ const router = createBrowserRouter([
       {
         path:"support-tickets",
         element:<div>Support Tickets</div>
+      },
+      {
+        path:"wishlist",
+        element:<div>Wishlist</div>
       }
     ]
   },
