@@ -87,8 +87,8 @@ const router = createBrowserRouter([
 
       // Admin Pages
       {
-        path:"settings",
-        element:<div>Settings</div>
+        path:"new-orders",
+        element:<div>New Orders</div>
       }
 
 
