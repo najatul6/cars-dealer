@@ -12,6 +12,7 @@ export default {
         'light-blue': '#01D1FF',
         background: '#000000',
         baseColor: '#006BB3',
+        'background2':'#2a323d'
       },
     },
   },
