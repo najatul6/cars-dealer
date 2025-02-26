@@ -3,18 +3,10 @@ import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
-  SquareChartGantt,
   PackageOpen,
   Truck,
   PackageCheck,
-  RotateCcw,
-  Newspaper,
-  PackageSearch,
-  UserCog,
-  Headset,
   BarChart,
-  CreditCard,
-  Settings,
   Wallet,
 } from "lucide-react";
 
