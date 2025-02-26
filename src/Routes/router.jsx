@@ -91,16 +91,14 @@ const router = createBrowserRouter([
         element:<div>New Orders</div>
       },
       {
-        path:"orders",
-        element:<div>All Orders</div>
+        path:"process-orders",
+        element:<div>Processing Orders</div>
       },
       {
         path:"settings",
         element:<div>Settings</div>
       },
-      {
-        path:
-      }
+    
 
 
     ]
