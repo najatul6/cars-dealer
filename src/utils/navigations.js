@@ -9,27 +9,27 @@ export const userNav = [
     {
         label: "Overview",
         path: "/dashboard/overview",
-        icon: <SquareChartGantt />,
+        icon: SquareChartGantt ,
     },
     {
         label: "My Orders",
         path: "/dashboard/my-orders",
-        icon: <BookA />,
+        icon: BookA ,
     },
     {
         label: "Support Tickets",
         path: "/dashboard/support-tickets",
-        icon: <LifeBuoy />,
+        icon: LifeBuoy ,
     },
     {
         label: "Wishlist",
         path: "/dashboard/wishlist",
-        icon: <Heart />,
+        icon: Heart ,
     },
     {
         label: "Profile Settings",
         path: "/dashboard/profile-settings",
-        icon: <User />,
+        icon: User ,
     },
 ];
 
@@ -37,32 +37,32 @@ export const agentNav = [
     {
         label: "Overview",
         path: "/dashboard/overview",
-        icon: <SquareChartGantt />,
+        icon: SquareChartGantt ,
     },
     {
         label: "Assigned Orders",
         path: "/dashboard/assigned-orders",
-        icon: <ClipboardList />,
+        icon: ClipboardList ,
     },
     {
         label: "Processing Orders",
         path: "/dashboard/agent-process-orders",
-        icon: <Truck />,
+        icon: Truck ,
     },
     {
         label: "Completed Orders",
         path: "/dashboard/agent-complete-orders",
-        icon: <PackageCheck />,
+        icon: PackageCheck ,
     },
     {
         label: "Customer Inquiries",
         path: "/dashboard/customer-inquiries",
-        icon: <MessagesSquare />,
+        icon: MessagesSquare ,
     },
     {
         label: "Earnings & Payouts",
         path: "/dashboard/earnings",
-        icon: <Wallet />,
+        icon: Wallet ,
     },
 ];
 
@@ -70,74 +70,74 @@ export const adminNav = [
     {
         label: "Overview",
         path: "/dashboard/overview",
-        icon: <SquareChartGantt />,
+        icon: SquareChartGantt ,
     },
 
     {
         label: "Pending Orders",
         path: "/dashboard/new-orders",
-        icon: <PackageOpen />,
+        icon: PackageOpen ,
     },
     {
         label: "Processing Orders",
         path: "/dashboard/process-orders",
-        icon: <Truck />,
+        icon: Truck ,
     },
     {
         label: "Completed Orders",
         path: "/dashboard/complete-orders",
-        icon: <PackageCheck />,
+        icon: PackageCheck ,
     },
     {
         label: "Refund Requests",
         path: "/dashboard/refund-requests",
-        icon: <RotateCcw />,
+        icon: RotateCcw ,
     },
     {
         label: "Categories",
         path: "/dashboard/categories-control",
-        icon: <Newspaper />,
+        icon: Newspaper ,
     },
     {
         label: "Products",
         path: "/dashboard/products-control",
-        icon: <PackageSearch />,
+        icon: PackageSearch ,
     },
 
     {
         label: "All Users",
         path: "/dashboard/users-control",
-        icon: <UserCog />,
+        icon: UserCog ,
     },
     {
         label: "Agents",
         path: "/dashboard/agents-control",
-        icon: <UserShield />,
+        icon: UserShield ,
     },
     {
         label: "Customer Support",
         path: "/dashboard/customer-support",
-        icon: <Headset />,
+        icon: Headset ,
     },
     {
         label: "Sales Reports",
         path: "/dashboard/reports",
-        icon: <BarChart />,
+        icon: BarChart ,
     },
     {
         label: "Transactions",
         path: "/dashboard/transactions",
-        icon: <CreditCard />,
+        icon: CreditCard ,
     },
     {
         label: "Payouts",
         path: "/dashboard/payouts",
-        icon: <Wallet />,
+        icon: Wallet ,
     },
 
     {
         label: "Settings",
         path: "/dashboard/settings",
-        icon: <Settings />,
+        icon: Settings ,
     },
 ];

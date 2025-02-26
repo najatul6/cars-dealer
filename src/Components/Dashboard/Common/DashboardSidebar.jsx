@@ -5,16 +5,8 @@ import { Link, NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 import headerLogo from "../../../assets/logo/ninCars.svg";
-import {
-  SquareChartGantt,
-  BookA,
-  UserCog,
-  Truck,
-  PackageOpen,
-  PackageCheck,
-  Newspaper,
-  PackageSearch,
-} from "lucide-react";
+import { adminNav, agentNav, userNav } from "../../../utils/navigations";
+
 const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
   const { logOut } = useAuth();
   const [userRole] = useRole();
@@ -25,57 +17,7 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
       error: "Error logging out",
     });
   };
-
-  const userNav = [
-    {
-      label: "Overview",
-      path: "/dashboard/overview",
-      icon: <SquareChartGantt />,
-    },
-    {
-      label: "My Orders",
-      path: "/dashboard/my-orders",
-      icon: <BookA />,
-    },
-  ];
-
-  const adminNav = [
-    {
-      label: "Overview",
-      path: "/dashboard/overview",
-      icon: <SquareChartGantt />,
-    },
-    {
-      label: "Pending Orders",
-      path: "/dashboard/new-orders",
-      icon: <PackageOpen />,
-    },
-    {
-      label: "Processing Orders",
-      path: "/dashboard/process-orders",
-      icon: <Truck />,
-    },
-    {
-      label: "Completed Orders",
-      path: "/dashboard/complete-orders",
-      icon: <PackageCheck />,
-    },
-    {
-      label: "Categories Management",
-      path: "/dashboard/categories-control",
-      icon: <Newspaper />,
-    },
-    {
-      label: "Products Management",
-      path: "/dashboard/products-control",
-      icon: <PackageSearch />,
-    },
-    {
-      label: "Users Management",
-      path: "/dashboard/users-control",
-      icon: <UserCog />,
-    },
-  ];
+  const navItems = userRole === "admin" ? adminNav : userRole === "agent" ? agentNav : userNav;
   return (
     <>
       <nav id="sidebar" className={`lg:min-w-[250px] w-max max-lg:min-w-8`}>
@@ -98,8 +40,7 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
           } bg-background2 flex flex-col justify-between border-r shadow-lg h-screen fixed py-6 px-4 top-[70px] left-0 overflow-auto z-[99] lg:min-w-[250px] lg:w-max  transition-all duration-500`}
         >
           <ul className="space-y-2">
-            {userRole === "user"
-              ? userNav?.map((item, index) => (
+            {navItems?.map((item, index) => (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -122,39 +63,12 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
                         }`
                       }
                     >
-                      {item.icon}
+                      {item.icon && <item.icon/>}
                       <span>{item.label}</span>
                     </NavLink>
                   </motion.div>
                 ))
-              : adminNav?.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{
-                      ease: "easeOut",
-                      duration: 0.6,
-                      delay: index * 0.2,
-                    }}
-                    viewport={{ once: true, amount: 0.2 }}
-                  >
-                    <NavLink
-                      to={item.path}
-                      onClick={() => setSidebarOpen(!sidebarOpen)}
-                      className={({ isActive }) =>
-                        `text-sm flex items-center rounded-md px-4 py-2 transition-all hover:text-baseColor ${
-                          isActive
-                            ? "bg-background text-baseColor"
-                            : " text-white hover:bg-background"
-                        }`
-                      }
-                    >
-                      <p className="mr-3">{item.icon}</p>
-                      <span>{item.label}</span>
-                    </NavLink>
-                  </motion.div>
-                ))}
+              }
           </ul>
 
           <div className="mt-6">
