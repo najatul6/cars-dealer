@@ -93,6 +93,10 @@ const router = createBrowserRouter([
       {
         path:"orders",
         element:<div>All Orders</div>
+      },
+      {
+        path:"settings",
+        element:<div>Settings</div>
       }
 
 
