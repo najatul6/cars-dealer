@@ -4,26 +4,27 @@ import useRole from "../../../Hooks/useRole";
 import { Link, NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 import PropTypes from "prop-types";
+import headerLogo from "../../../assets/logo/ninCars.svg";
 import {
-    SquareChartGantt,
-    BookA,
-    UserCog,
-    Truck,
-    PackageOpen,
-    PackageCheck,
-    Newspaper,
-    PackageSearch,
-  } from "lucide-react";
+  SquareChartGantt,
+  BookA,
+  UserCog,
+  Truck,
+  PackageOpen,
+  PackageCheck,
+  Newspaper,
+  PackageSearch,
+} from "lucide-react";
 const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
   const { logOut } = useAuth();
   const [userRole] = useRole();
   const handleLogout = () => {
     toast.promise(logOut(), {
-        pending: "Logging out...",
-        success: "Logged out successfully",
-        error: "Error logging out",
-      });
-  }
+      pending: "Logging out...",
+      success: "Logged out successfully",
+      error: "Error logging out",
+    });
+  };
 
   const userNav = [
     {
@@ -78,6 +79,15 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
   return (
     <>
       <nav id="sidebar" className={`lg:min-w-[250px] w-max max-lg:min-w-8`}>
+        <Link to="/" className="flex justify-center items-center gap-2 py-4">
+          <div className="flex justify-center items-center w-[150px] ">
+            <img
+              src={headerLogo}
+              alt=""
+              className="w-full h-fit object-center"
+            />
+          </div>
+        </Link>
         <div
           id="sidebar-collapse-menu"
           style={{ height: "calc(100vh - 72px)" }}
@@ -85,7 +95,7 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
             sidebarOpen
               ? "block w-[250px] visible opacity-[1]"
               : "block w-[32px] "
-          } bg-background2 flex flex-col justify-between shadow-lg h-screen fixed py-6 px-4 top-[70px] left-0 overflow-auto z-[99] lg:min-w-[250px] lg:w-max  transition-all duration-500`}
+          } bg-background2 flex flex-col justify-between border-r shadow-lg h-screen fixed py-6 px-4 top-[70px] left-0 overflow-auto z-[99] lg:min-w-[250px] lg:w-max  transition-all duration-500`}
         >
           <ul className="space-y-2">
             {userRole === "user"
@@ -218,8 +228,8 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
 };
 
 DashboardSidebar.propTypes = {
-    setSidebarOpen: PropTypes.func.isRequired,
-    sidebarOpen: PropTypes.bool.isRequired,
-}
+  setSidebarOpen: PropTypes.func.isRequired,
+  sidebarOpen: PropTypes.bool.isRequired,
+};
 
 export default DashboardSidebar;

@@ -5,7 +5,7 @@ import DashboardSidebar from "../Components/Dashboard/Common/DashboardSidebar";
 const Dashboard = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <div  className="relative pt-[70px] h-screen scroll-smooth">
+    <div  className="relative h-screen scroll-smooth">
         <div>
         <div className="flex items-start">
           <DashboardSidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
