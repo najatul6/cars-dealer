@@ -37,7 +37,7 @@ const Overview = () => {
   }, [axiosSecure]);
 
   return (
-    <div className="admin-dashboard-container px-8 py-6">
+    <div className="admin-dashboard-container  py-6">
       <div className="overview-header flex justify-between items-center py-4">
         <h2 className="text-3xl font-bold text-white">
           Admin Dashboard Overview
