@@ -62,9 +62,11 @@ const Header = () => {
         </div>
 
         {/* Button */}
+          <Link to="/dashboard">
         <div className="btn btn-outline text-light-blue hover:bg-Dark-blue hover:text-white uppercase font-bold">
           see your car
         </div>
+          </Link>
       </div>
     </div>
   );
