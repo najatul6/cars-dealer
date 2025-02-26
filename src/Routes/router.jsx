@@ -131,7 +131,8 @@ const router = createBrowserRouter([
         element:<div>Transactions</div>
       },
       {
-        path:"categories",
+        path:"payouts",
+        element:<div>Payouts</div>
       },
     
 
