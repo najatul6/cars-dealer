@@ -3,7 +3,7 @@ import {
     ClipboardList, Truck, PackageCheck, MessagesSquare, Wallet,
     PackageOpen, RotateCcw, Newspaper, PackageSearch, UserCog,
     UserShield, Headset, BarChart, CreditCard, Settings
-} from "lucide-react"; // Ensure you have lucide-react installed
+} from "lucide-react";
 
 export const userNav = [
     {
@@ -72,65 +72,52 @@ export const adminNav = [
         path: "/dashboard/overview",
         icon: <SquareChartGantt />,
     },
+
     {
-        label: "Orders Management",
-        subMenu: [
-            {
-                label: "Pending Orders",
-                path: "/dashboard/new-orders",
-                icon: <PackageOpen />,
-            },
-            {
-                label: "Processing Orders",
-                path: "/dashboard/process-orders",
-                icon: <Truck />,
-            },
-            {
-                label: "Completed Orders",
-                path: "/dashboard/complete-orders",
-                icon: <PackageCheck />,
-            },
-            {
-                label: "Refund Requests",
-                path: "/dashboard/refund-requests",
-                icon: <RotateCcw />,
-            },
-        ],
+        label: "Pending Orders",
+        path: "/dashboard/new-orders",
+        icon: <PackageOpen />,
     },
     {
-        label: "Product & Category Management",
-        subMenu: [
-            {
-                label: "Categories",
-                path: "/dashboard/categories-control",
-                icon: <Newspaper />,
-            },
-            {
-                label: "Products",
-                path: "/dashboard/products-control",
-                icon: <PackageSearch />,
-            },
-        ],
+        label: "Processing Orders",
+        path: "/dashboard/process-orders",
+        icon: <Truck />,
     },
     {
-        label: "User Management",
-        subMenu: [
-            {
-                label: "All Users",
-                path: "/dashboard/users-control",
-                icon: <UserCog />,
-            },
-            {
-                label: "Agents",
-                path: "/dashboard/agents-control",
-                icon: <UserShield />,
-            },
-            {
-                label: "Customer Support",
-                path: "/dashboard/customer-support",
-                icon: <Headset />,
-            },
-        ],
+        label: "Completed Orders",
+        path: "/dashboard/complete-orders",
+        icon: <PackageCheck />,
+    },
+    {
+        label: "Refund Requests",
+        path: "/dashboard/refund-requests",
+        icon: <RotateCcw />,
+    },
+    {
+        label: "Categories",
+        path: "/dashboard/categories-control",
+        icon: <Newspaper />,
+    },
+    {
+        label: "Products",
+        path: "/dashboard/products-control",
+        icon: <PackageSearch />,
+    },
+
+    {
+        label: "All Users",
+        path: "/dashboard/users-control",
+        icon: <UserCog />,
+    },
+    {
+        label: "Agents",
+        path: "/dashboard/agents-control",
+        icon: <UserShield />,
+    },
+    {
+        label: "Customer Support",
+        path: "/dashboard/customer-support",
+        icon: <Headset />,
     },
     {
         label: "Sales Reports",
