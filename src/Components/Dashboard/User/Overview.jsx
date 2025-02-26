@@ -1,197 +1,124 @@
-import { motion } from "framer-motion";
-import { Car, LifeBuoy, MessageCircle, Package, Star } from "lucide-react";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 
 const Overview = () => {
-  const [ordersCount, setOrdersCount] = useState(0);
-  const [ticketsCount, setTicketsCount] = useState(0);
-  const [reviewsCount, setReviewsCount] = useState(0);
-  const [servicesCount, setServicesCount] = useState(0);
+  const [overviewData, setOverviewData] = useState({
+    orders: 0,
+    wishlist: 0,
+    tickets: 0,
+    profileComplete: false,
+  });
+
   const axiosSecure = useAxiosSecure();
-  // Fetch all data at once when the component mounts
+
   useEffect(() => {
-    const fetchDashboardData = async () => {
+    // Fetching data from API
+    const fetchOverviewData = async () => {
       try {
-        // Make a single secure API call to fetch all the necessary data
-        const response = await axiosSecure.get("/api/dashboard/overview"); // Replace with your API endpoint
-
-        // Destructure the data from the API response
-        const { activeOrders, activeTickets, totalReviews, activeServices } =
-          response.data;
-
-        // Update the state with the data
-        setOrdersCount(activeOrders);
-        setTicketsCount(activeTickets);
-        setReviewsCount(totalReviews);
-        setServicesCount(activeServices);
+        const response = await axiosSecure.get("/user/overview"); // Example API endpoint
+        setOverviewData(response.data);
       } catch (error) {
-        console.error("Error fetching dashboard data:", error);
+        console.error("Error fetching overview data:", error);
       }
     };
 
-    fetchDashboardData();
-  }, []);
+    fetchOverviewData();
+  }, [axiosSecure]); // The dependency array ensures this runs once when the component mounts
 
   return (
-    <div className="p-6 space-y-8">
-      {/* Heading */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h2 className="text-3xl font-bold text-gray-800">
-          Your Dashboard Overview
-        </h2>
-        <p className="text-lg text-gray-500">
-          Stay on top of your orders, tickets, services, and reviews.
-        </p>
-      </motion.div>
+    <div className="dashboard-overview-container">
+      <div className="overview-header flex justify-between items-center py-4 px-6">
+        <h2 className="text-2xl font-bold text-white">Dashboard Overview</h2>
+      </div>
 
-      {/* KPIs Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Active Orders */}
+      <div className="overview-stats grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-6 py-4">
         <motion.div
+          className="stat-card bg-background rounded-lg shadow-lg p-4"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h3 className="text-sm text-gray-400">Orders</h3>
+          <h2 className="text-xl text-white font-semibold">{overviewData.orders}</h2>
+          <Link to="/dashboard/my-orders" className="text-baseColor hover:underline">
+            View Orders
+          </Link>
+        </motion.div>
+
+        <motion.div
+          className="stat-card bg-background rounded-lg shadow-lg p-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-white shadow-xl rounded-lg p-6 flex items-center justify-between space-x-4 hover:shadow-2xl transition duration-200 ease-in-out"
         >
-          <div className="bg-red-600 text-white p-4 rounded-full">
-            <Package size={30} />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold">Active Orders</h3>
-            <p className="text-gray-500">
-              You have {ordersCount} active orders.
-            </p>
-            <a
-              href="/dashboard/my-orders"
-              className="text-red-600 hover:text-red-500 font-semibold"
-            >
-              View Orders
-            </a>
-          </div>
+          <h3 className="text-sm text-gray-400">Wishlist</h3>
+          <h2 className="text-xl text-white font-semibold">{overviewData.wishlist}</h2>
+          <Link to="/dashboard/wishlist" className="text-baseColor hover:underline">
+            View Wishlist
+          </Link>
         </motion.div>
 
-        {/* Support Tickets */}
         <motion.div
+          className="stat-card bg-background rounded-lg shadow-lg p-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-white shadow-xl rounded-lg p-6 flex items-center justify-between space-x-4 hover:shadow-2xl transition duration-200 ease-in-out"
+          transition={{ duration: 0.7 }}
         >
-          <div className="bg-blue-600 text-white p-4 rounded-full">
-            <LifeBuoy size={30} />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold">Support Tickets</h3>
-            <p className="text-gray-500">
-              You have {ticketsCount} active support tickets.
-            </p>
-            <a
-              href="/dashboard/support-tickets"
-              className="text-blue-600 hover:text-blue-500 font-semibold"
-            >
-              View Tickets
-            </a>
-          </div>
-        </motion.div>
-
-        {/* Latest Reviews */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-white shadow-xl rounded-lg p-6 flex items-center justify-between space-x-4 hover:shadow-2xl transition duration-200 ease-in-out"
-        >
-          <div className="bg-yellow-600 text-white p-4 rounded-full">
-            <Star size={30} />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold">Latest Reviews</h3>
-            <p className="text-gray-500">
-              You have {reviewsCount} new reviews.
-            </p>
-            <a
-              href="/dashboard/reviews"
-              className="text-yellow-600 hover:text-yellow-500 font-semibold"
-            >
-              View Reviews
-            </a>
-          </div>
-        </motion.div>
-
-        {/* Active Services */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="bg-white shadow-xl rounded-lg p-6 flex items-center justify-between space-x-4 hover:shadow-2xl transition duration-200 ease-in-out"
-        >
-          <div className="bg-green-600 text-white p-4 rounded-full">
-            <Car size={30} />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold">Active Services</h3>
-            <p className="text-gray-500">
-              You have {servicesCount} active services.
-            </p>
-            <a
-              href="/dashboard/services"
-              className="text-green-600 hover:text-green-500 font-semibold"
-            >
-              View Services
-            </a>
-          </div>
+          <h3 className="text-sm text-gray-400">Support Tickets</h3>
+          <h2 className="text-xl text-white font-semibold">{overviewData.tickets}</h2>
+          <Link to="/dashboard/support-tickets" className="text-baseColor hover:underline">
+            View Tickets
+          </Link>
         </motion.div>
       </div>
 
-      {/* Real-Time Notifications/Updates */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1 }}
-        className="bg-white p-6 rounded-lg shadow-xl"
-      >
-        <h3 className="text-xl font-semibold text-gray-800 mb-4">
-          Real-Time Updates
-        </h3>
-        <div className="flex space-x-6">
-          <div className="bg-blue-50 p-4 rounded-lg flex items-center justify-between shadow-md w-1/3">
-            <MessageCircle size={25} className="text-blue-600" />
-            <div className="ml-2">
-              <p className="text-sm text-blue-600 font-semibold">New Message</p>
-              <p className="text-xs text-gray-500">
-                You have a new support message.
-              </p>
-            </div>
-          </div>
-          <div className="bg-yellow-50 p-4 rounded-lg flex items-center justify-between shadow-md w-1/3">
-            <Car size={25} className="text-yellow-600" />
-            <div className="ml-2">
-              <p className="text-sm text-yellow-600 font-semibold">
-                Service Update
-              </p>
-              <p className="text-xs text-gray-500">
-                Your car service is about to begin.
-              </p>
-            </div>
-          </div>
-          <div className="bg-green-50 p-4 rounded-lg flex items-center justify-between shadow-md w-1/3">
-            <Star size={25} className="text-green-600" />
-            <div className="ml-2">
-              <p className="text-sm text-green-600 font-semibold">
-                Review Received
-              </p>
-              <p className="text-xs text-gray-500">
-                You received a 5-star review for your service.
-              </p>
-            </div>
-          </div>
+      <div className="recent-activity bg-background2 rounded-lg shadow-lg p-6 mt-6">
+        <h3 className="text-lg font-semibold text-white mb-4">Recent Activity</h3>
+        <ul>
+          {/* Display a list of recent activity */}
+          <motion.li
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="activity-item text-white mb-2"
+          >
+            <span className="text-baseColor">Order #12345</span> - Completed on Feb 25
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="activity-item text-white mb-2"
+          >
+            <span className="text-baseColor">Wishlist Item</span> - Added on Feb 24
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="activity-item text-white mb-2"
+          >
+            <span className="text-baseColor">Support Ticket #345</span> - Opened on Feb 23
+          </motion.li>
+        </ul>
+      </div>
+
+      <div className="profile-completion mt-6 p-4 bg-background rounded-lg shadow-lg">
+        <h3 className="text-sm text-gray-400">Profile Completion</h3>
+        <div className="progress-bar mt-2 bg-gray-200 rounded-lg h-2.5 w-full">
+          <div
+            className="progress-fill bg-baseColor h-full"
+            style={{ width: overviewData.profileComplete ? "100%" : "60%" }}
+          ></div>
         </div>
-      </motion.div>
+        <p className="mt-2 text-white text-sm">
+          {overviewData.profileComplete
+            ? "Your profile is complete"
+            : "Complete your profile for full access"}
+        </p>
+      </div>
     </div>
   );
 };
