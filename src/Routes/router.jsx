@@ -99,7 +99,7 @@ const router = createBrowserRouter([
         element:<div>Settings</div>
       },
       {
-        
+        path
       }
 
 
