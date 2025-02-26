@@ -1,10 +1,9 @@
 // import useAuth from "../../../Hooks/useAuth";
 import { motion } from "framer-motion";
 import useRole from "../../../Hooks/useRole";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 // import { toast } from "react-toastify";
 import PropTypes from "prop-types";
-import headerLogo from "../../../assets/logo/ninCars.svg";
 import {
   SquareChartGantt, BookA, LifeBuoy, Heart, User,
   ClipboardList, Truck, PackageCheck, MessagesSquare, Wallet,
@@ -165,15 +164,7 @@ const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
   return (
     <>
       <nav id="sidebar" className={`lg:min-w-[250px] w-max max-lg:min-w-8`}>
-        <Link to="/" className="flex justify-center items-center gap-2 py-4">
-          <div className="flex justify-center items-center w-[150px] ">
-            <img
-              src={headerLogo}
-              alt=""
-              className="w-full h-fit object-center"
-            />
-          </div>
-        </Link>
+        
         <div
           id="sidebar-collapse-menu"
           style={{ height: "calc(100vh - 72px)" }}
