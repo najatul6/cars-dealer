@@ -61,7 +61,22 @@ const router = createBrowserRouter([
       {
         path:"profile-settings",
         element:<div>Profile Settings</div>
+      },
+
+      // Agent Pages
+      {
+        path:"assigned-orders",
+        element:<div>Assigned Orders</div>
+      },
+      {
+        path:"agent-process-orders",
+        element:<div>Processing Orders</div>
+      },
+      {
+        path:"agent-complete-orders",
+        element:<div>Completed Orders</div>
       }
+
     ]
   },
   {
