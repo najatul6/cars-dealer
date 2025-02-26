@@ -103,9 +103,19 @@ const router = createBrowserRouter([
         element:<div>Refund Requests</div>
       },
       {
-        path:"refund-requests",
-        element:<div>Refund Requests</div>
-      }
+        path:"categories-control",
+        element:<div>Categories Control</div>
+      },
+      {
+        path:"products-control",
+        element:<div>Products Control</div>
+      },
+      {
+        path:"categories-control",
+      },
+      {
+        path:"categories-control",
+      },
     
 
 
