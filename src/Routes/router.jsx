@@ -8,6 +8,7 @@ import AboutPage from "../pages/AboutPage/AboutPage";
 import Dashboard from "../Layout/Dashboard";
 import PrivateRoute from "./PrivateRoute";
 import MainOverview from "../pages/Dashboard/MainOverview";
+import Orders from "../pages/Dashboard/User/Orders";
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,11 @@ const router = createBrowserRouter([
       },
       {
         path:"my-orders",
-        element:<div>My Orders</div>
+        element:<Orders/>
+      },
+      {
+        path:"support-tickets",
+        element:<div>Support Tickets</div>
       }
     ]
   },
