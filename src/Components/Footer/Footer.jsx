@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import useRole from "../../Hooks/useRole";
 
 const Footer = () => {
+  const [userRole]=useRole();
+  console.log(userRole);
   return (
     <div>
       <footer className="footer bg-neutral text-neutral-content p-10">
