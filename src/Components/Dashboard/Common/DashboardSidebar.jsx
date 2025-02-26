@@ -1,8 +1,8 @@
-import useAuth from "../../../Hooks/useAuth";
+// import useAuth from "../../../Hooks/useAuth";
 import { motion } from "framer-motion";
 import useRole from "../../../Hooks/useRole";
 import { Link, NavLink } from "react-router-dom";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 import headerLogo from "../../../assets/logo/ninCars.svg";
 import {
@@ -13,15 +13,16 @@ import {
 } from "lucide-react";
 
 const DashboardSidebar = ({ setSidebarOpen, sidebarOpen }) => {
-  const { logOut } = useAuth();
+  // const { logOut } = useAuth();
   const [userRole] = useRole();
-  const handleLogout = () => {
-    toast.promise(logOut(), {
-      pending: "Logging out...",
-      success: "Logged out successfully",
-      error: "Error logging out",
-    });
-  };
+  // TODO: Add a toast notification for logging out
+  // const handleLogout = () => {
+  //   toast.promise(logOut(), {
+  //     pending: "Logging out...",
+  //     success: "Logged out successfully",
+  //     error: "Error logging out",
+  //   });
+  // };
 
   const userNav = [
     {
