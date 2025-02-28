@@ -10,6 +10,8 @@ import PrivateRoute from "./PrivateRoute";
 import MainOverview from "../pages/Dashboard/MainOverview";
 import Orders from "../pages/Dashboard/User/Orders";
 import TermCondition from "../pages/Term-Condition/TermCondition";
+import AgentRoute from "./AgentRoute";
+import AssignedOrders from "../pages/Dashboard/Agent/AssignedOrders";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:"/contactUs",
         element:<div>Contact Us</div>
+      },
+      {
+        path:'un-auth',
+        element:
       }
      
     ],
@@ -67,7 +73,9 @@ const router = createBrowserRouter([
       // Agent Pages
       {
         path:"assigned-orders",
-        element:<div>Assigned Orders</div>
+        element:<AgentRoute>
+          <AssignedOrders/>
+        </AgentRoute>
       },
       {
         path:"agent-process-orders",
