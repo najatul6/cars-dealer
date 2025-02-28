@@ -19,6 +19,7 @@ import ProfileSetting from "../pages/Dashboard/ProfileSetting";
 import ProceessOrders from "../pages/Dashboard/Agent/ProceessOrders";
 import CompleteOrders from "../pages/Dashboard/Agent/CompleteOrders";
 import CustomerInquiries from "../pages/Dashboard/Agent/customerInquiries";
+import Earnings from "../pages/Dashboard/Agent/Earnings";
 
 const router = createBrowserRouter([
   {
@@ -104,7 +105,9 @@ const router = createBrowserRouter([
       },
       {
         path:"earnings",
-        element:<div>Earnings & Payouts</div>
+        element:<AgentRoute>
+        <Earnings/>
+      </AgentRoute>
       },
 
       // Admin Pages
