@@ -51,9 +51,7 @@ const Header = () => {
               />
             </svg>
             <Link to="tel:+8801773827414">
-              <h2
-                className="lg:font-bold text-xs lg:text-lg"
-              >
+              <h2 className="lg:font-bold text-xs lg:text-lg">
                 +880 1738-27414
               </h2>
               <h3>toll free</h3>
@@ -62,11 +60,11 @@ const Header = () => {
         </div>
 
         {/* Button */}
-          <Link to="/dashboard/overview">
-        <div className="btn btn-outline text-light-blue hover:bg-Dark-blue hover:text-white uppercase font-bold">
-          see your car
-        </div>
-          </Link>
+        <Link to="/dashboard/overview">
+          <div className="btn btn-outline text-light-blue hover:bg-Dark-blue hover:text-white uppercase font-bold">
+            see your car
+          </div>
+        </Link>
       </div>
     </div>
   );
