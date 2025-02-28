@@ -9,6 +9,7 @@ import Dashboard from "../Layout/Dashboard";
 import PrivateRoute from "./PrivateRoute";
 import MainOverview from "../pages/Dashboard/MainOverview";
 import Orders from "../pages/Dashboard/User/Orders";
+import TermCondition from "../pages/Term-Condition/TermCondition";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/term-condition",
-        element:<div>TERM & CONDITION</div>
+        element:<TermCondition/>
       },
       {
         path:"/contactUs",
