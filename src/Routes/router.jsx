@@ -16,6 +16,7 @@ import UnAuth from "../pages/Auth/UnAuth";
 import SupportTickets from "../pages/Dashboard/User/SupportTickets";
 import WishList from "../pages/Dashboard/User/WishList";
 import ProfileSetting from "../pages/Dashboard/ProfileSetting";
+import ProceessOrders from "../pages/Dashboard/Agent/ProceessOrders";
 
 const router = createBrowserRouter([
   {
@@ -83,7 +84,9 @@ const router = createBrowserRouter([
       },
       {
         path:"agent-process-orders",
-        element:<div>Processing Orders</div>
+        element:<AgentRoute>
+        <ProceessOrders/>
+      </AgentRoute>
       },
       {
         path:"agent-complete-orders",
