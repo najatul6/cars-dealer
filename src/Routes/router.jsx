@@ -15,6 +15,7 @@ import AssignedOrders from "../pages/Dashboard/Agent/AssignedOrders";
 import UnAuth from "../pages/Auth/UnAuth";
 import SupportTickets from "../pages/Dashboard/User/SupportTickets";
 import WishList from "../pages/Dashboard/User/WishList";
+import ProfileSetting from "../pages/Dashboard/ProfileSetting";
 
 const router = createBrowserRouter([
   {
@@ -70,7 +71,7 @@ const router = createBrowserRouter([
       },
       {
         path:"profile-settings",
-        element:<div>Profile Settings</div>
+        element:<ProfileSetting/>
       },
 
       // Agent Pages
