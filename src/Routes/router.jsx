@@ -18,6 +18,7 @@ import WishList from "../pages/Dashboard/User/WishList";
 import ProfileSetting from "../pages/Dashboard/ProfileSetting";
 import ProceessOrders from "../pages/Dashboard/Agent/ProceessOrders";
 import CompleteOrders from "../pages/Dashboard/Agent/CompleteOrders";
+import CustomerInquiries from "../pages/Dashboard/Agent/customerInquiries";
 
 const router = createBrowserRouter([
   {
@@ -97,7 +98,9 @@ const router = createBrowserRouter([
       },
       {
         path:"customer-inquiries",
-        element:<div>Customer Inquiries</div>
+        element:<AgentRoute>
+        <CustomerInquiries/>
+      </AgentRoute>
       },
       {
         path:"earnings",
