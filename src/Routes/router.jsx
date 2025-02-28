@@ -13,6 +13,7 @@ import TermCondition from "../pages/Term-Condition/TermCondition";
 import AgentRoute from "./AgentRoute";
 import AssignedOrders from "../pages/Dashboard/Agent/AssignedOrders";
 import UnAuth from "../pages/Auth/UnAuth";
+import SupportTickets from "../pages/Dashboard/User/SupportTickets";
 
 const router = createBrowserRouter([
   {
@@ -60,7 +61,7 @@ const router = createBrowserRouter([
       },
       {
         path:"support-tickets",
-        element:<div>Support Tickets</div>
+        element:<SupportTickets/>
       },
       {
         path:"wishlist",
