@@ -14,6 +14,7 @@ import AgentRoute from "./AgentRoute";
 import AssignedOrders from "../pages/Dashboard/Agent/AssignedOrders";
 import UnAuth from "../pages/Auth/UnAuth";
 import SupportTickets from "../pages/Dashboard/User/SupportTickets";
+import WishList from "../pages/Dashboard/User/WishList";
 
 const router = createBrowserRouter([
   {
@@ -65,7 +66,7 @@ const router = createBrowserRouter([
       },
       {
         path:"wishlist",
-        element:<div>Wishlist</div>
+        element:<WishList/>
       },
       {
         path:"profile-settings",
