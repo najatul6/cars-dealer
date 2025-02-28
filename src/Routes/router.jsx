@@ -12,6 +12,7 @@ import Orders from "../pages/Dashboard/User/Orders";
 import TermCondition from "../pages/Term-Condition/TermCondition";
 import AgentRoute from "./AgentRoute";
 import AssignedOrders from "../pages/Dashboard/Agent/AssignedOrders";
+import UnAuth from "../pages/Auth/UnAuth";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path:'un-auth',
-        element:
+        element:<UnAuth/>
       }
      
     ],
