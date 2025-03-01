@@ -121,7 +121,9 @@ const router = createBrowserRouter([
       },
       {
         path:"process-orders",
-        element:<div>Processing Orders</div>
+        element:<AdminRoute>
+          <Processcing/>
+        </AdminRoute>
       },
       {
         path:"complete-orders",
