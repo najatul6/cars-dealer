@@ -38,156 +38,173 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path:"/about",
-        element:<AboutPage/>
+        path: "/about",
+        element: <AboutPage />,
       },
       {
-        path:"/term-condition",
-        element:<TermCondition/>
+        path: "/term-condition",
+        element: <TermCondition />,
       },
       {
-        path:"/contactUs",
-        element:<div>Contact Us</div>
+        path: "/contactUs",
+        element: <div>Contact Us</div>,
       },
       {
-        path:'un-auth',
-        element:<UnAuth/>
-      }
-     
+        path: "un-auth",
+        element: <UnAuth />,
+      },
     ],
   },
   {
-    path:"/dashboard",
-    element:<PrivateRoute>
-      <Dashboard/>
-    </PrivateRoute>,
-    children:[
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard />
+      </PrivateRoute>
+    ),
+    children: [
       {
-
-        path:"overview",
-        element:<MainOverview/>
+        path: "overview",
+        element: <MainOverview />,
       },
       {
-        path:"my-orders",
-        element:<Orders/>
+        path: "my-orders",
+        element: <Orders />,
       },
       {
-        path:"support-tickets",
-        element:<SupportTickets/>
+        path: "support-tickets",
+        element: <SupportTickets />,
       },
       {
-        path:"wishlist",
-        element:<WishList/>
+        path: "wishlist",
+        element: <WishList />,
       },
       {
-        path:"profile-settings",
-        element:<ProfileSetting/>
+        path: "profile-settings",
+        element: <ProfileSetting />,
       },
 
       // Agent Pages
       {
-        path:"assigned-orders",
-        element:<AgentRoute>
-          <AssignedOrders/>
-        </AgentRoute>
+        path: "assigned-orders",
+        element: (
+          <AgentRoute>
+            <AssignedOrders />
+          </AgentRoute>
+        ),
       },
       {
-        path:"agent-process-orders",
-        element:<AgentRoute>
-        <ProceessOrders/>
-      </AgentRoute>
+        path: "agent-process-orders",
+        element: (
+          <AgentRoute>
+            <ProceessOrders />
+          </AgentRoute>
+        ),
       },
       {
-        path:"agent-complete-orders",
-        element:<AgentRoute>
-        <CompleteOrders/>
-      </AgentRoute>
+        path: "agent-complete-orders",
+        element: (
+          <AgentRoute>
+            <CompleteOrders />
+          </AgentRoute>
+        ),
       },
       {
-        path:"customer-inquiries",
-        element:<AgentRoute>
-        <CustomerInquiries/>
-      </AgentRoute>
+        path: "customer-inquiries",
+        element: (
+          <AgentRoute>
+            <CustomerInquiries />
+          </AgentRoute>
+        ),
       },
       {
-        path:"earnings",
-        element:<AgentRoute>
-        <Earnings/>
-      </AgentRoute>
+        path: "earnings",
+        element: (
+          <AgentRoute>
+            <Earnings />
+          </AgentRoute>
+        ),
       },
 
       // Admin Pages
       {
-        path:"new-orders",
-        element:<AdminRoute>
-          <NewOrders/>
+        path: "new-orders",
+        element: (
+          <AdminRoute>
+            <NewOrders />
           </AdminRoute>
+        ),
       },
       {
-        path:"process-orders",
-        element:<AdminRoute>
-          <ProcesscingOrder/>
-        </AdminRoute>
+        path: "process-orders",
+        element: (
+          <AdminRoute>
+            <ProcesscingOrder />
+          </AdminRoute>
+        ),
       },
       {
-        path:"complete-orders",
-        element:<AdminRoute>
-        <CompletedOrders/>
-      </AdminRoute>
+        path: "complete-orders",
+        element: (
+          <AdminRoute>
+            <CompletedOrders />
+          </AdminRoute>
+        ),
       },
       {
-        path:"refund-requests",
-        element:<div>Refund Requests</div>
+        path: "refund-requests",
+        element: <div>Refund Requests</div>,
       },
       {
-        path:"categories-control",
-        element:<AdminRoute>
-        <CategoryControl/>
-      </AdminRoute>
+        path: "categories-control",
+        element: (
+          <AdminRoute>
+            <CategoryControl />
+          </AdminRoute>
+        ),
       },
       {
-        path:"products-control",
-        element:<AdminRoute>
-        <ProductControl/>
-      </AdminRoute>
+        path: "products-control",
+        element: (
+          <AdminRoute>
+            <ProductControl />
+          </AdminRoute>
+        ),
       },
       {
-        path:"users-control",
-        element:<div>Users Control</div>
+        path: "users-control",
+        element: <div>Users Control</div>,
       },
       {
-        path:"agents-control",
-        element:<div>Agents Control</div>
+        path: "agents-control",
+        element: <div>Agents Control</div>,
       },
       {
-        path:"customer-support",
-        element:<div>Customer Support</div>
+        path: "customer-support",
+        element: <div>Customer Support</div>,
       },
       {
-        path:"reports",
-        element:<div>Reports</div>
+        path: "reports",
+        element: <div>Reports</div>,
       },
       {
-        path:"transactions",
-        element:<div>Transactions</div>
+        path: "transactions",
+        element: <div>Transactions</div>,
       },
       {
-        path:"payouts",
-        element:<div>Payouts</div>
+        path: "payouts",
+        element: <div>Payouts</div>,
       },
-    
-
-
-    ]
+    ],
   },
   {
-    path:"/signin",
-    element:<LogIn/>
+    path: "/signin",
+    element: <LogIn />,
   },
   {
-    path:"/signup",
-    element:<Registration/>
-  }
+    path: "/signup",
+    element: <Registration />,
+  },
 ]);
 
 export default router;
