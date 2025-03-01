@@ -22,6 +22,7 @@ import CustomerInquiries from "../pages/Dashboard/Agent/customerInquiries";
 import Earnings from "../pages/Dashboard/Agent/Earnings";
 import AdminRoute from "./AdminRoute";
 import NewOrders from "../pages/Dashboard/Admin/NewOrders";
+import ProcesscingOrder from "../pages/Dashboard/Admin/ProcesscingOrder";
 
 const router = createBrowserRouter([
   {
@@ -122,12 +123,14 @@ const router = createBrowserRouter([
       {
         path:"process-orders",
         element:<AdminRoute>
-          <Processcing/>
+          <ProcesscingOrder/>
         </AdminRoute>
       },
       {
         path:"complete-orders",
-        element:<div>Completed Orders</div>
+        element:<AdminRoute>
+        <ProcesscingOrders/>
+      </AdminRoute>
       },
       {
         path:"refund-requests",
