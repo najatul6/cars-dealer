@@ -24,6 +24,7 @@ import AdminRoute from "./AdminRoute";
 import NewOrders from "../pages/Dashboard/Admin/NewOrders";
 import ProcesscingOrder from "../pages/Dashboard/Admin/ProcesscingOrder";
 import CompletedOrders from "../pages/Dashboard/Admin/CompletedOrders";
+import CategoryControl from "../pages/Dashboard/Admin/CategoryControl";
 
 const router = createBrowserRouter([
   {
@@ -139,7 +140,9 @@ const router = createBrowserRouter([
       },
       {
         path:"categories-control",
-        element:<div>Categories Control</div>
+        element:<AdminRoute>
+        <CategoryControl/>
+      </AdminRoute>
       },
       {
         path:"products-control",
