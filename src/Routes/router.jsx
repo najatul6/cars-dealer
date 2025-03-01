@@ -23,6 +23,7 @@ import Earnings from "../pages/Dashboard/Agent/Earnings";
 import AdminRoute from "./AdminRoute";
 import NewOrders from "../pages/Dashboard/Admin/NewOrders";
 import ProcesscingOrder from "../pages/Dashboard/Admin/ProcesscingOrder";
+import CompletedOrders from "../pages/Dashboard/Admin/CompletedOrders";
 
 const router = createBrowserRouter([
   {
@@ -129,7 +130,7 @@ const router = createBrowserRouter([
       {
         path:"complete-orders",
         element:<AdminRoute>
-        <ProcesscingOrders/>
+        <CompletedOrders/>
       </AdminRoute>
       },
       {
