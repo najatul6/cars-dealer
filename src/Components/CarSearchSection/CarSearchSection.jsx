@@ -5,7 +5,7 @@ const CarSearchSection = () => {
   return (
     <div className="p-5">
       <h1 className="text-2xl  lg:text-3xl text-white font-bold text-center pb-5">
-        Lets Find your car.
+      Let&apos;s Find your car.
       </h1>
       <div className="flex justify-center items-center gap-6 py-5">
         {carsIcons?.map((item) => {
