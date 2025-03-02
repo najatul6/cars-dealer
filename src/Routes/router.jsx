@@ -56,6 +56,10 @@ const router = createBrowserRouter([
         element: <Inventory />,
       },
       {
+        path:"services",
+        element:
+      },
+      {
         path: "un-auth",
         element: <UnAuth />,
       },
