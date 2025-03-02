@@ -26,6 +26,7 @@ import ProcesscingOrder from "../pages/Dashboard/Admin/ProcesscingOrder";
 import CompletedOrders from "../pages/Dashboard/Admin/CompletedOrders";
 import CategoryControl from "../pages/Dashboard/Admin/CategoryControl";
 import ProductControl from "../pages/Dashboard/Admin/ProductControl";
+import ContactUs from "../pages/Contact/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contactUs",
-        element: <div>Contact Us</div>,
+        element: <ContactUs/>,
       },
       {
         path: "un-auth",
@@ -169,27 +170,39 @@ const router = createBrowserRouter([
       },
       {
         path: "users-control",
-        element: <div>Users Control</div>,
+        element: <AdminRoute>
+        <ProductControl />
+      </AdminRoute>,
       },
       {
         path: "agents-control",
-        element: <div>Agents Control</div>,
+        element: <AdminRoute>
+        <ProductControl />
+      </AdminRoute>,
       },
       {
         path: "customer-support",
-        element: <div>Customer Support</div>,
+        element: <AdminRoute>
+        <ProductControl />
+      </AdminRoute>,
       },
       {
         path: "reports",
-        element: <div>Reports</div>,
+        element: <AdminRoute>
+        <ProductControl />
+      </AdminRoute>,
       },
       {
         path: "transactions",
-        element: <div>Transactions</div>,
+        element: <AdminRoute>
+        <ProductControl />
+      </AdminRoute>,
       },
       {
         path: "payouts",
-        element: <div>Payouts</div>,
+        element: <AdminRoute>
+        <ProductControl />
+      </AdminRoute>,
       },
     ],
   },
