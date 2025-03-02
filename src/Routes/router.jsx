@@ -18,7 +18,6 @@ import WishList from "../pages/Dashboard/User/WishList";
 import ProfileSetting from "../pages/Dashboard/ProfileSetting";
 import ProceessOrders from "../pages/Dashboard/Agent/ProceessOrders";
 import CompleteOrders from "../pages/Dashboard/Agent/CompleteOrders";
-import CustomerInquiries from "../pages/Dashboard/Agent/customerInquiries";
 import Earnings from "../pages/Dashboard/Agent/Earnings";
 import AdminRoute from "./AdminRoute";
 import NewOrders from "../pages/Dashboard/Admin/NewOrders";
@@ -27,6 +26,7 @@ import CompletedOrders from "../pages/Dashboard/Admin/CompletedOrders";
 import CategoryControl from "../pages/Dashboard/Admin/CategoryControl";
 import ProductControl from "../pages/Dashboard/Admin/ProductControl";
 import ContactUs from "../pages/Contact/ContactUs";
+import CustomerInquiries from "../pages/Dashboard/Agent/customerInquiries";
 
 const router = createBrowserRouter([
   {
@@ -114,7 +114,7 @@ const router = createBrowserRouter([
         path: "customer-inquiries",
         element: (
           <AgentRoute>
-            <CustomerInquiries />
+            <CustomerInquiries/>
           </AgentRoute>
         ),
       },
