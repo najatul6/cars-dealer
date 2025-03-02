@@ -26,7 +26,7 @@ import CompletedOrders from "../pages/Dashboard/Admin/CompletedOrders";
 import CategoryControl from "../pages/Dashboard/Admin/CategoryControl";
 import ProductControl from "../pages/Dashboard/Admin/ProductControl";
 import ContactUs from "../pages/Contact/ContactUs";
-import CustomerInquiries from "../pages/Dashboard/Agent/customerInquiries";
+import CustomerInquiries from "../pages/Dashboard/Agent/CustomerInquiries";
 
 const router = createBrowserRouter([
   {
