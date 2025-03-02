@@ -23,33 +23,33 @@ const fadeInUp = {
 const Home = () => {
   return (
     <div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="relative mb-72">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="relative mb-72">
         <Slider />
         <div className="bg-Dark-blue mx-auto w-11/12 absolute -bottom-[35%] left-0 right-0 z-10 shadow-2xl">
           <CarSearchSection />
         </div>
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp}>
         <SeriesSection />
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp}>
         <SecondSlider />
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="px-5 py-5">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="px-5 py-5">
         <Title text={"services"} />
         <ServiceSection />
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="py-5 bg-Dark-blue px-5">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="py-5 bg-Dark-blue px-5">
         <Title text={"products"} />
         <ProductSection />
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="py-5 px-5">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="py-5 px-5">
         <Title text={"our team"} />
         <OurTeam />
       </motion.div>
       <motion.div
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
         variants={fadeInUp}
         className="py-5"
       >
@@ -62,12 +62,12 @@ const Home = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <motion.h2 initial="hidden" animate="visible" variants={fadeInUp} className="text-6xl text-light-blue font-bold">
-            Let&asop;s find your dream car.
+          <motion.h2 initial="hidden" whileInView="visible" variants={fadeInUp} className="text-6xl text-light-blue font-bold">
+            Let &apos;s find your dream car.
           </motion.h2>
           <motion.button
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
             variants={fadeInUp}
             whileHover={{ scale: 1.1 }}
             className="flex justify-center items-center gap-5 bg-Dark-blue px-6 py-5 text-white -skew-x-[25deg]"
@@ -76,20 +76,20 @@ const Home = () => {
           </motion.button>
         </div>
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="py-5 px-5">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="py-5 px-5">
         <ShopSection />
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="py-5 px-5">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="py-5 px-5">
         <CardWizardSection />
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="py-5 px-5">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="py-5 px-5">
         <Title text={"Finance"} />
         <FinanceSection />
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="py-5 px-5">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="py-5 px-5">
         <TrustedSection />
       </motion.div>
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="py-5 px-5">
+      <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} className="py-5 px-5">
         <Title text={"Latest Reviews"} />
         <ReviewSection />
       </motion.div>
