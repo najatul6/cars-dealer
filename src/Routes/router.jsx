@@ -27,6 +27,7 @@ import CategoryControl from "../pages/Dashboard/Admin/CategoryControl";
 import ProductControl from "../pages/Dashboard/Admin/ProductControl";
 import ContactUs from "../pages/Contact/ContactUs";
 import CustomerInquiries from "../pages/Dashboard/Agent/CustomerInquiries";
+import Inventory from "../pages/Inventory/Inventory";
 
 const router = createBrowserRouter([
   {
@@ -39,16 +40,20 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <AboutPage />,
       },
       {
-        path: "/term-condition",
+        path: "term-condition",
         element: <TermCondition />,
       },
       {
-        path: "/contactUs",
-        element: <ContactUs/>,
+        path: "contactUs",
+        element: <ContactUs />,
+      },
+      {
+        path: "inventory",
+        element: <Inventory />,
       },
       {
         path: "un-auth",
@@ -114,7 +119,7 @@ const router = createBrowserRouter([
         path: "customer-inquiries",
         element: (
           <AgentRoute>
-            <CustomerInquiries/>
+            <CustomerInquiries />
           </AgentRoute>
         ),
       },
@@ -170,39 +175,51 @@ const router = createBrowserRouter([
       },
       {
         path: "users-control",
-        element: <AdminRoute>
-        <ProductControl />
-      </AdminRoute>,
+        element: (
+          <AdminRoute>
+            <ProductControl />
+          </AdminRoute>
+        ),
       },
       {
         path: "agents-control",
-        element: <AdminRoute>
-        <ProductControl />
-      </AdminRoute>,
+        element: (
+          <AdminRoute>
+            <ProductControl />
+          </AdminRoute>
+        ),
       },
       {
         path: "customer-support",
-        element: <AdminRoute>
-        <ProductControl />
-      </AdminRoute>,
+        element: (
+          <AdminRoute>
+            <ProductControl />
+          </AdminRoute>
+        ),
       },
       {
         path: "reports",
-        element: <AdminRoute>
-        <ProductControl />
-      </AdminRoute>,
+        element: (
+          <AdminRoute>
+            <ProductControl />
+          </AdminRoute>
+        ),
       },
       {
         path: "transactions",
-        element: <AdminRoute>
-        <ProductControl />
-      </AdminRoute>,
+        element: (
+          <AdminRoute>
+            <ProductControl />
+          </AdminRoute>
+        ),
       },
       {
         path: "payouts",
-        element: <AdminRoute>
-        <ProductControl />
-      </AdminRoute>,
+        element: (
+          <AdminRoute>
+            <ProductControl />
+          </AdminRoute>
+        ),
       },
     ],
   },
