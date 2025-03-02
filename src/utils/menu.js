@@ -27,8 +27,8 @@ export const navLinks = [
       route: "/shop",
     },
     {
-      label: "Contact",
-      route: "/contact",
+      label: "Contact Us",
+      route: "/contactUs",
     }
   ];
 
