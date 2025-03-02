@@ -152,10 +152,6 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "refund-requests",
-        element: <div>Refund Requests</div>,
-      },
-      {
         path: "categories-control",
         element: (
           <AdminRoute>
