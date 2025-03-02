@@ -29,6 +29,7 @@ import ContactUs from "../pages/Contact/ContactUs";
 import CustomerInquiries from "../pages/Dashboard/Agent/CustomerInquiries";
 import Inventory from "../pages/Inventory/Inventory";
 import Services from "../pages/Services/Services";
+import Newsroom from "../pages/Newsroom/Newsroom";
 
 const router = createBrowserRouter([
   {
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
       },
       {
         path:"newsroom",
-        element:<Services/>
+        element:<Newsroom/>
       },
       {
         path: "un-auth",
