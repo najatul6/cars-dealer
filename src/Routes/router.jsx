@@ -30,6 +30,7 @@ import CustomerInquiries from "../pages/Dashboard/Agent/CustomerInquiries";
 import Inventory from "../pages/Inventory/Inventory";
 import Services from "../pages/Services/Services";
 import Newsroom from "../pages/Newsroom/Newsroom";
+import Shop from "../pages/Shop/Shop";
 
 const router = createBrowserRouter([
   {
@@ -67,7 +68,7 @@ const router = createBrowserRouter([
       },
       {
         path:"shop",
-        element:<Newsroom/>
+        element:<Shop/>
       },
       {
         path: "un-auth",
