@@ -1,7 +1,7 @@
 
 const Shop = () => {
   return (
-    <div>Shop</div>
+    <div className="flex justify-center items-center text-center min-h-screen text-7xl">Shop</div>
   )
 }
 
