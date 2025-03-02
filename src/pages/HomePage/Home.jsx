@@ -17,7 +17,7 @@ import ReviewSection from "../../Components/ReviewSection/ReviewSection";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 const Home = () => {
@@ -63,7 +63,7 @@ const Home = () => {
           }}
         >
           <motion.h2 initial="hidden" whileInView="visible" variants={fadeInUp} className="text-6xl text-light-blue font-bold">
-            Let &apos;s find your dream car.
+          <span>Let&apos;s2 find your dream car.</span>
           </motion.h2>
           <motion.button
             initial="hidden"
