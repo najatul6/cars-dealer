@@ -61,6 +61,10 @@ const router = createBrowserRouter([
         element:<Services/>
       },
       {
+        path:"newsroom",
+        element:<Services/>
+      },
+      {
         path: "un-auth",
         element: <UnAuth />,
       },
