@@ -63,7 +63,7 @@ const Home = () => {
           }}
         >
           <motion.h2 initial="hidden" whileInView="visible" variants={fadeInUp} className="text-6xl text-light-blue font-bold">
-          <span>Let&apos;s2 find your dream car.</span>
+          <span>Let&apos;s find your dream car.</span>
           </motion.h2>
           <motion.button
             initial="hidden"
