@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 const WishList = () => {
   const [cart, refetch, isLoading] = useCart();
   const axiosSecure = useAxiosSecure();
-
+console.log(cart);
   // Remove item from wishlist
   const handleRemove = async (id) => {
     try {
@@ -21,17 +21,17 @@ const WishList = () => {
     }
   };
 
+  console.log(cart?.length);
   return (
     <div className="p-6 w-full">
       <h2 className="text-2xl font-bold text-white mb-5">My Wishlist</h2>
-
-      {isLoading ? (
+      {/* {isLoading ? (
         <p className="text-gray-400 text-center">Loading wishlist...</p>
-      ) : cart?.length === 0 ? (
+      ) : cart.length === 0 ? (
         <p className="text-gray-400 text-center">Your wishlist is empty.</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {cart?.map((item, index) => (
+          {cart.map((item, index) => (
             <motion.div
               key={item._id}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -58,7 +58,7 @@ const WishList = () => {
             </motion.div>
           ))}
         </div>
-      )}
+      )} */}
     </div>
   );
 };
