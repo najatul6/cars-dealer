@@ -3,7 +3,7 @@ import useAxiosPublic from "./useAxiosPublic";
 
 const useCategory = () => {
     const axiosPublic = useAxiosPublic();
-    const { data: categories=[], isLoading,refetch } = useQuery({
+    const { data: categories=[ ], isLoading,refetch } = useQuery({
       queryKey: ["categories"],
       queryFn: async () => {
         const res = await axiosPublic.get(`/category`);

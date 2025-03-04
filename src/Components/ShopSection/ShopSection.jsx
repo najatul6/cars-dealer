@@ -1,13 +1,14 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 // import "react-tabs/style/react-tabs.css";
-import { categories } from "../../utils/categories";
 import { shopProducts } from "../../utils/shopProducts";
 import ShopTab from "./ShopTab";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import useCategory from "../../Hooks/useCategory";
 
 const ShopSection = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const [categories] = useCategory();
   const handleTabClick = (index) => {
     setActiveTabIndex(index);
   };
