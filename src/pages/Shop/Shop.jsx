@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
-import { Helmet } from "react-helmet-async";
 import useShopItems from "../../Hooks/useShopItems";
 import ShopTab from "../../Components/ShopSection/ShopTab";
 import ProductCardSkeleton from "../../Components/shared/ProductCardSkeleton/ProductCardSkeleton";
