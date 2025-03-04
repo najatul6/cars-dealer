@@ -33,7 +33,7 @@ const ShopSection = () => {
         <TabList className="flex space-x-4 justify-center">
           {categories?.map((item,index) => (
             <Tab
-              key={item?.id}
+              key={item?._id}
               className={`px-4 py-2 cursor-pointer transition-colors duration-300 border-b-0 ${
                 activeTabIndex === index
                   ? "border-2 border-b-0 rounded-t-xl text-cyan-500 "
