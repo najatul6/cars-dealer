@@ -6,7 +6,7 @@ const useShopItems = () => {
   const { data: shopItems=[], isLoading,refetch } = useQuery({
     queryKey: ["shopItems"],
     queryFn: async () => {
-      const res = await axiosPublic.get(`/products`);
+      const res = await axiosPublic.get(`/shopItems`);
       return res.data;
     },
   });
