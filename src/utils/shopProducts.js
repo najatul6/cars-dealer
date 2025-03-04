@@ -1,8 +1,7 @@
 export const shopProducts = [
   {
-    id: "prod_001",
     name: "Toyota Camry",
-    price: 24000,
+    price:" 24000",
     rating: 4.5,
     category: "sedan",
     description:
@@ -33,9 +32,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_002",
     name: "Honda Civic",
-    price: 22000,
+    price:" 22000",
     rating: 4.4,
     category: "hatchback",
     description:
@@ -66,9 +64,8 @@ export const shopProducts = [
     safetyRating: "4-Star Overall",
   },
   {
-    id: "prod_003",
     name: "BMW M4",
-    price: 72000,
+    price:" 72000",
     rating: 4.8,
     category: "coupe",
     description:
@@ -99,9 +96,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_004",
     name: "Volvo V60",
-    price: 48000,
+    price:" 48000",
     rating: 4.7,
     category: "stationwagon",
     description:
@@ -132,9 +128,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_005",
     name: "Ford Focus",
-    price: 19000,
+    price:" 19000",
     rating: 4.2,
     category: "hatchback",
     description:
@@ -166,9 +161,8 @@ export const shopProducts = [
     safetyRating: "4-Star Overall",
   },
   {
-    id: "prod_006",
     name: "Mercedes-Benz E-Class",
-    price: 55000,
+    price:" 55000",
     rating: 4.9,
     category: "sedan",
     description:
@@ -200,9 +194,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_007",
     name: "Chevrolet Camaro",
-    price: 40000,
+    price:" 40000",
     rating: 4.6,
     category: "sedan",
     description:
@@ -234,9 +227,8 @@ export const shopProducts = [
     safetyRating: "4-Star Overall",
   },
   {
-    id: "prod_018",
     name: "Kia Seltos",
-    price: 23000,
+    price:" 23000",
     rating: 4.4,
     category: "stationwagon",
     description:
@@ -267,9 +259,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_018",
     name: "Kia Seltos",
-    price: 23000,
+    price:" 23000",
     rating: 4.4,
     category: "stationwagon",
     description:
@@ -300,9 +291,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_019",
     name: "Volkswagen Golf Alltrack",
-    price: 29000,
+    price:" 29000",
     rating: 4.5,
     category: "stationwagon",
     description:
@@ -333,9 +323,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_020",
     name: "Subaru Levorg",
-    price: 31000,
+    price:" 31000",
     rating: 4.7,
     category: "stationwagon",
     description:
@@ -366,9 +355,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_021",
     name: "Volvo V90 Cross Country",
-    price: 55000,
+    price:" 55000",
     rating: 4.8,
     category: "stationwagon",
     description:
@@ -399,9 +387,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_022",
     name: "Audi A6 Allroad",
-    price: 65000,
+    price:" 65000",
     rating: 4.9,
     category: "stationwagon",
     description:
@@ -432,9 +419,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_019",
     name: "Volkswagen Passat",
-    price: 28000,
+    price:" 28000",
     rating: 4.5,
     category: "sedan",
     description:
@@ -465,9 +451,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_020",
     name: "Tesla Model S",
-    price: 85000,
+    price:" 85000",
     rating: 4.9,
     category: "sedan",
     description:
@@ -498,9 +483,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_021",
     name: "Jaguar F-Pace",
-    price: 62000,
+    price:" 62000",
     rating: 4.6,
     category: "sedan",
     description:
@@ -531,9 +515,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_022",
     name: "Lexus RX 350",
-    price: 47000,
+    price:" 47000",
     rating: 4.7,
     category: "sedan",
     description:
@@ -564,9 +547,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_023",
     name: "Hyundai Tucson",
-    price: 29000,
+    price:" 29000",
     rating: 4.5,
     category: "sedan",
     description:
@@ -597,9 +579,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_024",
     name: "Chevrolet Tahoe",
-    price: 65000,
+    price:" 65000",
     rating: 4.7,
     category: "sedan",
     description:
@@ -630,9 +611,8 @@ export const shopProducts = [
     safetyRating: "4-Star Overall",
   },
   {
-    id: "prod_025",
     name: "Acura MDX",
-    price: 52000,
+    price:" 52000",
     rating: 4.6,
     category: "sedan",
     description:
@@ -663,9 +643,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_026",
     name: "Mazda CX-5",
-    price: 31000,
+    price:" 31000",
     rating: 4.6,
     category: "hatchback",
     description:
@@ -696,9 +675,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_027",
     name: "Audi A4",
-    price: 41000,
+    price:" 41000",
     rating: 4.8,
     category: "sedan",
     description:
@@ -729,9 +707,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_028",
     name: "Subaru Outback",
-    price: 34000,
+    price:" 34000",
     rating: 4.7,
     category: "hatchback",
     description:
@@ -762,9 +739,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_029",
     name: "Ford Mustang",
-    price: 55000,
+    price:" 55000",
     rating: 4.8,
     category: "coupe",
     description:
@@ -795,9 +771,8 @@ export const shopProducts = [
     safetyRating: "4-Star Overall",
   },
   {
-    id: "prod_030",
     name: "Toyota RAV4",
-    price: 32000,
+    price:" 32000",
     rating: 4.5,
     category: "coupe",
     description:
@@ -828,9 +803,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_031",
     name: "Nissan Altima",
-    price: 27000,
+    price:" 27000",
     rating: 4.4,
     category: "sedan",
     description:
@@ -861,9 +835,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_032",
     name: "Honda Accord",
-    price: 31000,
+    price:" 31000",
     rating: 4.7,
     category: "sedan",
     description:
@@ -894,9 +867,8 @@ export const shopProducts = [
     safetyRating: "5-Star Overall",
   },
   {
-    id: "prod_033",
     name: "BMW X5",
-    price: 61000,
+    price:" 61000",
     rating: 4.8,
     category: "coupe",
     description:

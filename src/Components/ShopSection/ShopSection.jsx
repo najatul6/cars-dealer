@@ -1,30 +1,31 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 // import "react-tabs/style/react-tabs.css";
-import { shopProducts } from "../../utils/shopProducts";
 import ShopTab from "./ShopTab";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useCategory from "../../Hooks/useCategory";
+import useProduct from "../../Hooks/useProduct";
 
 const ShopSection = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [categories] = useCategory();
+  const [products]=useProduct()
   const handleTabClick = (index) => {
     setActiveTabIndex(index);
   };
-  const sedansProducts = shopProducts.filter(
+  const sedansProducts = products.filter(
     (product) => product?.category === "sedan"
   );
-  const hatchbackProducts = shopProducts.filter(
+  const hatchbackProducts = products.filter(
     (product) => product?.category === "hatchback"
   );
-  const coupeProducts = shopProducts.filter(
+  const coupeProducts = products.filter(
     (product) => product?.category === "coupe"
   );
-  const stationWagonProducts = shopProducts.filter(
+  const stationWagonProducts = products.filter(
     (product) => product?.category === "stationwagon"
   );
-  const hotDealProducts = shopProducts.filter(
+  const hotDealProducts = products.filter(
     (product) => product?.isHotDeal === true
   );
   return (
