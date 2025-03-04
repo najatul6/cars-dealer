@@ -4,7 +4,6 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import useShopItems from "../../Hooks/useShopItems";
 import ShopTab from "../../Components/ShopSection/ShopTab";
 import ProductCardSkeleton from "../../Components/shared/ProductCardSkeleton/ProductCardSkeleton";
-import ShopSidebar from "../../Components/Shop/ShopSidebar";
 import useCategory from "../../Hooks/useCategory";
 
 const Shop = () => {
@@ -39,8 +38,6 @@ const Shop = () => {
 
   return (
     <div className="flex flex-col lg:flex-row min-h-screen w-full">
-      {/* Sidebar */}
-      <ShopSidebar category={activeCategory} setCategory={handleTabChange} className="w-full lg:w-64" />
 
       {/* Main Content */}
       <div className="flex-1 p-4">
