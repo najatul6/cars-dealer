@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import {  useState } from "react";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import useShopItems from "../../Hooks/useShopItems";
 import ShopTab from "../../Components/ShopSection/ShopTab";
@@ -7,84 +6,67 @@ import ProductCardSkeleton from "../../Components/shared/ProductCardSkeleton/Pro
 import useCategory from "../../Hooks/useCategory";
 
 const Shop = () => {
-  const { category } = useParams();
-  const navigate = useNavigate();
-  const [shopItems, isLoading] = useShopItems();
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [categories] = useCategory();
-
-  // Default to "hotDeal" instead of "popular"
-  const activeCategory = category || "hotDeal";
-
-  useEffect(() => {
-    if (!category) {
-      navigate(`/shop/hotDeal`, { replace: true });
-    }
-  }, [category, navigate]);
-
-  const handleTabChange = (index) => {
-    const selectedCategory = index === 0 ? "hotDeal" : categories[index - 1]?.category;
-    navigate(`/shop/${selectedCategory}`, { replace: true });
+  const [shopItems]=useShopItems()
+  const handleTabClick = (index) => {
+    setActiveTabIndex(index);
   };
-
-  const normalizedCategory = activeCategory.toLowerCase();
-
-  // ✅ Filter products based on the selected category
-  const filteredProducts =
-    activeCategory === "hotDeal"
-      ? shopItems.filter((product) => product.isHotDeal === true)
-      : shopItems.filter(
-          (product) => product.category.toLowerCase() === normalizedCategory
-        );
-
+  const sedansProducts = shopItems.filter(
+    (product) => product?.category === "sedan"
+  );
+  const hatchbackProducts = shopItems.filter(
+    (product) => product?.category === "hatchback"
+  );
+  const coupeProducts = shopItems.filter(
+    (product) => product?.category === "coupe"
+  );
+  const stationWagonProducts = shopItems.filter(
+    (product) => product?.category === "stationwagon"
+  );
+  const hotDealProducts = shopItems.filter(
+    (product) => product?.isHotDeal === true
+  );
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen w-full">
-
-      {/* Main Content */}
-      <div className="flex-1 p-4">
-        <Tabs selectedIndex={activeCategory === "hotDeal" ? 0 : categories.findIndex(c => c.category === activeCategory) + 1} onSelect={handleTabChange}>
-          <TabList className="flex space-x-4 mb-4">
-            <Tab className="px-4 py-2 cursor-pointer text-white border-b-2">
-              Hot Deal
-            </Tab>
-            {categories.map((cat, index) => (
-              <Tab key={index} className="px-4 py-2 cursor-pointer text-white border-b-2">
-                {cat.category}
-              </Tab>
-            ))}
-          </TabList>
-
-          {/* Hot Deal Tab */}
-          <TabPanel>
-            <h2 className="text-xl font-bold mb-4">🔥 Hot Deals</h2>
-            {isLoading ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {Array.from({ length: 8 }).map((_, index) => (
-                  <ProductCardSkeleton key={index} />
-                ))}
-              </div>
-            ) : (
-              <ShopTab items={filteredProducts} />
-            )}
-          </TabPanel>
-
-          {/* Dynamic Category Tabs */}
-          {categories.map((cat, index) => (
-            <TabPanel key={index}>
-              <h2 className="text-xl font-bold mb-4 capitalize">{cat.category} Zone</h2>
-              {isLoading ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {Array.from({ length: 8 }).map((_, index) => (
-                    <ProductCardSkeleton key={index} />
-                  ))}
-                </div>
-              ) : (
-                <ShopTab items={shopItems.filter((product) => product.category === cat.category)} />
-              )}
+     <div className="text-center">
+          <Tabs selectedIndex={activeTabIndex} onSelect={(index) => handleTabClick(index)}>
+            <TabList className="flex space-x-4 justify-center">
+              {categories?.map((item,index) => (
+                <Tab
+                  key={item?._id}
+                  className={`px-4 py-2 cursor-pointer transition-colors duration-300 border-b-0 ${
+                    activeTabIndex === index
+                      ? "border-2 border-b-0 rounded-t-xl text-cyan-500 "
+                      : "border-b-0 text-white hover:text-cyan-500 "
+                  }`}
+                >
+                  {item?.category}
+                </Tab>
+              ))}
+            </TabList>
+              <hr className="w-full mb-10 border-2 border-white"/>
+            <TabPanel>
+              <ShopTab items={hotDealProducts} />
             </TabPanel>
-          ))}
-        </Tabs>
-      </div>
-    </div>
+            <TabPanel>
+              <ShopTab items={sedansProducts} />
+            </TabPanel>
+            <TabPanel>
+              <ShopTab items={hatchbackProducts} />
+            </TabPanel>
+            <TabPanel>
+              <ShopTab items={coupeProducts} />
+            </TabPanel>
+            <TabPanel>
+              <ShopTab items={stationWagonProducts} />
+            </TabPanel>
+          </Tabs>
+          <button className="mt-10">
+            <Link to="/shop" className="btn bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full">
+              View All Products
+            </Link>
+          </button>
+        </div>
   );
 };
 
