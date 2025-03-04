@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/ninCars.svg";
+import { FaCartPlus } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -62,7 +63,7 @@ const Header = () => {
         {/* Button */}
         <Link to="/dashboard/overview">
           <div className="btn btn-outline text-light-blue hover:bg-Dark-blue hover:text-white uppercase font-bold">
-            see your car
+          <FaCartPlus /> see your car
           </div>
         </Link>
       </div>
