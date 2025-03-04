@@ -28,6 +28,12 @@ const ShopSection = () => {
   const hotDealProducts = shopItems.filter(
     (product) => product?.isHotDeal === true
   );
+  const slicesedan=sedansProducts.slice(0,3)
+  const slicehatchback=hatchbackProducts.slice(0,3)
+  const slicecoupe=coupeProducts.slice(0,3)
+  const slicestationwagon=stationWagonProducts.slice(0,3)
+  const slicehotdeal=hotDealProducts.slice(0,3)
+
   return (
     <div className="text-center">
       <Tabs selectedIndex={activeTabIndex} onSelect={(index) => handleTabClick(index)}>
@@ -47,19 +53,19 @@ const ShopSection = () => {
         </TabList>
           <hr className="w-full mb-10 border-2 border-white"/>
         <TabPanel>
-          <ShopTab items={hotDealProducts} />
+          <ShopTab items={slicehotdeal} />
         </TabPanel>
         <TabPanel>
-          <ShopTab items={sedansProducts} />
+          <ShopTab items={slicesedan} />
         </TabPanel>
         <TabPanel>
-          <ShopTab items={hatchbackProducts} />
+          <ShopTab items={slicehatchback} />
         </TabPanel>
         <TabPanel>
-          <ShopTab items={coupeProducts} />
+          <ShopTab items={slicecoupe} />
         </TabPanel>
         <TabPanel>
-          <ShopTab items={stationWagonProducts} />
+          <ShopTab items={slicestationwagon} />
         </TabPanel>
       </Tabs>
       <button className="mt-10">

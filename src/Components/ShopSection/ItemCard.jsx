@@ -27,7 +27,7 @@ const ItemCard = ({ item }) => {
           email: user.email,
           name: product.name,
           price: product.price,
-          image: product.image,
+          image: product.images[0],
         };
         try {
           const { data } = await axiosSecure.post("/createCart", cartItem);
