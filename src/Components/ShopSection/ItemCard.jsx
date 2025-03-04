@@ -1,10 +1,41 @@
 import { Rating } from "@smastrom/react-rating";
 import PropTypes from "prop-types";
+import useAuth from "../../Hooks/useAuth";
 
 const ItemCard = ({ item }) => {
   const { images, name, price, rating, stock, weight, colorOptions, isOnSale } =
     item;
-  // console.log(stoke);
+    const { user } = useAuth();
+    
+
+    const addToCart = async (product) => {
+        if (!user || !user?.email) {
+          return navigate("/signin", { state: { from: location } });
+        }
+        if (userRole !== "user") {
+          toast.error("Only customers can add products to cart");
+          return navigate("/dashboard/overview", { state: { from: location } });
+        }
+        const cartItem = {
+          itemId: product._id,
+          email: user.email,
+          name: product.name,
+          price: product.price,
+          image: product.image,
+        };
+        try {
+          const { data } = await axiosSecure.post("/createCart", cartItem);
+      
+          if (data.insertedId) {
+            toast.success("Product added to cart");
+          } else {
+            toast.info(data.message || "Product already in cart");
+          }
+        } catch (error) {
+          console.error("Add to cart error:", error);
+          toast.error("Failed to add product to cart");
+        }
+      };
   return (
     <div className="card shadow-2xl rounded-xl w-full">
       <figure>
@@ -32,6 +63,7 @@ const ItemCard = ({ item }) => {
         <div className="text-white w-full">
           <button
             disabled={!isOnSale}
+            onClick={() => addToCart(item)}
             className={`${
                isOnSale ? "bg-regal-blue hover:bg-light-blue" : "bg-red-600 text-red-600"
             } btn w-full rounded-xl  text-white outline-none border-none font-bold`}

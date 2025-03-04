@@ -4,6 +4,7 @@ import { categories } from "../../utils/categories";
 import { shopProducts } from "../../utils/shopProducts";
 import ShopTab from "./ShopTab";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ShopSection = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -59,6 +60,11 @@ const ShopSection = () => {
           <ShopTab items={stationWagonProducts} />
         </TabPanel>
       </Tabs>
+      <button className="mt-10">
+        <Link to="/shop" className="btn bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full">
+          View All Products
+        </Link>
+      </button>
     </div>
   );
 };
