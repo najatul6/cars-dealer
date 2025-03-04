@@ -1,12 +1,18 @@
 import { Rating } from "@smastrom/react-rating";
 import PropTypes from "prop-types";
 import useAuth from "../../Hooks/useAuth";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import { useNavigate } from "react-router-dom";
+import useRole from "../../Hooks/useRole";
+import { toast } from "react-toastify";
 
 const ItemCard = ({ item }) => {
   const { images, name, price, rating, stock, weight, colorOptions, isOnSale } =
     item;
     const { user } = useAuth();
-    
+    const axiosSecure = useAxiosSecure();
+    const navigate = useNavigate();
+    const [userRole] = useRole();
 
     const addToCart = async (product) => {
         if (!user || !user?.email) {
