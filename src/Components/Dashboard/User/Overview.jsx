@@ -28,7 +28,7 @@ const Overview = () => {
   }, [axiosSecure]); // The dependency array ensures this runs once when the component mounts
 
   return (
-    <div className=" py-4">
+    <div className="py-4">
       <div className="overview-header flex justify-between items-center py-4 ">
         <h2 className="text-2xl font-bold text-white">Dashboard Overview</h2>
       </div>
@@ -41,8 +41,13 @@ const Overview = () => {
           transition={{ duration: 0.5 }}
         >
           <h3 className="text-sm text-gray-400">Orders</h3>
-          <h2 className="text-xl text-white font-semibold">{overviewData.orders}</h2>
-          <Link to="/dashboard/my-orders" className="text-baseColor hover:underline">
+          <h2 className="text-xl text-white font-semibold">
+            {overviewData.orders}
+          </h2>
+          <Link
+            to="/dashboard/my-orders"
+            className="text-baseColor hover:underline"
+          >
             View Orders
           </Link>
         </motion.div>
@@ -54,8 +59,13 @@ const Overview = () => {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-sm text-gray-400">Wishlist</h3>
-          <h2 className="text-xl text-white font-semibold">{overviewData.wishlist}</h2>
-          <Link to="/dashboard/wishlist" className="text-baseColor hover:underline">
+          <h2 className="text-xl text-white font-semibold">
+            {overviewData.wishlist}
+          </h2>
+          <Link
+            to="/dashboard/wishlist"
+            className="text-baseColor hover:underline"
+          >
             View Wishlist
           </Link>
         </motion.div>
@@ -67,15 +77,22 @@ const Overview = () => {
           transition={{ duration: 0.7 }}
         >
           <h3 className="text-sm text-gray-400">Support Tickets</h3>
-          <h2 className="text-xl text-white font-semibold">{overviewData.tickets}</h2>
-          <Link to="/dashboard/support-tickets" className="text-baseColor hover:underline">
+          <h2 className="text-xl text-white font-semibold">
+            {overviewData.tickets}
+          </h2>
+          <Link
+            to="/dashboard/support-tickets"
+            className="text-baseColor hover:underline"
+          >
             View Tickets
           </Link>
         </motion.div>
       </div>
 
       <div className="recent-activity bg-background2 rounded-lg shadow-lg p-6 mt-6">
-        <h3 className="text-lg font-semibold text-white mb-4">Recent Activity</h3>
+        <h3 className="text-lg font-semibold text-white mb-4">
+          Recent Activity
+        </h3>
         <ul>
           {/* Display a list of recent activity */}
           <motion.li
@@ -84,7 +101,8 @@ const Overview = () => {
             transition={{ duration: 0.5 }}
             className="activity-item text-white mb-2"
           >
-            <span className="text-baseColor">Order #12345</span> - Completed on Feb 25
+            <span className="text-baseColor">Order #12345</span> - Completed on
+            Feb 25
           </motion.li>
           <motion.li
             initial={{ opacity: 0, x: -100 }}
@@ -92,7 +110,8 @@ const Overview = () => {
             transition={{ duration: 0.6 }}
             className="activity-item text-white mb-2"
           >
-            <span className="text-baseColor">Wishlist Item</span> - Added on Feb 24
+            <span className="text-baseColor">Wishlist Item</span> - Added on Feb
+            24
           </motion.li>
           <motion.li
             initial={{ opacity: 0, x: -100 }}
@@ -100,7 +119,8 @@ const Overview = () => {
             transition={{ duration: 0.7 }}
             className="activity-item text-white mb-2"
           >
-            <span className="text-baseColor">Support Ticket #345</span> - Opened on Feb 23
+            <span className="text-baseColor">Support Ticket #345</span> - Opened
+            on Feb 23
           </motion.li>
         </ul>
       </div>

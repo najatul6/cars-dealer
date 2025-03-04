@@ -23,9 +23,12 @@ console.log(cart);
 
   console.log(cart?.length);
   return (
-    <div className="p-6 w-full">
+    <div className="p-6 w-full border">
+      <div className="py-4">
+
+      
       <h2 className="text-2xl font-bold text-white mb-5">My Wishlist</h2>
-      {/* {isLoading ? (
+      {isLoading ? (
         <p className="text-gray-400 text-center">Loading wishlist...</p>
       ) : cart.length === 0 ? (
         <p className="text-gray-400 text-center">Your wishlist is empty.</p>
@@ -58,7 +61,8 @@ console.log(cart);
             </motion.div>
           ))}
         </div>
-      )} */}
+      )}
+      </div>
     </div>
   );
 };
