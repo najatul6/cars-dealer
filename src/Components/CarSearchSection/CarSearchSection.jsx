@@ -20,7 +20,7 @@ const CarSearchSection = () => {
           );
         })}
       </div>
-      <div>
+      <div>   
         <input
           type="range"
           min={0}
