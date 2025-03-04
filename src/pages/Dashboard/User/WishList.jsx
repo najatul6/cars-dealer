@@ -81,7 +81,7 @@ const WishList = () => {
                   <td className="p-3 text-light-blue font-bold">
                     $ {item.price || "0.00"}
                   </td>
-                  <td className="p-3 text-center border flex justify-center">
+                  <td className="p-3 text-center flex justify-center">
                     <button
                       onClick={() => handleRemove(item._id)}
                       className="bg-red-600 hover:bg-red-500 text-white py-1 px-3 rounded flex items-center gap-2"
