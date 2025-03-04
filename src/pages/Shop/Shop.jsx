@@ -16,7 +16,7 @@ const Shop = () => {
 
   useEffect(() => {
     if (!category) {
-      navigate(`/shop/popular`, { replace: true });
+      navigate(`/shop`, { replace: true });
     }
   }, [category, navigate]);
 
