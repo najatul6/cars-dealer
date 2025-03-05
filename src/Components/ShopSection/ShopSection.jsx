@@ -37,37 +37,44 @@ const ShopSection = () => {
   return (
     <div className="text-center">
       <Tabs selectedIndex={activeTabIndex} onSelect={(index) => handleTabClick(index)}>
-        <TabList className="flex space-x-4 justify-center">
-          {categories?.map((item,index) => (
-            <Tab
-              key={item?._id}
-              className={`px-4 py-2 cursor-pointer transition-colors duration-300 border-b-0 ${
-                activeTabIndex === index
-                  ? "border-2 border-b-0 rounded-t-xl text-cyan-500 "
-                  : "border-b-0 text-white hover:text-cyan-500 "
-              }`}
-            >
-              {item?.category}
-            </Tab>
-          ))}
-        </TabList>
-          <hr className="w-full mb-10 border-2 border-white"/>
-        <TabPanel>
-          <ShopTab items={slicehotdeal} />
-        </TabPanel>
-        <TabPanel>
-          <ShopTab items={slicesedan} />
-        </TabPanel>
-        <TabPanel>
-          <ShopTab items={slicehatchback} />
-        </TabPanel>
-        <TabPanel>
-          <ShopTab items={slicecoupe} />
-        </TabPanel>
-        <TabPanel>
-          <ShopTab items={slicestationwagon} />
-        </TabPanel>
-      </Tabs>
+  {/* Tab List */}
+  <TabList className="flex space-x-4 justify-center">
+    {categories?.map((item, index) => (
+      <Tab
+        key={item?._id}
+        className={`px-4 py-2 cursor-pointer transition-colors duration-300 border-b-0 ${
+          activeTabIndex === index
+            ? "border-2 border-b-0 rounded-t-xl text-cyan-500 "
+            : "border-b-0 text-white hover:text-cyan-500 "
+        }`}
+      >
+        {item?.category}
+      </Tab>
+    ))}
+  </TabList>
+
+  <hr className="w-full mb-10 border-2 border-white" />
+
+  {/* Tab Panels (Dynamically Generated) */}
+  {categories?.map((item) => (
+    <TabPanel key={item?._id}>
+      <ShopTab
+        items={
+          item.category === "sedan"
+            ? slicesedan
+            : item.category === "hatchback"
+            ? slicehatchback
+            : item.category === "coupe"
+            ? slicecoupe
+            : item.category === "stationwagon"
+            ? slicestationwagon
+            : slicehotdeal
+        }
+      />
+    </TabPanel>
+  ))}
+</Tabs>
+
       <button className="mt-10">
         <Link to="/shop" className="btn bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full">
           View All Products
