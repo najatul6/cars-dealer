@@ -1,8 +1,10 @@
 import useAllUser from "../../../Hooks/useAllUser";
 import { useState } from "react";
+import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 
 const UsersControl = () => {
     const [users, refetch, isLoading] = useAllUser();
+    const axiosSecure=useAxiosSecure();
     const [search, setSearch] = useState("");
 
     const filteredUsers = users?.filter(user => 
@@ -11,7 +13,7 @@ const UsersControl = () => {
     );
 
     return (
-        <div className="p-6 bg-gray-900 rounded-lg text-white">
+        <div className="p-6  rounded-lg text-white">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-bold">User Management</h2>
                 <input 
@@ -53,6 +55,7 @@ const UsersControl = () => {
                                     <td className="p-2">{user.role}</td>
                                     <td className="p-2">
                                         <button className="px-3 py-1 bg-blue-600 rounded mr-2">Edit</button>
+                                        <button className="px-3 py-1 bg-green-600 rounded mr-2">Update</button>
                                         <button className="px-3 py-1 bg-red-600 rounded">Delete</button>
                                     </td>
                                 </tr>
