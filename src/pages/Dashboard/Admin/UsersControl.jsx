@@ -11,8 +11,13 @@ const UsersControl = () => {
     const handleUpdate = async (user) => {
         const { value: role } = await Swal.fire({
             title: "Update Role",
-            input: "text",
-            inputLabel: "Enter new role",
+            input: "select",
+            inputOptions: {
+                user: "User",
+                admin: "Admin",
+                agent: "Agent"
+            },
+            inputLabel: "Select new role",
             inputValue: user.role,
             showCancelButton: true
         });
