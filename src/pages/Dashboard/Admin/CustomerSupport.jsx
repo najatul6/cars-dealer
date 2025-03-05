@@ -6,7 +6,7 @@ import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import { toast } from "react-toastify";
 
 const CustomerSupport = () => {
-  const [ticket, refetch, isLoading] = useTicket();
+  const [ticket, refetch] = useTicket();
   const axiosSecure = useAxiosSecure();
 
   // Handle updating ticket status
