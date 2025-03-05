@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { FaPlus, FaTrash, FaEdit } from "react-icons/fa";
+import { FaPlus, FaTrash } from "react-icons/fa";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import { toast } from "react-toastify";
-import useAuth from "../../../Hooks/useAuth"; // Hook to get the logged-in user
+import useAuth from "../../../Hooks/useAuth";
 
 const SupportTickets = () => {
   const axiosSecure = useAxiosSecure();
-  const { user } = useAuth(); // Get logged-in user info
+  const { user } = useAuth(); 
   const [tickets, setTickets] = useState([]);
   const [newTicket, setNewTicket] = useState("");
 
