@@ -47,7 +47,7 @@ const UsersControl = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await axiosSecure.delete(`/users/${user.id}`);
+                    const response = await axiosSecure.delete(`/users/${user._id}`);
                     if (response.data.deletedCount > 0) {
                         Swal.fire("Deleted!", "The user has been removed.", "success");
                         refetch();
@@ -59,16 +59,7 @@ const UsersControl = () => {
         });
     };
 
-    const handleSearch = async () => {
-        try {
-            const response = await axiosSecure.get(`/users?search=${search}`);
-            if (response.data) {
-                Swal.fire("Search Complete!", "User search results updated.", "success");
-            }
-        } catch (error) {
-            Swal.fire("Error!", "Failed to fetch user.", "error");
-        }
-    };
+  
 
     return (
         <div className="p-6 bg-gray-900 rounded-lg text-white">
@@ -82,10 +73,7 @@ const UsersControl = () => {
                         onChange={(e) => setSearch(e.target.value)} 
                         className="w-64 bg-gray-800 text-white border-gray-700 p-2 rounded"
                     />
-                    <button 
-                        onClick={handleSearch} 
-                        className="px-3 py-2 bg-blue-600 rounded"
-                    >Search</button>
+                    
                 </div>
             </div>
             <div className="overflow-x-auto rounded-lg">
