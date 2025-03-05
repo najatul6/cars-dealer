@@ -2,36 +2,41 @@ import { useState, useEffect } from "react";
 import { FaPlus, FaTrash, FaEdit } from "react-icons/fa";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import { toast } from "react-toastify";
+import useAuth from "../../../Hooks/useAuth"; // Hook to get the logged-in user
 
 const SupportTickets = () => {
   const axiosSecure = useAxiosSecure();
+  const { user } = useAuth(); // Get logged-in user info
   const [tickets, setTickets] = useState([]);
   const [newTicket, setNewTicket] = useState("");
 
-  // Fetch tickets from the server
+  // Fetch tickets for the logged-in user
   useEffect(() => {
-    const fetchTickets = async () => {
-      try {
-        const res = await axiosSecure.get("/support-tickets");
-        setTickets(res.data);
-      } catch (error) {
-        toast.error("Failed to fetch tickets");
-      }
-    };
-    fetchTickets();
-  }, [axiosSecure]);
+    if (user?.email) {
+      const fetchTickets = async () => {
+        try {
+          const res = await axiosSecure.get(`/supportTickets?email=${user.email}`);
+          setTickets(res.data);
+        } catch (error) {
+          toast.error("Failed to fetch tickets");
+        }
+      };
+      fetchTickets();
+    }
+  }, [axiosSecure, user?.email]);
 
-  // Add a new ticket
+  // Add a new ticket with the user's email
   const handleAddTicket = async () => {
-    if (newTicket.trim()) {
+    if (newTicket.trim() && user?.email) {
       try {
         const res = await axiosSecure.post("/supportTickets", {
           title: newTicket,
           status: "Open",
+          email: user.email, // Store user's email
         });
-  
+
         if (res.data.insertedId) {
-          setTickets([...tickets, { _id: res.data.insertedId, title: newTicket, status: "Open" }]);
+          setTickets([...tickets, { _id: res.data.insertedId, title: newTicket, status: "Open", email: user.email }]);
           setNewTicket("");
           toast.success("Ticket added successfully");
         }
@@ -56,7 +61,7 @@ const SupportTickets = () => {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold text-white mb-4">Support Tickets</h2>
+      <h2 className="text-2xl font-bold text-white mb-4">My Support Tickets</h2>
       <div className="flex gap-2 mb-4">
         <input
           type="text"
