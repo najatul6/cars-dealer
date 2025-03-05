@@ -25,13 +25,16 @@ const SupportTickets = () => {
   const handleAddTicket = async () => {
     if (newTicket.trim()) {
       try {
-        const res = await axiosSecure.post("/createSupportTicket", {
+        const res = await axiosSecure.post("/supportTickets", {
           title: newTicket,
           status: "Open",
         });
-        setTickets([...tickets, res.data]);
-        setNewTicket("");
-        toast.success("Ticket added successfully");
+  
+        if (res.data.insertedId) {
+          setTickets([...tickets, { _id: res.data.insertedId, title: newTicket, status: "Open" }]);
+          setNewTicket("");
+          toast.success("Ticket added successfully");
+        }
       } catch (error) {
         toast.error("Failed to add ticket");
       }
@@ -41,9 +44,11 @@ const SupportTickets = () => {
   // Delete a ticket
   const handleDeleteTicket = async (id) => {
     try {
-      await axiosSecure.delete(`/supportTickets/${id}`);
-      setTickets(tickets.filter((ticket) => ticket._id !== id));
-      toast.success("Ticket deleted successfully");
+      const res = await axiosSecure.delete(`/supportTickets/${id}`);
+      if (res.data.deletedCount > 0) {
+        setTickets(tickets.filter((ticket) => ticket._id !== id));
+        toast.success("Ticket deleted successfully");
+      }
     } catch (error) {
       toast.error("Failed to delete ticket");
     }
