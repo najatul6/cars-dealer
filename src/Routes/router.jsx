@@ -31,6 +31,7 @@ import Inventory from "../pages/Inventory/Inventory";
 import Services from "../pages/Services/Services";
 import Newsroom from "../pages/Newsroom/Newsroom";
 import Shop from "../pages/Shop/Shop";
+import CustomerSupport from "../pages/Dashboard/Admin/CustomerSupport";
 
 const router = createBrowserRouter([
   {
@@ -208,7 +209,7 @@ const router = createBrowserRouter([
         path: "customer-support",
         element: (
           <AdminRoute>
-            <ProductControl />
+            <CustomerSupport />
           </AdminRoute>
         ),
       },
