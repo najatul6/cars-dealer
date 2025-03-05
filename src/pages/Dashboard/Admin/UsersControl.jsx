@@ -1,11 +1,34 @@
 import useAllUser from "../../../Hooks/useAllUser";
 import { useState } from "react";
-import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 const UsersControl = () => {
     const [users, refetch, isLoading] = useAllUser();
-    const axiosSecure=useAxiosSecure();
     const [search, setSearch] = useState("");
+
+    const handleEdit = (user) => {
+        Swal.fire("Edit User", `Editing user: ${user.name}`, "info");
+    };
+
+    const handleUpdate = (user) => {
+        Swal.fire("Update User", `Updating user: ${user.name}`, "success");
+    };
+
+    const handleDelete = (user) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: `You are about to delete ${user.name}. This action cannot be undone!`,
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire("Deleted!", "The user has been removed.", "success");
+            }
+        });
+    };
 
     const filteredUsers = users?.filter(user => 
         user.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -13,7 +36,7 @@ const UsersControl = () => {
     );
 
     return (
-        <div className="p-6  rounded-lg text-white">
+        <div className="p-6 bg-gray-900 rounded-lg text-white">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-bold">User Management</h2>
                 <input 
@@ -54,9 +77,18 @@ const UsersControl = () => {
                                     <td className="p-2">{user.email}</td>
                                     <td className="p-2">{user.role}</td>
                                     <td className="p-2">
-                                        <button className="px-3 py-1 bg-blue-600 rounded mr-2">Edit</button>
-                                        <button className="px-3 py-1 bg-green-600 rounded mr-2">Update</button>
-                                        <button className="px-3 py-1 bg-red-600 rounded">Delete</button>
+                                        <button 
+                                            className="px-3 py-1 bg-blue-600 rounded mr-2"
+                                            onClick={() => handleEdit(user)}
+                                        >Edit</button>
+                                        <button 
+                                            className="px-3 py-1 bg-green-600 rounded mr-2"
+                                            onClick={() => handleUpdate(user)}
+                                        >Update</button>
+                                        <button 
+                                            className="px-3 py-1 bg-red-600 rounded"
+                                            onClick={() => handleDelete(user)}
+                                        >Delete</button>
                                     </td>
                                 </tr>
                             ))
