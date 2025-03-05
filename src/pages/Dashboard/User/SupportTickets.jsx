@@ -1,25 +1,52 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaPlus, FaTrash, FaEdit } from "react-icons/fa";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import { toast } from "react-toastify";
 
 const SupportTickets = () => {
   const axiosSecure = useAxiosSecure();
-  const [tickets, setTickets] = useState([
-    { id: 1, title: "Issue with Payment", status: "Open" },
-    { id: 2, title: "Bug in Dashboard", status: "In Progress" },
-  ]);
-
+  const [tickets, setTickets] = useState([]);
   const [newTicket, setNewTicket] = useState("");
 
-  const handleAddTicket = () => {
+  // Fetch tickets from the server
+  useEffect(() => {
+    const fetchTickets = async () => {
+      try {
+        const res = await axiosSecure.get("/support-tickets");
+        setTickets(res.data);
+      } catch (error) {
+        toast.error("Failed to fetch tickets");
+      }
+    };
+    fetchTickets();
+  }, [axiosSecure]);
+
+  // Add a new ticket
+  const handleAddTicket = async () => {
     if (newTicket.trim()) {
-      setTickets([...tickets, { id: Date.now(), title: newTicket, status: "Open" }]);
-      setNewTicket("");
+      try {
+        const res = await axiosSecure.post("/createSupportTicket", {
+          title: newTicket,
+          status: "Open",
+        });
+        setTickets([...tickets, res.data]);
+        setNewTicket("");
+        toast.success("Ticket added successfully");
+      } catch (error) {
+        toast.error("Failed to add ticket");
+      }
     }
   };
 
-  const handleDeleteTicket = (id) => {
-    setTickets(tickets.filter((ticket) => ticket.id !== id));
+  // Delete a ticket
+  const handleDeleteTicket = async (id) => {
+    try {
+      await axiosSecure.delete(`/supportTickets/${id}`);
+      setTickets(tickets.filter((ticket) => ticket._id !== id));
+      toast.success("Ticket deleted successfully");
+    } catch (error) {
+      toast.error("Failed to delete ticket");
+    }
   };
 
   return (
@@ -39,7 +66,7 @@ const SupportTickets = () => {
       </div>
       <div className="grid gap-4">
         {tickets.map((ticket) => (
-          <div key={ticket.id} className="bg-gray-900 text-white p-4 flex justify-between items-center rounded">
+          <div key={ticket._id} className="bg-gray-900 text-white p-4 flex justify-between items-center rounded">
             <div>
               <h3 className="text-lg font-semibold">{ticket.title}</h3>
               <p className="text-sm text-gray-400">Status: {ticket.status}</p>
@@ -48,7 +75,7 @@ const SupportTickets = () => {
               <button className="bg-blue-500 hover:bg-blue-600 p-2 rounded">
                 <FaEdit />
               </button>
-              <button onClick={() => handleDeleteTicket(ticket.id)} className="bg-red-500 hover:bg-red-600 p-2 rounded">
+              <button onClick={() => handleDeleteTicket(ticket._id)} className="bg-red-500 hover:bg-red-600 p-2 rounded">
                 <FaTrash />
               </button>
             </div>
