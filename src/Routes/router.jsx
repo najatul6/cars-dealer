@@ -32,6 +32,7 @@ import Services from "../pages/Services/Services";
 import Newsroom from "../pages/Newsroom/Newsroom";
 import Shop from "../pages/Shop/Shop";
 import CustomerSupport from "../pages/Dashboard/Admin/CustomerSupport";
+import UsersControl from "../pages/Dashboard/Admin/UsersControl";
 
 const router = createBrowserRouter([
   {
@@ -193,7 +194,7 @@ const router = createBrowserRouter([
         path: "users-control",
         element: (
           <AdminRoute>
-            <ProductControl />
+            <UsersControl />
           </AdminRoute>
         ),
       },
