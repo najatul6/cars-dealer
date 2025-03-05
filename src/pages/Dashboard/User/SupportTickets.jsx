@@ -82,9 +82,7 @@ const SupportTickets = () => {
               <p className="text-sm text-gray-400">Status: {ticket.status}</p>
             </div>
             <div className="flex gap-2">
-              <button className="bg-blue-500 hover:bg-blue-600 p-2 rounded">
-                <FaEdit />
-              </button>
+              
               <button onClick={() => handleDeleteTicket(ticket._id)} className="bg-red-500 hover:bg-red-600 p-2 rounded">
                 <FaTrash />
               </button>
