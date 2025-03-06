@@ -47,7 +47,7 @@ const UsersControl = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await axiosSecure.delete(`/users/${user._id}`);
+                    const response = await axiosSecure.delete(`/users/${user?._id}`);
                     if (response.data.deletedCount > 0) {
                         Swal.fire("Deleted!", "The user has been removed.", "success");
                         refetch();
@@ -62,7 +62,7 @@ const UsersControl = () => {
   
 
     return (
-        <div className="p-6 bg-gray-900 rounded-lg text-white">
+        <div className="p-6 rounded-lg text-white">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-bold">User Management</h2>
                 <div className="flex gap-2">
