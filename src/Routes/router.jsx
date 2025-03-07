@@ -33,6 +33,7 @@ import Newsroom from "../pages/Newsroom/Newsroom";
 import Shop from "../pages/Shop/Shop";
 import CustomerSupport from "../pages/Dashboard/Admin/CustomerSupport";
 import UsersControl from "../pages/Dashboard/Admin/UsersControl";
+import Transactions from "../pages/Dashboard/Admin/Transactions";
 
 const router = createBrowserRouter([
   {
@@ -226,7 +227,7 @@ const router = createBrowserRouter([
         path: "transactions",
         element: (
           <AdminRoute>
-            <ProductControl />
+            <Transactions />
           </AdminRoute>
         ),
       },
